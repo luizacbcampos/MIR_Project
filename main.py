@@ -116,7 +116,6 @@ def first_merge(save='merge.csv'):
 
 	print("Checking NaN values")
 	null = result.columns[result.isnull().any()].tolist()
-	lista = []
 	
 	def correct_gender(index):
 		mini = result.loc[index, ['artist_name', 'song_title', 'gender']]
@@ -161,6 +160,7 @@ def first_merge(save='merge.csv'):
 		return np.nan
 	
 	#gender
+	print("Correcting gender values")
 	gender_list = result[result['gender'].isnull()].index.to_list()
 	for index in gender_list:
 		new_gender = correct_gender(index)
