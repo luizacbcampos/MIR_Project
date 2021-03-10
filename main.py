@@ -5,6 +5,7 @@ import csv
 
 FULL_PATH = "/home/luiza/estudo/8º período/MIR/falsetto/full/"
 ANN_PATH = "/home/luiza/estudo/8º período/MIR/falsetto/data-analysis/"
+
 def unify(x, col):
 	if pd.isnull(x[(col+'_x')]): #se x é NaN usa o Y
 		return x[(col+'_y')]
