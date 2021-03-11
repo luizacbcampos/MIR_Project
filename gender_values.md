@@ -10,79 +10,68 @@ Gender values are: `male`, `female`, `duet`
 
 Artist | Song | Check
 -------|------|------
-"Groove" Holmes | Misty | <ul><li>[ ] X</li></ul>
-69 Boyz | Tootsee Roll | <ul><li>[ ] X</li></ul>
-95 South | Rodeo | <ul><li>[ ] X</li></ul>
-95 South | Whoot, There It Is | <ul><li>[ ] X</li></ul>
-A-Trak + Milo & Otis Featuring Rich Kidz | Out The Speakers | <ul><li>[ ] X</li></ul>
-Ace Cannon | Searchin' | <ul><li>[ ] X</li></ul>
-Ace Cannon | Tuff | <ul><li>[ ] X</li></ul>
-Al Caiola And His Orchestra | Bonanza | <ul><li>[ ] X</li></ul>
-Al Caiola And His Orchestra | The Magnificent Seven | <ul><li>[ ] X</li></ul>
-Al Casey Combo | Cookin' | <ul><li>[ ] X</li></ul>
-Al Casey Combo | Jivin' Around | <ul><li>[ ] X</li></ul>
-Arthur Lyman Group | Love For Sale | <ul><li>[ ] X</li></ul>
-Arthur Lyman Group | Yellow Bird | <ul><li>[ ] X</li></ul>
-Arthur Lyman | Taboo | <ul><li>[ ] X</li></ul>
-B. Bumble & The Stingers | Boogie Woogie | <ul><li>[ ] X</li></ul>
-B. Bumble & The Stingers | Bumble Boogie | <ul><li>[ ] X</li></ul>
-B. Bumble & The Stingers | Nut Rocker | <ul><li>[ ] X</li></ul>
-Baauer | Harlem Shake | <ul><li>[ ] X</li></ul>
-Baby Cortez | Rinky Dink | <ul><li>[ ] X</li></ul>
-Bent Fabric and His Piano | Alley Cat | <ul><li>[ ] X</li></ul>
-Bent Fabric and His Piano | Chicken Feed | <ul><li>[ ] X</li></ul>
-Bert Kaempfert And His Orchestra | Afrikaan Beat | <ul><li>[ ] X</li></ul>
-Bert Kaempfert And His Orchestra | Bye Bye Blues | <ul><li>[ ] X</li></ul>
-Bert Kaempfert And His Orchestra | Moon Over Naples | <ul><li>[ ] X</li></ul>
-Bert Kaempfert And His Orchestra | Now And Forever | <ul><li>[ ] X</li></ul>
-Bert Kaempfert And His Orchestra | Red Roses For A Blue Lady | <ul><li>[ ] X</li></ul>
-Bert Kaempfert And His Orchestra | Three O'Clock In The Morning | <ul><li>[ ] X</li></ul>
+"Groove" Holmes | Misty | <ul><li>[X]</li></ul>
+Ace Cannon | Searchin' | <ul><li>[X]</li></ul>
+Ace Cannon | Tuff | <ul><li>[X]</li></ul>
+Al Caiola And His Orchestra | Bonanza | <ul><li>[X]</li></ul>
+Al Caiola And His Orchestra | The Magnificent Seven | <ul><li>[X]</li></ul>
+Al Casey Combo | Cookin' | <ul><li>[x]</li></ul>
+Al Casey Combo | Jivin' Around | <ul><li>[X]</li></ul>
+Arthur Lyman Group | Love For Sale | <ul><li>[X]</li></ul>
+Arthur Lyman Group | Yellow Bird | <ul><li>[X]</li></ul>
+Arthur Lyman | Taboo | <ul><li>[X]</li></ul>
+B. Bumble & The Stingers | Boogie Woogie | <ul><li>[X]</li></ul>
+B. Bumble & The Stingers | Bumble Boogie | <ul><li>[X]</li></ul>
+B. Bumble & The Stingers | Nut Rocker | <ul><li>[X]</li></ul>
+Baby Cortez | Rinky Dink | <ul><li>[X]</li></ul>
+Bent Fabric and His Piano | Alley Cat | <ul><li>[X]</li></ul>
+Bent Fabric and His Piano | Chicken Feed | <ul><li>[X]</li></ul>
+Bert Kaempfert And His Orchestra | Afrikaan Beat | <ul><li>[X]</li></ul>
+Bert Kaempfert And His Orchestra | Bye Bye Blues | <ul><li>[X]</li></ul>
+Bert Kaempfert And His Orchestra | Moon Over Naples | <ul><li>[X]</li></ul>
+Bert Kaempfert And His Orchestra | Now And Forever | <ul><li>[X]</li></ul>
+Bert Kaempfert And His Orchestra | Red Roses For A Blue Lady | <ul><li>[X]</li></ul>
+Bert Kaempfert And His Orchestra | Three O'Clock In The Morning | <ul><li>[X]</li></ul>
 Bill Black's Combo | -twistin'-White Silver Sands | <ul><li>[ ] X</li></ul>
-Bill Black's Combo | Comin' On | <ul><li>[ ] X</li></ul>
-Bill Black's Combo | Don't Be Cruel | <ul><li>[ ] X</li></ul>
-Bill Black's Combo | Honky Train | <ul><li>[ ] X</li></ul>
-Bill Black's Combo | Little Queenie | <ul><li>[ ] X</li></ul>
-Bill Black's Combo | Monkey-Shine | <ul><li>[ ] X</li></ul>
-Bill Black's Combo | Movin' | <ul><li>[ ] X</li></ul>
-Bill Black's Combo | Twist-Her | <ul><li>[ ] X</li></ul>
-Bill Black's Combo | White Silver Sands | <ul><li>[ ] X</li></ul>
-Bill Conti | Gonna Fly Now | <ul><li>[ ] X</li></ul>
-Bill Conti | Theme From Dynasty | <ul><li>[ ] X</li></ul>
-Bill Pursell | Our Winter Love | <ul><li>[ ] X</li></ul>
-Billy Vaughn And His Orchestra | A Swingin' Safari | <ul><li>[ ] X</li></ul>
-Bizarre Inc | I'm Gonna Get You | <ul><li>[ ] X</li></ul>
-Bob Crewe Generation | Birds Of Britain | <ul><li>[ ] X</li></ul>
-Bob Crewe Generation | Music To Watch Girls By | <ul><li>[ ] X</li></ul>
-Bob James | Feel Like Making Love | <ul><li>[ ] X</li></ul>
-Bobby Gregg and His Friends | Potato Peeler | <ul><li>[ ] X</li></ul>
+Bill Black's Combo | Comin' On | <ul><li>[X]</li></ul>
+Bill Black's Combo | Don't Be Cruel | <ul><li>[X]</li></ul>
+Bill Black's Combo | Honky Train | <ul><li>[X]</li></ul>
+Bill Black's Combo | Little Queenie | <ul><li>[X]</li></ul>
+Bill Black's Combo | Monkey-Shine | <ul><li>[X]</li></ul>
+Bill Black's Combo | Movin' | <ul><li>[X]</li></ul>
+Bill Black's Combo | Twist-Her | <ul><li>[X]</li></ul>
+Bill Black's Combo | White Silver Sands | <ul><li>[X]</li></ul>
+Bill Conti | Theme From Dynasty | <ul><li>[X]</li></ul>
+Bill Pursell | Our Winter Love | <ul><li>[X]</li></ul>
+Billy Vaughn And His Orchestra | A Swingin' Safari | <ul><li>[X]</li></ul>
+Bob Crewe Generation | Music To Watch Girls By | <ul><li>[X]</li></ul>
+Bob James | Feel Like Making Love | <ul><li>[X]</li></ul>
+Bobby Gregg and His Friends | Potato Peeler | <ul><li>[X]</li></ul>
 Bobby Gregg and His Friends | The Jam - Part 1 | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Boot-Leg | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Chinese Checkers | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Green Onions | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Groovin' | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Hang 'Em High | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Hip Hug-Her | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Jellybread | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Melting Pot | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Mo-Onions | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Mrs. Robinson | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | My Sweet Potato | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Slim Jenkin's Place | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Slum Baby | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Something | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Soul Dressing | <ul><li>[ ] X</li></ul>
-Booker T. & The MG's | Soul-Limbo | <ul><li>[ ] X</li></ul>
-Chantay's | Pipeline | <ul><li>[ ] X</li></ul>
-Chet Atkins | Boo Boo Stick Beat | <ul><li>[ ] X</li></ul>
-Chet Atkins | Yakety Axe | <ul><li>[ ] X</li></ul>
-Chuck Mangione | Feels So Good | <ul><li>[ ] X</li></ul>
-Chuck Mangione | Give It All You Got | <ul><li>[ ] X</li></ul>
-Cliff Nobles & Co. | Switch It On | <ul><li>[ ] X</li></ul>
-Cliff Nobles & Co. | The Horse | <ul><li>[ ] X</li></ul>
-Cozy Powell | Dance With The Devil | <ul><li>[ ] X</li></ul>
-Crazy Frog | Axel F | <ul><li>[ ] X</li></ul>
-Current | Theme From "Rocky" (Gonna Fly Now) | <ul><li>[ ] X</li></ul>
-Cymande | The Message | <ul><li>[ ] X</li></ul>
+Booker T. & The MG's | Boot-Leg | <ul><li>[X]</li></ul>
+Booker T. & The MG's | Chinese Checkers | <ul><li>[X]</li></ul>
+Booker T. & The MG's | Green Onions | <ul><li>[X]</li></ul>
+Booker T. & The MG's | Groovin' | <ul><li>[X]</li></ul>
+Booker T. & The MG's | Hang 'Em High | <ul><li>[X]</li></ul>
+Booker T. & The MG's | Hip Hug-Her | <ul><li>[X]</li></ul>
+Booker T. & The MG's | Jellybread | <ul><li>[X]</li></ul>
+Booker T. & The MG's | Melting Pot | <ul><li>[X]</li></ul>
+Booker T. & The MG's | Mo-Onions | <ul><li>[X]</li></ul>
+Booker T. & The MG's | Mrs. Robinson | <ul><li>[X]</li></ul>
+Booker T. & The MG's | My Sweet Potato | <ul><li>[X]</li></ul>
+Booker T. & The MG's | Slim Jenkin's Place | <ul><li>[X]</li></ul>
+Booker T. & The MG's | Slum Baby | <ul><li>[X]</li></ul>
+Booker T. & The MG's | Something | <ul><li>[X]</li></ul>
+Booker T. & The MG's | Soul Dressing | <ul><li>[X] /li></ul>
+Booker T. & The MG's | Soul-Limbo | <ul><li>[X]</li></ul>
+Chantay's | Pipeline | <ul><li>[X]</li></ul>
+Chet Atkins | Boo Boo Stick Beat | <ul><li>[X]</li></ul>
+Chet Atkins | Yakety Axe | <ul><li>[X]</li></ul>
+Chuck Mangione | Feels So Good | <ul><li>[X]</li></ul>
+Chuck Mangione | Give It All You Got | <ul><li>[X]</li></ul>
+Cliff Nobles & Co. | Switch It On | <ul><li>[X]</li></ul>
+Cliff Nobles & Co. | The Horse | <ul><li>[X]</li></ul>
+Cozy Powell | Dance With The Devil | <ul><li>[X]</li></ul>
 Damage | Love II Love | <ul><li>[ ] X</li></ul>
 Darude | Sandstorm | <ul><li>[ ] X</li></ul>
 Das EFX (Featuring Mobb Deep) | Microphone Master | <ul><li>[ ] X</li></ul>

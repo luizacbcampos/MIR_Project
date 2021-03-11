@@ -5745,7 +5745,7 @@
 60,175,1967,"8b5f7a55e5458b4b5de51a8214b31578abe73653","Blues Magoos","Pipe Dream","True",0,"male",5,"Rock",0,6869154
 81,38,1967,"692ce1695741763a3dfcd46f6b2cf2cdfd9d77c0","Blues Magoos","There's A Chance We Can Make It","True",0,"male",6,"Pop",2,13496407
 88,61,1967,NULL,"Bo Diddley","Ooh Baby","True",NULL,NULL,NULL,NULL,NULL,NULL
-89,18,1967,NULL,"Bob Crewe Generation","Birds Of Britain","False",0,"#N/A",0,"Pop",0,411654
+89,18,1967,NULL,"Bob Crewe Generation","Birds Of Britain","False",0,"female",0,"Pop",0,411654
 81,67,1967,"e255931e7e5e80acb347aebadc8e19da7cf89978","Bob Dylan","Leopard-Skin Pill-Box Hat","True",0,"male",6,"Rock",0,16879
 1,1418,1967,"c9212ac5232cbc01210ee2e674df49f586b9d908","Bobbie Gentry","Ode To Billie Joe","True",0,"female",7,"Country",0,2847168
 54,155,1967,"0864367633bda091365cd77d6a8484bce5b21951","Bobbie Gentry","Okolona River Bottom Band","True",0,"female",6,"Country",2,2847170
@@ -9704,7 +9704,7 @@
 88,29,1973,"29d43ea1d0b5ea6c19a7e270d5dab3abbbec9728","Curtis Mayfield","Can't Say Nothin'","True",8,"male",8,"R&B",3,7444741
 39,471,1973,"db2baf8a0217355f9b35984e05464a6da6b42160","Curtis Mayfield","Future Shock","True",NULL,NULL,NULL,NULL,NULL,NULL
 71,80,1973,"1689824bbcb58cdc8c0f6db4556356efd4f696ed","Curtis Mayfield","If I Were Only A Child Again","True",8,"male",9,"R&B",0,7444745
-48,378,1973,"b507f83e63964c99b7a96ff189cd1f495833a498","Cymande","The Message","True",0,"#N/A",0,"Pop",0,6604851
+48,378,1973,"b507f83e63964c99b7a96ff189cd1f495833a498","Cymande","The Message","True",0,"duet",0,"Pop",0,6604851
 94,21,1973,"cb78546bc1051a755ca30e36822bdb0dab5d9603","David Blue","Outlaw Man","True",NULL,NULL,NULL,NULL,NULL,NULL
 15,1000,1973,"b39f0ae16451e7aca47dec309ea7d55aad607b8e","David Bowie","Space Oddity","True",0,"male",6,"Rock",4,851660
 5,1519,1973,"04855427adc44edd357067acb0fa013272da14d6","David Essex","Rock On","True",0,"male",5,"Pop",0,17814
@@ -11728,7 +11728,7 @@
 1,2629,1977,"e796afaa8ec1ec36844e45c87551c8a58def96db","Bee Gees","How Deep Is Your Love","True",3,"male",7,"Pop",0,71291
 1,2092,1977,"3d1632a9d561aa44fd5d66eb766e002cb2acf6d0","Bee Gees","Stayin' Alive","True",10,"male",10,"Pop",0,8010414
 42,423,1977,NULL,"Bette Midler","You're Movin' Out Today","True",NULL,NULL,NULL,NULL,NULL,NULL
-1,1449,1977,"6541320a6f29ddc7388645699b1cd094d76d3a08","Bill Conti","Gonna Fly Now","True",0,"#N/A",0,"Pop",0,785269
+1,1449,1977,"6541320a6f29ddc7388645699b1cd094d76d3a08","Bill Conti","Gonna Fly Now","True",0,"female",0,"Pop",0,785269
 30,657,1977,"300afa67fbdef1d924d3ac8730f308e7fae85823","Bill Withers","Lovely Day","True",0,"male",6,"Pop",0,5578482
 3,1744,1977,"ef6c2caa85012dbc077651c06256c4b2b5940088","Billy Joel","Just The Way You Are","True",0,"male",7,"Pop",0,6603511
 93,8,1977,NULL,"Billy Lemmons","Six Packs A Day","False",NULL,NULL,NULL,NULL,NULL,NULL
@@ -11794,7 +11794,7 @@
 7,1335,1977,"550e630b625ec2c3ed993da2f451073cc2f02f98","Crosby, Stills & Nash","Just A Song Before I Go","True",0,"male",7,"Pop",0,1377993
 42,373,1977,"b4cee9af47a9b5c3e40e588c867e1ab95423df10","Crown Heights Affair","Dancin'","True",NULL,NULL,NULL,NULL,NULL,NULL
 2,1852,1977,"990cc387b978c7ac2933f921829c28d1146f619b","Crystal Gayle","Don't It Make My Brown Eyes Blue","True",2,"female",7,"Pop",0,5778329
-94,11,1977,NULL,"Current","Theme From ""Rocky"" (Gonna Fly Now)","False",0,"#N/A",0,"Pop",0,785269
+94,11,1977,NULL,"Current","Theme From ""Rocky"" (Gonna Fly Now)","False",0,"female",0,"Pop",0,785269
 3,1497,1977,"f62b7536bf4e487fd2b1efceab0113b5fbe7ef06","Dan Hill","Sometimes When We Touch","True",0,"male",7,"Pop",0,650539
 100,2,1977,NULL,"Danny White","Dance Little Lady Dance","False",NULL,NULL,NULL,NULL,NULL,NULL
 28,493,1977,"b69524dc31acce0cf0d42f349bc772db5b9f86a0","Daryl Hall John Oates","Back Together Again","True",6,"male",8,"Pop",0,7252967
@@ -18306,7 +18306,7 @@
 11,1657,1993,"f79800dbd0db6c8e733fb9ef07852669c524097d","2Pac","I Get Around","True",0,"male",5,"Rap/Hip hop",9,1335584
 12,1399,1993,"deaeacd3da1901bd9a44e229260224d207f46871","2Pac","Keep Ya Head Up","True",0,"male",4,"Rap/Hip hop",9,791193
 14,1641,1993,"0ef304f46704b1c3a5a8c119b2cbfa696824c187","4 Non Blondes","What's Up","True",3,"female",8,"Pop",0,22140
-11,1654,1993,"9a7d1cedeb02f479f47a1b304f40c6c3940ec57d","95 South","Whoot, There It Is","True",0,"#N/A",0,"Rap/Hip hop",0,8002572
+11,1654,1993,"9a7d1cedeb02f479f47a1b304f40c6c3940ec57d","95 South","Whoot, There It Is","True",0,"male",0,"Rap/Hip hop",0,8002572
 47,708,1993,"091602d4440f4d4f3485a7124827096ab064db31","A Tribe Called Quest","Award Tour","True",0,"male",7,"Rap/Hip hop",10,99085
 56,547,1993,NULL,"Aaron Neville","Don't Take Away My Heaven","True",4,"male",5,"Pop",0,42918
 90,38,1993,NULL,"Aaron Neville","The Grand Tour","True",3,"male",6,"Pop",0,42907
@@ -18331,7 +18331,7 @@
 3,2121,1993,"ddc79ec18d01d3e1bf318b60fffc1dd735702490","Billy Joel","The River Of Dreams","True",5,"male",6,"Pop",0,30301
 76,149,1993,"a6025d98070888ae90810656d0dcccc897c41d76","Billy Ray Cyrus","In The Heart Of A Woman","True",0,"male",6,"Pop",0,14959
 70,186,1993,"e959f3ac73fff7c3770760cb9c4d1f6941e7619b","Billy Ray Cyrus","She's Not Cryin' Anymore","True",0,"male",6,"Pop",0,14967
-47,1062,1993,"e307d37e4596fbb46a426c090954b3d70d1981bf","Bizarre Inc","I'm Gonna Get You","True",0,"#N/A",0,"Dance",0,15030103
+47,1062,1993,"e307d37e4596fbb46a426c090954b3d70d1981bf","Bizarre Inc","I'm Gonna Get You","True",0,"female",0,"Dance",0,15030103
 86,57,1993,"a5993bad873f6cf94bed5b248c2d4169012f2b76","Black Moon","Who Got The Props","True",NULL,NULL,NULL,NULL,NULL,NULL
 20,1345,1993,"43833792afa46c75d5e83e313097929b6881c26c","Blind Melon","No Rain","True",0,"male",7,"Pop",0,20995
 14,984,1993,"95ec50c52c272426b1f600b9a65b246d3430866b","Bobby Brown","Get Away","True",NULL,NULL,NULL,NULL,NULL,NULL
@@ -18646,7 +18646,7 @@
 87,20,1994,NULL,"2Pac Duet With Mopreme","Papa'z Song","True",0,"male",4,"Rap/Hip hop",10,1335585
 8,2229,1994,NULL,"4PM","Sukiyaki","True",0,"male",8,"Pop",5,6866970
 51,631,1994,"6ce2918d1b5742c371be7b2a41a10fb7ac2250da","69 Boyz","Kitty Kitty","True",NULL,NULL,NULL,NULL,NULL,NULL
-8,2831,1994,"a35d727d3a66a25e35595c85c0b53543d615f534","69 Boyz","Tootsee Roll","True",0,"#N/A",7,"Rap/Hip hop",10,11044255
+8,2831,1994,"a35d727d3a66a25e35595c85c0b53543d615f534","69 Boyz","Tootsee Roll","True",0,"male",7,"Rap/Hip hop",10,11044255
 65,240,1994,"9aa86cdaeb666be724a5033faf83bd67abebcecf","A Tribe Called Quest","Electric Relaxation (Relax Yourself Girl)","True",0,"male",6,"Rap/Hip hop",10,99080
 6,1421,1994,"9b5dd396c4bb53e03c7a153ab47c48195fc2344b","Aaliyah","At Your Best (You Are Love)","True",6,"female",8,"R&B",0,2406936
 5,1977,1994,"d8aa06172761a63724bed7e7e58a8d06621cf68e","Aaliyah","Back & Forth","True",3,"female",6,"R&B",0,2406943
@@ -18982,7 +18982,7 @@
 44,487,1995,"a1f04e4596626dc2c6d62eff6c020a87d47ba537","2Pac","So Many Tears","True",0,"male",4,"Rap/Hip hop",10,791200
 68,111,1995,NULL,"2Pac","Temptations","True",0,"male",4,"Rap/Hip hop",8,94012
 15,2393,1995,"96c2b2773273b29127c8364509b77b4c7592655f","3T","Anything","True",0,"male",7,"R&B",0,621359
-77,291,1995,"13bc0dd8fa7de2ebc5f2215e98b1b2af03f8ae07","95 South","Rodeo","True",0,"#N/A",0,"Rap/Hip hop",0,1610000
+77,291,1995,"13bc0dd8fa7de2ebc5f2215e98b1b2af03f8ae07","95 South","Rodeo","True",0,"duet",0,"Rap/Hip hop",0,1610000
 75,154,1995,"18651d2745dc5ba9317b9c2f3ab18ed9ea117a90","Aaliyah","Age Ain't Nothing But A Number","True",3,"female",5,"R&B",4,6602211
 99,2,1995,NULL,"Aaron Neville","Can't Stop My Heart From Loving You (The Rain Song)","True",4,"male",8,"R&B",0,120034
 15,1300,1995,"8d21ac55aa747a4d5b7c59701c42bae6a686bcfe","Ace Of Base","Beautiful Life","True",0,"female",7,"Pop",0,9011215
@@ -22203,7 +22203,7 @@
 79,100,2005,"086b29ee265a57bea7b5e8675e76d728c31c767f","Common","Go!","True",0,"male",5,"Rap/Hip hop",10,264021
 45,640,2005,"180550eb9cb41abf4444242dc35f342143a499bf","Craig Morgan","Redneck Yacht Club","True",0,"male",6,"Country",0,237428
 51,707,2005,"52b1ee9a28ef385eb684939666aa6c6035256a0c","Craig Morgan","That's What I Love About Sunday","True",0,"male",6,"Country",0,237421
-50,198,2005,"67e0f3a1e02411136cdd2cd2f7ea7efd795a4b6a","Crazy Frog","Axel F","True",0,"#N/A",0,"Dance",0,313766
+50,198,2005,"67e0f3a1e02411136cdd2cd2f7ea7efd795a4b6a","Crazy Frog","Axel F","True",0,"male",0,"Dance",0,313766
 78,23,2005,NULL,"Cristian Castro","Amor Eterno","True",0,"male",7,"Latin",0,374900
 8,1951,2005,"4b74c82db2185949652c0399b0feac4ea687af7b","D.H.T.","Listen To Your Heart","True",0,"female",7,"Dance",0,296134
 1,1918,2005,"b71d55ef20dbd656060073e5209f27e8d21e884d","D4L","Laffy Taffy","True",0,"male",7,"Rap/Hip hop",8,12889020
@@ -25383,7 +25383,7 @@
 91,10,2013,"1e6c524d7e3cf860b017e3b45612a5e466e91f58","Avril Lavigne","Rock N Roll","True",0,"female",7,"Rock",2,2362370
 53,722,2013,"23eff46bddf98cbf453cd697ce3665ed1931ecbc","B.o.B Featuring 2 Chainz","HeadBand","True",0,"male",3,"Rap/Hip hop",10,2390312
 64,553,2013,"581e57c30d69dd5b063beda41c7da1b6dcf7b603","B.o.B Featuring T.I. & Juicy J","We Still In This B****","True",0,"male",7,"Rap/Hip hop",7,2390317
-1,1469,2013,"4c842f5324d3c03d3c66ebb546551373c82f992d","Baauer","Harlem Shake","True",0,"#N/A",0,"Dance",0,2165719
+1,1469,2013,"4c842f5324d3c03d3c66ebb546551373c82f992d","Baauer","Harlem Shake","True",0,"male",0,"Dance",0,2165719
 5,3554,2013,"db33ccf2e995d4590a77f7842e59a6fad2e2b861","Bastille","Pompeii","True",0,"male",7,"Pop",0,2408839
 38,854,2013,"6b7971569e5fe0bf4a1fb2201a4e508cdaba1f30","Big Sean Featuring Lil Wayne & Jhene Aiko","Beware","True",0,"male",2,"Rap/Hip hop",7,2293922
 39,832,2013,"68697daf29ceaca1b8765516c66a041817a2b99a","Billy Currington","Hey Girl","True",0,"male",6,"Country",0,2315146
@@ -26097,7 +26097,7 @@
 92,11,2015,NULL,"A$AP Rocky Featuring Rod Stewart x Miguel x Mark Ronson","Everyday","True",0,"male",6,"Rap/Hip hop",9,10065520
 80,25,2015,NULL,"A$AP Rocky Featuring ScHoolboy Q","Electric Body","True",2,"male",6,"Rap/Hip hop",8,3245399
 62,59,2015,"acc8c9d799cd91fcb1045ad7ba44663a4f574c80","A$AP Rocky","L$D","True",5,"male",8,"Rap/Hip hop",3,3245395
-98,3,2015,NULL,"A-Trak + Milo & Otis Featuring Rich Kidz","Out The Speakers","True",0,"#N/A",0,"Dance",0,3067842
+98,3,2015,NULL,"A-Trak + Milo & Otis Featuring Rich Kidz","Out The Speakers","True",0,"male",0,"Dance",0,3067842
 91,10,2015,"521fa021bd5d37bd0f1e2be7165ad5edda15bf2b","Action Bronson Featuring Chance The Rapper","Baby Blue","True",0,"male",4,"Rap/Hip hop",8,9666977
 64,425,2015,"2941c6a5545aa61a49130cf4bf54d9ed67de4bbb","Adam Lambert","Ghost Town","True",0,"male",6,"Pop",0,3113108
 1,2414,2015,"4ab65f9b193ccc37f2059344322462ae5e9dac90","Adele","Hello","True",0,"female",8,"Pop",0,4567270
