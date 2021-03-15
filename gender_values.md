@@ -47,7 +47,7 @@ Billy Vaughn And His Orchestra | A Swingin' Safari | <ul><li>[X]</li></ul>
 Bob Crewe Generation | Music To Watch Girls By | <ul><li>[X]</li></ul>
 Bob James | Feel Like Making Love | <ul><li>[X]</li></ul>
 Bobby Gregg and His Friends | Potato Peeler | <ul><li>[X]</li></ul>
-Bobby Gregg and His Friends | The Jam - Part 1 | <ul><li>[ ] X</li></ul>
+Bobby Gregg and His Friends | The Jam - Part 1 | <ul><li>[X]</li></ul>
 Booker T. & The MG's | Boot-Leg | <ul><li>[X]</li></ul>
 Booker T. & The MG's | Chinese Checkers | <ul><li>[X]</li></ul>
 Booker T. & The MG's | Green Onions | <ul><li>[X]</li></ul>
@@ -72,166 +72,129 @@ Chuck Mangione | Give It All You Got | <ul><li>[X]</li></ul>
 Cliff Nobles & Co. | Switch It On | <ul><li>[X]</li></ul>
 Cliff Nobles & Co. | The Horse | <ul><li>[X]</li></ul>
 Cozy Powell | Dance With The Devil | <ul><li>[X]</li></ul>
-Damage | Love II Love | <ul><li>[ ] X</li></ul>
-Darude | Sandstorm | <ul><li>[ ] X</li></ul>
-Das EFX (Featuring Mobb Deep) | Microphone Master | <ul><li>[ ] X</li></ul>
-David A. Stewart Introducing Candy Dulfer | Lily Was Here | <ul><li>[ ] X</li></ul>
-Davie Allan And The Arrows | Devil's Angels | <ul><li>[ ] X</li></ul>
-Davie Allan And The Arrows | Theme From The Wild Angels | <ul><li>[ ] X</li></ul>
-dc Talk | Between You And Me | <ul><li>[ ] X</li></ul>
-Deliverance/Eric Weissberg & Steve Mandell | Dueling Banjos | <ul><li>[ ] X</li></ul>
-Dillon Francis & DJ Snake | Get Low | <ul><li>[ ] X</li></ul>
-DJ Suede The Remix God | Cash Me Outside (#CashMeOutside) | <ul><li>[ ] X</li></ul>
-Don Costa And His Orchestra And Chorus | Never On Sunday | <ul><li>[ ] X</li></ul>
-Don Shirley Trio | Water Boy | <ul><li>[ ] X</li></ul>
-Don Shirley | Drown In My Own Tears | <ul><li>[ ] X</li></ul>
-Duane Eddy And The Rebels | Because They're Young | <ul><li>[ ] X</li></ul>
-Duane Eddy And The Rebels | Forty Miles Of Bad Road | <ul><li>[ ] X</li></ul>
-Duane Eddy His Twangy Guitar And The Rebels | "Yep!" | <ul><li>[ ] X</li></ul>
-Duane Eddy His Twangy Guitar And The Rebels | Bonnie Came Back | <ul><li>[ ] X</li></ul>
-Duane Eddy His Twangy Guitar And The Rebels | Cannonball | <ul><li>[ ] X</li></ul>
-Duane Eddy His Twangy Guitar And The Rebels | First Love, First Tears | <ul><li>[ ] X</li></ul>
-Duane Eddy His Twangy Guitar And The Rebels | Pepe | <ul><li>[ ] X</li></ul>
-Duane Eddy His Twangy Guitar And The Rebels | Ramrod | <ul><li>[ ] X</li></ul>
+Darude | Sandstorm | <ul><li>[X]</li></ul>
+David A. Stewart Introducing Candy Dulfer | Lily Was Here | <ul><li>[X]</li></ul>
+Davie Allan And The Arrows | Devil's Angels | <ul><li>[X]</li></ul>
+Davie Allan And The Arrows | Theme From The Wild Angels | <ul><li>[X]</li></ul>
+Deliverance/Eric Weissberg & Steve Mandell | Dueling Banjos | <ul><li>[X]</li></ul>
+Don Costa And His Orchestra And Chorus | Never On Sunday | <ul><li>[X]</li></ul>
+Don Shirley Trio | Water Boy | <ul><li>[X]</li></ul>
+Don Shirley | Drown In My Own Tears | <ul><li>[X]</li></ul>
+Duane Eddy And The Rebels | Because They're Young | <ul><li>[X]</li></ul>
+Duane Eddy And The Rebels | Forty Miles Of Bad Road | <ul><li>[X]</li></ul>
+Duane Eddy His Twangy Guitar And The Rebels | Bonnie Came Back | <ul><li>[X]</li></ul>
+Duane Eddy His Twangy Guitar And The Rebels | Cannonball | <ul><li>[X]</li></ul>
+Duane Eddy His Twangy Guitar And The Rebels | First Love, First Tears | <ul><li>[X]</li></ul>
+Duane Eddy His Twangy Guitar And The Rebels | Pepe | <ul><li>[X]</li></ul>
+Duane Eddy His Twangy Guitar And The Rebels | Ramrod | <ul><li>[X]</li></ul>
 Duane Eddy His Twangy Guitar And The Rebels | Rebel-'rouser | <ul><li>[ ] X</li></ul>
-Duane Eddy His Twangy Guitar And The Rebels | Shazam! | <ul><li>[ ] X</li></ul>
-Duane Eddy His Twangy Guitar And The Rebels | Some Kind-A Earthquake | <ul><li>[ ] X</li></ul>
-Duane Eddy His Twangy Guitar And The Rebels | The Lonely One | <ul><li>[ ] X</li></ul>
-Enoch Light & The Light Brigade | I Want To Be Happy Cha Cha | <ul><li>[ ] X</li></ul>
-Ernie Fields & Orch. | Chattanooga Choo Choo | <ul><li>[ ] X</li></ul>
-Ernie Fields & Orch. | In The Mood | <ul><li>[ ] X</li></ul>
-Ernie Fields | The Charleston | <ul><li>[ ] X</li></ul>
-Ernie Freeman | (Theme from) "The Dark At The Top Of The Stairs" | <ul><li>[ ] X</li></ul>
-F.L.Y. (Fast Life Yungstaz) | Swag Surfin' | <ul><li>[ ] X</li></ul>
-F.R. David | Words | <ul><li>[ ] X</li></ul>
-Ferrante & Teicher | Exodus | <ul><li>[ ] X</li></ul>
-Ferrante & Teicher | Midnight Cowboy | <ul><li>[ ] X</li></ul>
-Ferrante & Teicher | Smile | <ul><li>[ ] X</li></ul>
-Fireballs | Torquay | <ul><li>[ ] X</li></ul>
-Floyd Cramer | Chattanooga Choo Choo | <ul><li>[ ] X</li></ul>
-Floyd Cramer | Java | <ul><li>[ ] X</li></ul>
-Floyd Cramer | Last Date | <ul><li>[ ] X</li></ul>
-Floyd Cramer | Let's Go | <ul><li>[ ] X</li></ul>
-Floyd Cramer | Lovesick Blues | <ul><li>[ ] X</li></ul>
-Floyd Cramer | On The Rebound | <ul><li>[ ] X</li></ul>
-Floyd Cramer | San Antonio Rose | <ul><li>[ ] X</li></ul>
-Floyd Cramer | Your Last Goodbye | <ul><li>[ ] X</li></ul>
-Fragma | Toca's Miracle | <ul><li>[ ] X</li></ul>
-Frank Mills | Music Box Dancer | <ul><li>[ ] X</li></ul>
-Frank Mills | Peter Piper | <ul><li>[ ] X</li></ul>
-G-Eazy Featuring Marc E. Bassy | Some Kind Of Drug | <ul><li>[ ] X</li></ul>
-Gary Glitter | Rock And Roll Part 2 | <ul><li>[ ] X</li></ul>
-Glenn Jones | We've Only Just Begun (The Romance Is Not Over) | <ul><li>[ ] X</li></ul>
-Gravediggaz | Diary Of A Madman | <ul><li>[ ] X</li></ul>
-Grover Washington, Jr. | Mister Magic | <ul><li>[ ] X</li></ul>
-H.B. Barnum | Lost Love | <ul><li>[ ] X</li></ul>
-Hadouken! | Levitate | <ul><li>[ ] X</li></ul>
-Hank Snow | I've Been Everywhere | <ul><li>[ ] X</li></ul>
-Harlow Wilcox and the Oakies | Groovy Grubworm | <ul><li>[ ] X</li></ul>
-Harold Faltermeyer | Axel F | <ul><li>[ ] X</li></ul>
-Henry Mancini | Mr. Lucky | <ul><li>[ ] X</li></ul>
-Herbie Mann | Memphis Underground | <ul><li>[ ] X</li></ul>
-Hot Butter | Popcorn | <ul><li>[ ] X</li></ul>
-Hugh Masekela | Grazing In The Grass | <ul><li>[ ] X</li></ul>
-Hugh Masekela | Puffin' On Down The Track | <ul><li>[ ] X</li></ul>
-Hugh Masekela | Riot | <ul><li>[ ] X</li></ul>
-Hugh Masekela | Up-Up And Away | <ul><li>[ ] X</li></ul>
-Hugo Montenegro, His Orchestra And Chorus | The Good, The Bad And The Ugly | <ul><li>[ ] X</li></ul>
-Jack Nitzsche | The Lonely Surfer | <ul><li>[ ] X</li></ul>
-James Booker | Gonzo | <ul><li>[ ] X</li></ul>
-Jerry Byrd | Memories Of Maria | <ul><li>[ ] X</li></ul>
-Jerry Murad's Harmonicats | Cherry Pink And Apple Blossom White | <ul><li>[ ] X</li></ul>
-Jim Weatherly | I'll Still Love You | <ul><li>[ ] X</li></ul>
-Jimmy Beck & His Orchestra | Pipe Dreams | <ul><li>[ ] X</li></ul>
-Jimmy Castor | Hey, Leroy, Your Mama's Callin' You | <ul><li>[ ] X</li></ul>
-Jimmy McGriff | All About My Girl | <ul><li>[ ] X</li></ul>
-Jimmy McGriff | I've Got A Woman (Part I) | <ul><li>[ ] X</li></ul>
-Jimmy McGriff | Kiko | <ul><li>[ ] X</li></ul>
-Jimmy McGriff | M.G. Blues | <ul><li>[ ] X</li></ul>
-Jimmy McGriff | The Worm | <ul><li>[ ] X</li></ul>
-Jimmy Smith With Kenny Burrell And Grady Tate | The Organ Grinder's Swing | <ul><li>[ ] X</li></ul>
-Jimmy Smith | (Theme From) Any Number Can Win | <ul><li>[ ] X</li></ul>
-Jimmy Smith | Back At The Chicken Shack, Part 1 | <ul><li>[ ] X</li></ul>
-Jimmy Smith | Ol' Man River | <ul><li>[ ] X</li></ul>
-Jimmy Smith | Who's Afraid Of Virginia Woolf? (Part I) | <ul><li>[ ] X</li></ul>
-John Handy | Hard Work | <ul><li>[ ] X</li></ul>
-Johnny And The Hurricanes | Beatnik Fly | <ul><li>[ ] X</li></ul>
-Johnny And The Hurricanes | Crossfire | <ul><li>[ ] X</li></ul>
-Johnny And The Hurricanes | Red River Rock | <ul><li>[ ] X</li></ul>
-Johnny And The Hurricanes | You Are My Sunshine | <ul><li>[ ] X</li></ul>
-Kenny Ball and his Jazzmen | Midnight In Moscow | <ul><li>[ ] X</li></ul>
-King Curtis & The Kingpins | (Sittin' On) The Dock Of The Bay | <ul><li>[ ] X</li></ul>
-King Curtis & The Kingpins | I Was Made To Love Her | <ul><li>[ ] X</li></ul>
-King Curtis And The Noble Knights | Beach Party | <ul><li>[ ] X</li></ul>
-King Curtis And The Noble Knights | Soul Twist | <ul><li>[ ] X</li></ul>
-Kungs vs Cookin' On 3 Burners | This Girl | <ul><li>[ ] X</li></ul>
-L.A. Style | James Brown Is Dead | <ul><li>[ ] X</li></ul>
-Lalo Schifrin | Mission-Impossible | <ul><li>[ ] X</li></ul>
-Larry Carlton | Sleepwalk | <ul><li>[ ] X</li></ul>
-Larry Elgart And His Manhattan Swing Orchestra | Hooked On Swing | <ul><li>[ ] X</li></ul>
-Lee Allen And His Band | Tic Toc | <ul><li>[ ] X</li></ul>
-Lee Morgan | The Sidewinder, Part 1 | <ul><li>[ ] X</li></ul>
-Lil Jon & The East Side Boyz Featuring Ludacris, Too Short, Big Kap & Chyna Whyte | Bia' Bia' | <ul><li>[ ] X</li></ul>
-Link Wray And The Wraymen | Raw-Hide | <ul><li>[ ] X</li></ul>
-Lord Rockingham's XI | Fried Onions | <ul><li>[ ] X</li></ul>
-Lord Tariq & Peter Gunz | Deja Vu [Uptown Baby] | <ul><li>[ ] X</li></ul>
-Love Unlimited Orchestra | Love's Theme | <ul><li>[ ] X</li></ul>
-Love Unlimited Orchestra | Rhapsody In White | <ul><li>[ ] X</li></ul>
-Love Unlimited Orchestra | Satin Soul | <ul><li>[ ] X</li></ul>
-Ludacris Featuring Mystikal & Infamous 2.0 | Move B\*\*\*h | <ul><li>[ ] X</li></ul>
-M/A/R/R/S | Pump Up The Volume | <ul><li>[ ] X</li></ul>
-Mar-Keys | Last Night | <ul><li>[ ] X</li></ul>
-Mar-Keys | Morning After | <ul><li>[ ] X</li></ul>
-Mar-Keys | Pop-Eye Stroll | <ul><li>[ ] X</li></ul>
-Marshmello | Alone | <ul><li>[ ] X</li></ul>
-Martin Garrix | Animals | <ul><li>[ ] X</li></ul>
-Martin Mull and Orchestra | Dueling Tubas | <ul><li>[ ] X</li></ul>
-Mason Williams | Baroque-A-Nova | <ul><li>[ ] X</li></ul>
-Mason Williams | Classical Gas | <ul><li>[ ] X</li></ul>
-Meco | Star Wars Theme/Cantina Band | <ul><li>[ ] X</li></ul>
-Method Man Featuring Mary J. Blige | I'll Be There For You/You're All I Need To Get By | <ul><li>[ ] X</li></ul>
-MFSB | Sexy | <ul><li>[ ] X</li></ul>
-Mike Post featuring Larry Carlton | The Theme From Hill Street Blues | <ul><li>[ ] X</li></ul>
-Mike Post | Theme From Magnum P.i. | <ul><li>[ ] X</li></ul>
-Millie Small | My Boy Lollipop | <ul><li>[ ] X</li></ul>
-Mongo Santamaria | El Pussy Cat | <ul><li>[ ] X</li></ul>
-Mungo Jerry | In The Summertime | <ul><li>[ ] X</li></ul>
-Oscar Black | I'm A Fool To Care | <ul><li>[ ] X</li></ul>
-Paul Humphrey & His Cool Aid Chemists | Cool Aid | <ul><li>[ ] X</li></ul>
-Paul Nicholas | On The Strip | <ul><li>[ ] X</li></ul>
-Perez Prado And His Orchestra | Guaglione | <ul><li>[ ] X</li></ul>
-Perez Prado And His Orchestra | Paris | <ul><li>[ ] X</li></ul>
-Perez Prado And His Orchestra | Patricia | <ul><li>[ ] X</li></ul>
-Perez Prado And His Orchestra | Patricia - Twist | <ul><li>[ ] X</li></ul>
-Peter Nero | Theme From "Summer Of '42" | <ul><li>[ ] X</li></ul>
-Philip Upchurch Combo | You Can't Sit Down Part 2 | <ul><li>[ ] X</li></ul>
-PIKOTARO | PPAP (Pen-Pineapple-Apple-Pen) | <ul><li>[ ] X</li></ul>
-Plies Featuring T-Pain | Shawty | <ul><li>[ ] X</li></ul>
-Preston Epps | Bongo Rock | <ul><li>[ ] X</li></ul>
-Pretty Purdie | Funky Donkey | <ul><li>[ ] X</li></ul>
-Ramsey Lewis Trio | Hi Heel Sneakers - Pt. 1 | <ul><li>[ ] X</li></ul>
-Ramsey Lewis Trio | Something You Got | <ul><li>[ ] X</li></ul>
-Ramsey Lewis | Julia | <ul><li>[ ] X</li></ul>
-Ramsey Lewis | Since You've Been Gone | <ul><li>[ ] X</li></ul>
-Ramsey Lewis | Wade In The Water | <ul><li>[ ] X</li></ul>
-Randy Newman & Paul Simon | The Blues | <ul><li>[ ] X</li></ul>
-Ray Anthony and His Orchestra | Peter Gunn | <ul><li>[ ] X</li></ul>
-Ray Barretto | El Watusi | <ul><li>[ ] X</li></ul>
-Redman/Method Man | How High (From "The Show") | <ul><li>[ ] X</li></ul>
-Rhinoceros | Apricot Brandy | <ul><li>[ ] X</li></ul>
-Robert Maxwell His Harp And Orchestra | Shangri-La | <ul><li>[ ] X</li></ul>
-Robert Miles | Children | <ul><li>[ ] X</li></ul>
-Roger Williams | Autumn Leaves - 1965 | <ul><li>[ ] X</li></ul>
-Roger Williams | Born Free | <ul><li>[ ] X</li></ul>
-Roger Williams | The Impossible Dream | <ul><li>[ ] X</li></ul>
-Sagat | Funk Dat/Why Is It? | <ul><li>[ ] X</li></ul>
-Sandy Nelson | Let There Be Drums | <ul><li>[ ] X</li></ul>
-Sandy Nelson | Teen Beat | <ul><li>[ ] X</li></ul>
-Santo & Johnny | Hop Scotch | <ul><li>[ ] X</li></ul>
-Santo & Johnny | Sleep Walk | <ul><li>[ ] X</li></ul>
-Sil Austin | Danny Boy | <ul><li>[ ] X</li></ul>
-Silvetti | Spring Rain | <ul><li>[ ] X</li></ul>
-Skrillex Featuring Sirah | Bangarang | <ul><li>[ ] X</li></ul>
+Duane Eddy His Twangy Guitar And The Rebels | Shazam! | <ul><li>[X]</li></ul>
+Duane Eddy His Twangy Guitar And The Rebels | Some Kind-A Earthquake | <ul><li>[X]</li></ul>
+Duane Eddy His Twangy Guitar And The Rebels | The Lonely One | <ul><li>[X]</li></ul>
+Enoch Light & The Light Brigade | I Want To Be Happy Cha Cha | <ul><li>[X]</li></ul>
+Ernie Fields & Orch. | Chattanooga Choo Choo | <ul><li>[X]</li></ul>
+Ernie Fields & Orch. | In The Mood | <ul><li>[X]</li></ul>
+Ernie Fields | The Charleston | <ul><li>[X]</li></ul>
+Ernie Freeman | (Theme from) "The Dark At The Top Of The Stairs" | <ul><li>[X]</li></ul>
+Ferrante & Teicher | Exodus | <ul><li>[X]</li></ul>
+Ferrante & Teicher | Midnight Cowboy | <ul><li>[X]</li></ul>
+Ferrante & Teicher | Smile | <ul><li>[X]</li></ul>
+Floyd Cramer | Chattanooga Choo Choo | <ul><li>[X]</li></ul>
+Floyd Cramer | Java | <ul><li>[X]</li></ul>
+Floyd Cramer | Last Date | <ul><li>[X]</li></ul>
+Floyd Cramer | Let's Go | <ul><li>[X]</li></ul>
+Floyd Cramer | Lovesick Blues | <ul><li>[X]</li></ul>
+Floyd Cramer | On The Rebound | <ul><li>[X]</li></ul>
+Floyd Cramer | San Antonio Rose | <ul><li>[X]</li></ul>
+Floyd Cramer | Your Last Goodbye | <ul><li>[X]</li></ul>
+Frank Mills | Music Box Dancer | <ul><li>[ X /li></ul>
+Frank Mills | Peter Piper | <ul><li>[X]</li></ul>
+Grover Washington, Jr. | Mister Magic | <ul><li>[X]</li></ul>
+H.B. Barnum | Lost Love | <ul><li>[X]</li></ul>
+Harlow Wilcox and the Oakies | Groovy Grubworm | <ul><li>[X]</li></ul>
+Harold Faltermeyer | Axel F | <ul><li>[X]</li></ul>
+Henry Mancini | Mr. Lucky | <ul><li>[X]</li></ul>
+Herbie Mann | Memphis Underground | <ul><li>[X]</li></ul>
+Hot Butter | Popcorn | <ul><li>[X]</li></ul>
+Hugh Masekela | Grazing In The Grass | <ul><li>[X]</li></ul>
+Hugh Masekela | Puffin' On Down The Track | <ul><li>[X]</li></ul>
+Hugh Masekela | Riot | <ul><li>[X]</li></ul>
+Hugh Masekela | Up-Up And Away | <ul><li>[X]</li></ul>
+Hugo Montenegro, His Orchestra And Chorus | The Good, The Bad And The Ugly | <ul><li>[X]</li></ul>
+Jack Nitzsche | The Lonely Surfer | <ul><li>[X]</li></ul>
+James Booker | Gonzo | <ul><li>[X]</li></ul>
+Jerry Byrd | Memories Of Maria | <ul><li>[X]</li></ul>
+Jerry Murad's Harmonicats | Cherry Pink And Apple Blossom White | <ul><li>[X]</li></ul>
+Jimmy Beck & His Orchestra | Pipe Dreams | <ul><li>[X]</li></ul>
+Jimmy McGriff | All About My Girl | <ul><li>[X]</li></ul>
+Jimmy McGriff | I've Got A Woman (Part I) | <ul><li>[X]</li></ul>
+Jimmy McGriff | Kiko | <ul><li>[X]</li></ul>
+Jimmy McGriff | M.G. Blues | <ul><li>[X]</li></ul>
+Jimmy McGriff | The Worm | <ul><li>[X]</li></ul>
+Jimmy Smith With Kenny Burrell And Grady Tate | The Organ Grinder's Swing | <ul><li>[X]</li></ul>
+Jimmy Smith | (Theme From) Any Number Can Win | <ul><li>[X]</li></ul>
+Jimmy Smith | Back At The Chicken Shack, Part 1 | <ul><li>[X]</li></ul>
+Jimmy Smith | Ol' Man River | <ul><li>[X]</li></ul>
+Jimmy Smith | Who's Afraid Of Virginia Woolf? (Part I) | <ul><li>[X]</li></ul>
+John Handy | Hard Work | <ul><li>[X]</li></ul>
+Johnny And The Hurricanes | Beatnik Fly | <ul><li>[X]</li></ul>
+Johnny And The Hurricanes | Crossfire | <ul><li>[X]</li></ul>
+Johnny And The Hurricanes | Red River Rock | <ul><li>[X]</li></ul>
+Johnny And The Hurricanes | You Are My Sunshine | <ul><li>[X]</li></ul>
+Kenny Ball and his Jazzmen | Midnight In Moscow | <ul><li>[X]</li></ul>
+King Curtis & The Kingpins | (Sittin' On) The Dock Of The Bay | <ul><li>[X]</li></ul>
+King Curtis & The Kingpins | I Was Made To Love Her | <ul><li>[X]</li></ul>
+King Curtis And The Noble Knights | Beach Party | <ul><li>[X]</li></ul>
+King Curtis And The Noble Knights | Soul Twist | <ul><li>[X]</li></ul>
+Lalo Schifrin | Mission-Impossible | <ul><li>[X]</li></ul>
+Larry Carlton | Sleepwalk | <ul><li>[X]</li></ul>
+Larry Elgart And His Manhattan Swing Orchestra | Hooked On Swing | <ul><li>[X]</li></ul>
+Lee Allen And His Band | Tic Toc | <ul><li>[X]</li></ul>
+Lee Morgan | The Sidewinder, Part 1 | <ul><li>[X]</li></ul>
+Link Wray And The Wraymen | Raw-Hide | <ul><li>[X]</li></ul>
+Lord Rockingham's XI | Fried Onions | <ul><li>[X]</li></ul>
+Love Unlimited Orchestra | Love's Theme | <ul><li>[X]</li></ul>
+Love Unlimited Orchestra | Rhapsody In White | <ul><li>[X]</li></ul>
+Love Unlimited Orchestra | Satin Soul | <ul><li>[X]</li></ul>
+Mar-Keys | Last Night | <ul><li>[X]</li></ul>
+Mar-Keys | Morning After | <ul><li>[X]</li></ul>
+Mar-Keys | Pop-Eye Stroll | <ul><li>[X]</li></ul>
+Martin Garrix | Animals | <ul><li>[X]</li></ul>
+Martin Mull and Orchestra | Dueling Tubas | <ul><li>[X]</li></ul>
+Mason Williams | Baroque-A-Nova | <ul><li>[X]</li></ul>
+Mason Williams | Classical Gas | <ul><li>[X]</li></ul>
+Meco | Star Wars Theme/Cantina Band | <ul><li>[X]</li></ul>
+MFSB | Sexy | <ul><li>[X]</li></ul>
+Mike Post featuring Larry Carlton | The Theme From Hill Street Blues | <ul><li>[X]</li></ul>
+Mike Post | Theme From Magnum P.i. | <ul><li>[X]</li></ul>
+Mongo Santamaria | El Pussy Cat | <ul><li>[X]</li></ul>
+Paul Humphrey & His Cool Aid Chemists | Cool Aid | <ul><li>[X]</li></ul>
+Perez Prado And His Orchestra | Guaglione | <ul><li>[X]</li></ul>
+Perez Prado And His Orchestra | Paris | <ul><li>[X]</li></ul>
+Perez Prado And His Orchestra | Patricia | <ul><li>[X]</li></ul>
+Perez Prado And His Orchestra | Patricia - Twist | <ul><li>[X]</li></ul>
+Peter Nero | Theme From "Summer Of '42" | <ul><li>[X]</li></ul>
+Philip Upchurch Combo | You Can't Sit Down Part 2 | <ul><li>[X]</li></ul>
+Preston Epps | Bongo Rock | <ul><li>[X]</li></ul>
+Pretty Purdie | Funky Donkey | <ul><li>[X]</li></ul>
+Ramsey Lewis Trio | Hi Heel Sneakers - Pt. 1 | <ul><li>[X]</li></ul>
+Ramsey Lewis Trio | Something You Got | <ul><li>[X]</li></ul>
+Ramsey Lewis | Julia | <ul><li>[ X /li></ul>
+Ramsey Lewis | Since You've Been Gone | <ul><li>[X]</li></ul>
+Ramsey Lewis | Wade In The Water | <ul><li>[X]</li></ul>
+Ray Anthony and His Orchestra | Peter Gunn | <ul><li>[X]</li></ul>
+Rhinoceros | Apricot Brandy | <ul><li>[X]</li></ul>
+Robert Maxwell His Harp And Orchestra | Shangri-La | <ul><li>[X]</li></ul>
+Robert Miles | Children | <ul><li>[X]</li></ul>
+Roger Williams | Autumn Leaves - 1965 | <ul><li>[X]</li></ul>
+Roger Williams | Born Free | <ul><li>[X]</li></ul>
+Roger Williams | The Impossible Dream | <ul><li>[X]</li></ul>
+Sandy Nelson | Let There Be Drums | <ul><li>[X]</li></ul>
+Sandy Nelson | Teen Beat | <ul><li>[X]</li></ul>
+Santo & Johnny | Hop Scotch | <ul><li>[X]</li></ul>
+Santo & Johnny | Sleep Walk | <ul><li>[X]</li></ul>
+Sil Austin | Danny Boy | <ul><li>[X]</li></ul>
+Silvetti | Spring Rain | <ul><li>[X]</li></ul>
 Skrillex Featuring Sirah | Kyoto | <ul><li>[ ] X</li></ul>
 Skrillex | First Of The Year (Equinox) | <ul><li>[ ] X</li></ul>
 Skrillex | Scary Monsters And Nice Sprites | <ul><li>[ ] X</li></ul>
