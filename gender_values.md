@@ -32,7 +32,7 @@ Bert Kaempfert And His Orchestra | Moon Over Naples | <ul><li>[X]</li></ul>
 Bert Kaempfert And His Orchestra | Now And Forever | <ul><li>[X]</li></ul>
 Bert Kaempfert And His Orchestra | Red Roses For A Blue Lady | <ul><li>[X]</li></ul>
 Bert Kaempfert And His Orchestra | Three O'Clock In The Morning | <ul><li>[X]</li></ul>
-Bill Black's Combo | -twistin'-White Silver Sands | <ul><li>[ ] X</li></ul>
+Bill Black's Combo | -twistin'-White Silver Sands | <ul><li>[X]</li></ul>
 Bill Black's Combo | Comin' On | <ul><li>[X]</li></ul>
 Bill Black's Combo | Don't Be Cruel | <ul><li>[X]</li></ul>
 Bill Black's Combo | Honky Train | <ul><li>[X]</li></ul>
@@ -62,7 +62,7 @@ Booker T. & The MG's | My Sweet Potato | <ul><li>[X]</li></ul>
 Booker T. & The MG's | Slim Jenkin's Place | <ul><li>[X]</li></ul>
 Booker T. & The MG's | Slum Baby | <ul><li>[X]</li></ul>
 Booker T. & The MG's | Something | <ul><li>[X]</li></ul>
-Booker T. & The MG's | Soul Dressing | <ul><li>[X] /li></ul>
+Booker T. & The MG's | Soul Dressing | <ul><li>[X]</li></ul>
 Booker T. & The MG's | Soul-Limbo | <ul><li>[X]</li></ul>
 Chantay's | Pipeline | <ul><li>[X]</li></ul>
 Chet Atkins | Boo Boo Stick Beat | <ul><li>[X]</li></ul>
