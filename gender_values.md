@@ -87,7 +87,7 @@ Duane Eddy His Twangy Guitar And The Rebels | Cannonball | <ul><li>[X]</li></ul>
 Duane Eddy His Twangy Guitar And The Rebels | First Love, First Tears | <ul><li>[X]</li></ul>
 Duane Eddy His Twangy Guitar And The Rebels | Pepe | <ul><li>[X]</li></ul>
 Duane Eddy His Twangy Guitar And The Rebels | Ramrod | <ul><li>[X]</li></ul>
-Duane Eddy His Twangy Guitar And The Rebels | Rebel-'rouser | <ul><li>[ ] X</li></ul>
+Duane Eddy His Twangy Guitar And The Rebels | Rebel-'rouser | <ul><li>[X]</li></ul>
 Duane Eddy His Twangy Guitar And The Rebels | Shazam! | <ul><li>[X]</li></ul>
 Duane Eddy His Twangy Guitar And The Rebels | Some Kind-A Earthquake | <ul><li>[X]</li></ul>
 Duane Eddy His Twangy Guitar And The Rebels | The Lonely One | <ul><li>[X]</li></ul>
@@ -107,7 +107,7 @@ Floyd Cramer | Lovesick Blues | <ul><li>[X]</li></ul>
 Floyd Cramer | On The Rebound | <ul><li>[X]</li></ul>
 Floyd Cramer | San Antonio Rose | <ul><li>[X]</li></ul>
 Floyd Cramer | Your Last Goodbye | <ul><li>[X]</li></ul>
-Frank Mills | Music Box Dancer | <ul><li>[ X /li></ul>
+Frank Mills | Music Box Dancer | <ul><li>[X]</li></ul>
 Frank Mills | Peter Piper | <ul><li>[X]</li></ul>
 Grover Washington, Jr. | Mister Magic | <ul><li>[X]</li></ul>
 H.B. Barnum | Lost Love | <ul><li>[X]</li></ul>
@@ -179,7 +179,7 @@ Preston Epps | Bongo Rock | <ul><li>[X]</li></ul>
 Pretty Purdie | Funky Donkey | <ul><li>[X]</li></ul>
 Ramsey Lewis Trio | Hi Heel Sneakers - Pt. 1 | <ul><li>[X]</li></ul>
 Ramsey Lewis Trio | Something You Got | <ul><li>[X]</li></ul>
-Ramsey Lewis | Julia | <ul><li>[ X /li></ul>
+Ramsey Lewis | Julia | <ul><li>[X]</li></ul>
 Ramsey Lewis | Since You've Been Gone | <ul><li>[X]</li></ul>
 Ramsey Lewis | Wade In The Water | <ul><li>[X]</li></ul>
 Ray Anthony and His Orchestra | Peter Gunn | <ul><li>[X]</li></ul>
