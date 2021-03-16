@@ -195,108 +195,70 @@ Santo & Johnny | Hop Scotch | <ul><li>[X]</li></ul>
 Santo & Johnny | Sleep Walk | <ul><li>[X]</li></ul>
 Sil Austin | Danny Boy | <ul><li>[X]</li></ul>
 Silvetti | Spring Rain | <ul><li>[X]</li></ul>
-Skrillex Featuring Sirah | Kyoto | <ul><li>[ ] X</li></ul>
-Skrillex | First Of The Year (Equinox) | <ul><li>[ ] X</li></ul>
-Skrillex | Scary Monsters And Nice Sprites | <ul><li>[ ] X</li></ul>
-Soul Train Gang | Soul Train "75" | <ul><li>[ ] X</li></ul>
-Souls Of Mischief | 93 'til Infinity | <ul><li>[ ] X</li></ul>
-Sound Factory | Understand This Groove | <ul><li>[ ] X</li></ul>
-Spencer Ross | Tracy's Theme | <ul><li>[ ] X</li></ul>
-Spyro Gyra | Cafe Amore | <ul><li>[ ] X</li></ul>
-Spyro Gyra | Catching The Sun | <ul><li>[ ] X</li></ul>
-Spyro Gyra | Morning Dance | <ul><li>[ ] X</li></ul>
-St. Lunatics | Midwest Swing | <ul><li>[ ] X</li></ul>
-Sugarloaf | Tongue In Cheek | <ul><li>[ ] X</li></ul>
-Swingin' Medallions | Double Shot (Of My Baby's Love) | <ul><li>[ ] X</li></ul>
-T.W.D.Y. Featuring Too Short & Mac Mall | Players Holiday | <ul><li>[ ] X</li></ul>
-The 5th Dimension | Go Where You Wanna Go | <ul><li>[ ] X</li></ul>
-The 5th Dimension | Living Together, Growing Together | <ul><li>[ ] X</li></ul>
-The Ames Brothers | Stay | <ul><li>[ ] X</li></ul>
-The Applejacks | Mexican Hat Rock | <ul><li>[ ] X</li></ul>
-The Applejacks | Rocka-Conga | <ul><li>[ ] X</li></ul>
-The Arrows Featuring Davie Allan | Apache '65 | <ul><li>[ ] X</li></ul>
-The Assembled Multitude | Overture From Tommy (A Rock Opera) | <ul><li>[ ] X</li></ul>
-The Assembled Multitude | Woodstock | <ul><li>[ ] X</li></ul>
-The Astronauts | Baja | <ul><li>[ ] X</li></ul>
-The Beatnuts Featuring Yellaklaw | Watch Out Now | <ul><li>[ ] X</li></ul>
-The Bucketheads | The Bomb! (These Sounds Fall Into My Mind) | <ul><li>[ ] X</li></ul>
-The Buena Vistas | Here Come Da Judge | <ul><li>[ ] X</li></ul>
-The Buena Vistas | Hot Shot | <ul><li>[ ] X</li></ul>
-The Champs | Chariot Rock | <ul><li>[ ] X</li></ul>
-The Champs | Limbo Dance | <ul><li>[ ] X</li></ul>
-The Champs | Limbo Rock | <ul><li>[ ] X</li></ul>
-The Champs | Midnighter | <ul><li>[ ] X</li></ul>
-The Chanters | No, No, No | <ul><li>[ ] X</li></ul>
-The Dave Brubeck Quartet | Take Five | <ul><li>[ ] X</li></ul>
-The Dave Brubeck Quartet | Unsquare Dance | <ul><li>[ ] X</li></ul>
-The Exotic Sounds of Martin Denny | Martinique | <ul><li>[ ] X</li></ul>
-The Exotic Sounds of Martin Denny | Quiet Village | <ul><li>[ ] X</li></ul>
-The Exotic Sounds of Martin Denny | The Enchanted Sea | <ul><li>[ ] X</li></ul>
-The Five Blobs | The Blob | <ul><li>[ ] X</li></ul>
-The Four Lads | The Fountain Of Youth | <ul><li>[ ] X</li></ul>
-The Frogmen | Underwater | <ul><li>[ ] X</li></ul>
-The Goodmen | Give It Up | <ul><li>[ ] X</li></ul>
-The Greenwood County Singers | Frankie And Johnny | <ul><li>[ ] X</li></ul>
-The Incredible Bongo Band | Bongo Rock | <ul><li>[ ] X</li></ul>
-The Jazz Crusaders | Way Back Home | <ul><li>[ ] X</li></ul>
-The Mamas & The Papas | Creeque Alley | <ul><li>[ ] X</li></ul>
-The Mamas & The Papas | I Saw Her Again | <ul><li>[ ] X</li></ul>
-The Mamas & The Papas | Monday, Monday | <ul><li>[ ] X</li></ul>
-The Mamas & The Papas | Safe In My Garden | <ul><li>[ ] X</li></ul>
-The Mar-Keys | Philly Dog | <ul><li>[ ] X</li></ul>
-The Marketts | Balboa Blue | <ul><li>[ ] X</li></ul>
-The Marketts | Out Of Limits | <ul><li>[ ] X</li></ul>
-The Marketts | Surfer's Stomp | <ul><li>[ ] X</li></ul>
-The Mighty Dub Katz | Magic Carpet Ride | <ul><li>[ ] X</li></ul>
-The Nite-Liters | Afro-Strut | <ul><li>[ ] X</li></ul>
-The Nite-Liters | K-Jee | <ul><li>[ ] X</li></ul>
-The Piltdown Men | Brontosaurus Stomp | <ul><li>[ ] X</li></ul>
-The Pyramids | Penetration | <ul><li>[ ] X</li></ul>
-The Quarter Notes | Record Hop Blues | <ul><li>[ ] X</li></ul>
-The Revels | Midnight Stroll | <ul><li>[ ] X</li></ul>
-The Routers | Sting Ray | <ul><li>[ ] X</li></ul>
-The Royaltones | Flamingo Express | <ul><li>[ ] X</li></ul>
-The Spacemen | The Clouds | <ul><li>[ ] X</li></ul>
-The String-A-Longs | Wheels | <ul><li>[ ] X</li></ul>
-The T-Bones | No Matter What Shape (Your Stomach's In) | <ul><li>[ ] X</li></ul>
-The Tornadoes | Ridin' The Wind | <ul><li>[ ] X</li></ul>
-The Tornadoes | Telstar | <ul><li>[ ] X</li></ul>
-The Ventures | Diamond Head | <ul><li>[ ] X</li></ul>
-The Ventures | Hawaii Five-O | <ul><li>[ ] X</li></ul>
-The Ventures | Lullaby Of The Leaves | <ul><li>[ ] X</li></ul>
-The Ventures | Perfidia | <ul><li>[ ] X</li></ul>
-The Ventures | Ram-Bunk-Shush | <ul><li>[ ] X</li></ul>
-The Ventures | Slaughter On Tenth Avenue | <ul><li>[ ] X</li></ul>
-The Ventures | The 2,000 Pound Bee (Part 2) | <ul><li>[ ] X</li></ul>
-The Ventures | Walk -- Don't Run | <ul><li>[ ] X</li></ul>
-The Ventures | Walk-Don't Run '64 | <ul><li>[ ] X</li></ul>
-The Village Stompers | Washington Square | <ul><li>[ ] X</li></ul>
-The Virtues | Guitar Boogie Shuffle | <ul><li>[ ] X</li></ul>
-The Virtues | Guitar Boogie Shuffle Twist | <ul><li>[ ] X</li></ul>
-The Watts 103rd Street Rhythm Band | Spreadin' Honey | <ul><li>[ ] X</li></ul>
-Times Two | Strange But True | <ul><li>[ ] X</li></ul>
-Tom Tom Club | Genius Of Love | <ul><li>[ ] X</li></ul>
-Trans-X | Living On Video | <ul><li>[ ] X</li></ul>
-Universal Robot Band | Dance And Shake Your Tambourine | <ul><li>[ ] X</li></ul>
-Van McCoy And The Soul City Symphony | The Hustle | <ul><li>[ ] X</li></ul>
-Vangelis | Chariots Of Fire - Titles | <ul><li>[ ] X</li></ul>
-Vince Guaraldi Trio | Cast Your Fate To The Wind | <ul><li>[ ] X</li></ul>
-Wade Flemons and the Newcomers | Here I Stand | <ul><li>[ ] X</li></ul>
-Walter Murphy & The Big Apple Band | A Fifth Of Beethoven | <ul><li>[ ] X</li></ul>
-Walter Murphy | Themes From E.T. (The Extra-Terrestrial) | <ul><li>[ ] X</li></ul>
-Waylon & Willie | Mammas Don't Let Your Babies Grow Up To Be Cowboys | <ul><li>[ ] X</li></ul>
-Wes Montgomery | Georgia On My Mind | <ul><li>[ ] X</li></ul>
-When In Rome | Heaven Knows | <ul><li>[ ] X</li></ul>
-When In Rome | The Promise | <ul><li>[ ] X</li></ul>
-Whistling Jack Smith | I Was Kaiser Bill's Batman | <ul><li>[ ] X</li></ul>
-Willie Henderson And The Soul Explosions | Funky Chicken (Part 1) | <ul><li>[ ] X</li></ul>
-Willie Henderson | Dance Master Pt. 1 | <ul><li>[ ] X</li></ul>
-Willie Mitchell | 20-75 | <ul><li>[ ] X</li></ul>
-Willie Mitchell | 30-60-90 | <ul><li>[ ] X</li></ul>
-Willie Mitchell | Bad Eye | <ul><li>[ ] X</li></ul>
-Willie Mitchell | Buster Browne | <ul><li>[ ] X</li></ul>
-Willie Mitchell | Soul Serenade | <ul><li>[ ] X</li></ul>
-Willie Mitchell | Up-Hard | <ul><li>[ ] X</li></ul>
-Yellow Magic Orchestra | Computer Game "Theme From The Circus" | <ul><li>[ ] X</li></ul>
-Yolanda Be Cool & Dcup | We No Speak Americano | <ul><li>[ ] X</li></ul>
-Young-Holt Unlimited | Soulful Strut | <ul><li>[ ] X</li></ul>
+Spencer Ross | Tracy's Theme | <ul><li>[X]</li></ul>
+Spyro Gyra | Cafe Amore | <ul><li>[X]</li></ul>
+Spyro Gyra | Catching The Sun | <ul><li>[X]</li></ul>
+Spyro Gyra | Morning Dance | <ul><li>[X]</li></ul>
+The Applejacks | Mexican Hat Rock | <ul><li>[X]</li></ul>
+The Arrows Featuring Davie Allan | Apache '65 | <ul><li>[X]</li></ul>
+The Assembled Multitude | Overture From Tommy (A Rock Opera) | <ul><li>[X]</li></ul>
+The Assembled Multitude | Woodstock | <ul><li>[X]</li></ul>
+The Astronauts | Baja | <ul><li>[X]</li></ul>
+The Buena Vistas | Here Come Da Judge | <ul><li>[X]</li></ul>
+The Buena Vistas | Hot Shot | <ul><li>[X]</li></ul>
+The Champs | Chariot Rock | <ul><li>[X]</li></ul>
+The Champs | Limbo Dance | <ul><li>[X]</li></ul>
+The Champs | Limbo Rock | <ul><li>[X]</li></ul>
+The Champs | Midnighter | <ul><li>[X]</li></ul>
+The Dave Brubeck Quartet | Take Five | <ul><li>[X]</li></ul>
+The Dave Brubeck Quartet | Unsquare Dance | <ul><li>[X]</li></ul>
+The Exotic Sounds of Martin Denny | Martinique | <ul><li>[X]</li></ul>
+The Exotic Sounds of Martin Denny | Quiet Village | <ul><li>[X]</li></ul>
+The Exotic Sounds of Martin Denny | The Enchanted Sea | <ul><li>[X]</li></ul>
+The Frogmen | Underwater | <ul><li>[X]</li></ul>
+The Incredible Bongo Band | Bongo Rock | <ul><li>[X]</li></ul>
+The Jazz Crusaders | Way Back Home | <ul><li>[X]</li></ul>
+The Mar-Keys | Philly Dog | <ul><li>[X]</li></ul>
+The Marketts | Balboa Blue | <ul><li>[X]</li></ul>
+The Marketts | Out Of Limits | <ul><li>[X]</li></ul>
+The Marketts | Surfer's Stomp | <ul><li>[X]</li></ul>
+The Mighty Dub Katz | Magic Carpet Ride | <ul><li>[X]</li></ul>
+The Nite-Liters | Afro-Strut | <ul><li>[X]</li></ul>
+The Nite-Liters | K-Jee | <ul><li>[X]</li></ul>
+The Piltdown Men | Brontosaurus Stomp | <ul><li>[X]</li></ul>
+The Pyramids | Penetration | <ul><li>[X]</li></ul>
+The Quarter Notes | Record Hop Blues | <ul><li>[X]</li></ul>
+The Routers | Sting Ray | <ul><li>[X]</li></ul>
+The Royaltones | Flamingo Express | <ul><li>[X]</li></ul>
+The Spacemen | The Clouds | <ul><li>[X]</li></ul>
+The String-A-Longs | Wheels | <ul><li>[X]</li></ul>
+The T-Bones | No Matter What Shape (Your Stomach's In) | <ul><li>[X]</li></ul>
+The Tornadoes | Ridin' The Wind | <ul><li>[X]</li></ul>
+The Tornadoes | Telstar | <ul><li>[X]</li></ul>
+The Ventures | Diamond Head | <ul><li>[X]</li></ul>
+The Ventures | Hawaii Five-O | <ul><li>[X]</li></ul>
+The Ventures | Lullaby Of The Leaves | <ul><li>[X]</li></ul>
+The Ventures | Perfidia | <ul><li>[X]</li></ul>
+The Ventures | Ram-Bunk-Shush | <ul><li>[X]</li></ul>
+The Ventures | Slaughter On Tenth Avenue | <ul><li>[X]</li></ul>
+The Ventures | The 2,000 Pound Bee (Part 2) | <ul><li>[X]</li></ul>
+The Ventures | Walk -- Don't Run | <ul><li>[X]</li></ul>
+The Ventures | Walk-Don't Run '64 | <ul><li>[X]</li></ul>
+The Village Stompers | Washington Square | <ul><li>[X]</li></ul>
+The Virtues | Guitar Boogie Shuffle | <ul><li>[X]</li></ul>
+The Virtues | Guitar Boogie Shuffle Twist | <ul><li>[X]</li></ul>
+The Watts 103rd Street Rhythm Band | Spreadin' Honey | <ul><li>[X]</li></ul>
+Vangelis | Chariots Of Fire - Titles | <ul><li>[X]</li></ul>
+Vince Guaraldi Trio | Cast Your Fate To The Wind | <ul><li>[X]</li></ul>
+Walter Murphy & The Big Apple Band | A Fifth Of Beethoven | <ul><li>[X]</li></ul>
+Walter Murphy | Themes From E.T. (The Extra-Terrestrial) | <ul><li>[X]</li></ul>
+Wes Montgomery | Georgia On My Mind | <ul><li>[X]</li></ul>
+Willie Henderson And The Soul Explosions | Funky Chicken (Part 1) | <ul><li>[X]</li></ul>
+Willie Mitchell | 20-75 | <ul><li>[X]</li></ul>
+Willie Mitchell | 30-60-90 | <ul><li>[X]</li></ul>
+Willie Mitchell | Bad Eye | <ul><li>[X]</li></ul>
+Willie Mitchell | Buster Browne | <ul><li>[X]</li></ul>
+Willie Mitchell | Soul Serenade | <ul><li>[X]</li></ul>
+Willie Mitchell | Up-Hard | <ul><li>[X]</li></ul>
+Yellow Magic Orchestra | Computer Game "Theme From The Circus" | <ul><li>[X]</li></ul>
+Young-Holt Unlimited | Soulful Strut | <ul><li>[X]</li></ul>

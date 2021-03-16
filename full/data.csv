@@ -265,9 +265,9 @@
 45,340,1958,NULL,"The Ames Brothers","No One But You (In My Heart)","True",NULL,NULL,NULL,NULL,NULL,NULL
 17,941,1958,NULL,"The Ames Brothers","Pussy Cat","True",NULL,NULL,NULL,NULL,NULL,NULL
 37,500,1958,NULL,"The Ames Brothers","Red River Rose","True",NULL,NULL,NULL,NULL,NULL,NULL
-90,11,1958,NULL,"The Ames Brothers","Stay","True",0,"#N/A",0,"Pop",0,6480123
+90,11,1958,NULL,"The Ames Brothers","Stay","True",0,"male",0,"Pop",0,6480123
 16,926,1958,NULL,"The Applejacks","Mexican Hat Rock","True",0,"#N/A",0,"Rock",0,272588
-38,442,1958,NULL,"The Applejacks","Rocka-Conga","True",0,"#N/A",0,"Rock",0,272592
+38,442,1958,NULL,"The Applejacks","Rocka-Conga","True",0,"male",0,"Rock",0,272592
 28,547,1958,"11bf6026ff99c731a74d4acc572be76248760d16","The Cadillacs","Peek-A-Boo","True",0,"male",6,"R&B",0,7456483
 59,192,1958,"400875bcf597bdce2a4c3f9c3a70a1ba9c6e5046","The Champs","Chariot Rock","True",0,"#N/A",0,"Pop",0,5761094
 94,7,1958,"7a31639457543250a56d6fb8a0ee2f5fbd1d1a24","The Champs","Midnighter","True",0,"#N/A",0,"Pop",0,5761118
@@ -291,7 +291,7 @@
 10,1039,1958,"68f55fa8bc4512adac1ca3f9c442c50246fc375a","The Everly Brothers","Devoted To You","True",0,"male",6,"Pop",0,12088334
 40,202,1958,"406758cbaf1a4267746d0c55561f48150c772608","The Everly Brothers","Love Of My Life","True",NULL,NULL,NULL,NULL,NULL,NULL
 2,1168,1958,"f8e5059ca13d483dabc010c90738d83169c546b8","The Everly Brothers","Problems","True",0,"male",7,"Pop",0,12088348
-33,426,1958,"c74a7ad762f6b5a88fe648b1d5099138105ad611","The Five Blobs","The Blob","True",0,"#N/A",0,"Rock",0,14033419
+33,426,1958,"c74a7ad762f6b5a88fe648b1d5099138105ad611","The Five Blobs","The Blob","True",0,"male",0,"Rock",0,14033419
 94,7,1958,"25ad9cdf98711ab3d50a91847192dd205b769cf2","The Fontane Sisters","Jealous Heart","False",NULL,NULL,NULL,NULL,NULL,NULL
 63,87,1958,"e6f38dda015c3046f26a99488db39afc954eca84","The Four Aces","The World Outside","True",NULL,NULL,NULL,NULL,NULL,NULL
 21,624,1958,"97fb30772c823fdc69423a7361b9a0116bf0f84e","The Four Coins","The World Outside","True",NULL,NULL,NULL,NULL,NULL,NULL
@@ -349,7 +349,7 @@
 20,774,1958,"433f72053155e2b69b8a07a1d522c71f8c8a8c37","Tony Bennett","Firefly","True",NULL,NULL,NULL,NULL,NULL,NULL
 59,62,1958,"d0b1f2f65d32213d07b7064e66d8151f8d90ebf0","Tony Bennett","Young And Warm And Wonderful","True",NULL,NULL,NULL,NULL,NULL,NULL
 60,162,1958,"57e1ce5d425864d00cc9ca0d425d92c0a4a3e705","Tony Dallara","Come Prima","True",0,"male",8,"Pop",0,8791972
-80,67,1958,NULL,"Wade Flemons and the Newcomers","Here I Stand","True",0,"#N/A",0,"Country",0,4335471
+80,67,1958,NULL,"Wade Flemons and the Newcomers","Here I Stand","True",0,"male",0,"Country",0,4335471
 81,31,1958,"765c91deda7c2ef1d21c35980af593e4bcf7bff6","Warren Storm","Prisoner's Song","True",0,"male",5,"R&B",0,6268889
 87,27,1959,"d821f5246041d4978cfd3ed9bbf103c9fe6ee474","5 Satins","Shadows","True",0,"male",5,"R&B",3,5760280
 62,115,1959,"b286a0a66c9fc69e4af712de23d141f7eb13d41e","Addrisi Brothers","Cherrystone","False",0,"male",7,"Pop",0,198244
@@ -833,7 +833,7 @@
 82,55,1959,NULL,"The Four Coins","One Love, One Heart","False",NULL,NULL,NULL,NULL,NULL,NULL
 83,40,1959,NULL,"The Four Knights","O' Falling Star","False",NULL,NULL,NULL,NULL,NULL,NULL
 77,59,1959,"915042dc634e7449a85aad044fbc6d657ad3fc96","The Four Lads","Happy Anniversary","False",NULL,NULL,NULL,NULL,NULL,NULL
-90,20,1959,"4d1f37a1ce9b31bc7c79bc547d0b289ec621abeb","The Four Lads","The Fountain Of Youth","True",0,"#N/A",0,"Jazz",0,911924
+90,20,1959,"4d1f37a1ce9b31bc7c79bc547d0b289ec621abeb","The Four Lads","The Fountain Of Youth","True",0,"male",0,"Jazz",0,911924
 52,319,1959,NULL,"The Four Lads","The Girl On Page 44","True",NULL,NULL,NULL,NULL,NULL,NULL
 13,989,1959,"0ee94dd24087a8843045903cdfed158cccbad551","The Four Preps","Down By The Station","True",NULL,NULL,NULL,NULL,NULL,NULL
 79,23,1959,"51c71da24114a13f6b0a16feac88d08abc74db19","The Four Preps","I Ain't Never","True",NULL,NULL,NULL,NULL,NULL,NULL
@@ -880,7 +880,7 @@
 75,60,1959,NULL,"The Playmates","Star Love","False",4,"male",7,"Pop",0,47276
 15,825,1959,NULL,"The Playmates","What Is Love?","False",NULL,NULL,NULL,NULL,NULL,NULL
 82,19,1959,NULL,"The Quarter Notes","Record Hop Blues","True",0,"#N/A",0,"Pop",0,1799059
-35,359,1959,"0575e1119fbe78c6db9782e4fcfc736761ce53ff","The Revels","Midnight Stroll","True",0,"#N/A",0,"Pop",0,15518953
+35,359,1959,"0575e1119fbe78c6db9782e4fcfc736761ce53ff","The Revels","Midnight Stroll","True",0,"male",0,"Pop",0,15518953
 47,306,1959,"277a621a3370ba4e936e35d6d979ca55d614c85f","The Rivieras","Moonlight Serenade","True",0,"male",5,"R&B",0,6252704
 57,215,1959,NULL,"The Rockin R's","The Beat","False",NULL,NULL,NULL,NULL,NULL,NULL
 3,1382,1959,"a15f8c09b9d511eb5146b80e8570038d3f76157b","The Shirelles","Dedicated To The One I Love","True",0,"female",6,"Pop",0,5148563
@@ -2056,7 +2056,7 @@
 20,658,1961,"4590ec937a2516e42c2f5b7f7cec651b1ee5317e","The Castells","Sacred","True",0,"male",4,"Pop",0,1172787
 14,793,1961,"fa1bf12a3ac3f22409c8861bbee8e3a682b0e67c","The Chantels","Look In My Eyes","True",3,"female",8,"Pop",0,14815448
 29,458,1961,"c88f5f3c1c0c65fe0b655a39802ff8ef454329c3","The Chantels","Well, I Told You","True",NULL,NULL,NULL,NULL,NULL,NULL
-41,360,1961,"68f5b7e88261d2041a08fd0d61baaa80a57a40ff","The Chanters","No, No, No","True",2,"#N/A",6,"R&B",0,7558008
+41,360,1961,"68f5b7e88261d2041a08fd0d61baaa80a57a40ff","The Chanters","No, No, No","True",2,"male",6,"R&B",0,7558008
 38,379,1961,"ef6b83b25d3a859137d243b49647dcd6a49ef92f","The Chimes","I'm In The Mood For Love","True",NULL,NULL,NULL,NULL,NULL,NULL
 90,11,1961,"42427ef353aed0fc8c63c9ab2a4c570dd235bfed","The Chordettes","Faraway Star","True",NULL,NULL,NULL,NULL,NULL,NULL
 13,753,1961,"0cb4933744bd4ba083ec5ae00c6c858449c909b1","The Chordettes","Never On Sunday","True",0,"female",7,"Rock",0,6131642
@@ -4095,7 +4095,7 @@
 85,45,1964,"a697f26fa5e5c6566cd080c3b48e08400db3b5e4","The Four Preps","A Letter To The Beatles","True",0,"male",5,"Pop",3,9017697
 75,76,1964,NULL,"The Four-Evers","Be My Girl","False",NULL,NULL,NULL,NULL,NULL,NULL
 44,342,1964,"65005140bdd8390c4584d5061346253e4c02a401","The Gestures","Run, Run, Run","True",0,"male",6,"Rock",0,5887899
-75,101,1964,NULL,"The Greenwood County Singers","Frankie And Johnny","True",0,"#N/A",0,"Pop",0,2590784
+75,101,1964,NULL,"The Greenwood County Singers","Frankie And Johnny","True",0,"duet",0,"Pop",0,2590784
 44,274,1964,"b130791a6fe2a8657bb0cf2c2ff652da56cde2ca","The Hollies","Just One Look","False",3,"male",7,"Pop",2,10208707
 93,8,1964,NULL,"The Hollyridge Strings","All My Loving","False",NULL,NULL,NULL,NULL,NULL,NULL
 9,850,1964,"7bedb09a187d7d2d97cbf467a31ed3c82f7591ad","The Hondells","Little Honda","True",0,"male",6,"R&B",2,9769174
@@ -5414,7 +5414,7 @@
 9,730,1966,"f7d031ba77b76959d0e992426b424c27b0063e3b","Stevie Wonder","Blowin In The Wind","True",NULL,NULL,NULL,NULL,NULL,NULL
 20,429,1966,NULL,"Stevie Wonder","Nothing's Too Good For My Baby","True",0,"male",9,"Pop",2,6128793
 63,207,1966,"309bcf1b924cafd2e1c14f953fb698424f902981","Susan Christie","I Love Onions","True",0,"female",4,"Rock",3,11476163
-17,708,1966,"cc0f301dce0ca52f2d45ac5db706da7a9a84f55c","Swingin' Medallions","Double Shot (Of My Baby's Love)","True",0,"#N/A",0,"Rock",0,1952110
+17,708,1966,"cc0f301dce0ca52f2d45ac5db706da7a9a84f55c","Swingin' Medallions","Double Shot (Of My Baby's Love)","True",0,"male",0,"Rock",0,1952110
 8,706,1966,"ef65e8a5a0a9a166478a579f434310000fb4ea43","Syndicate Of Sound","Little Girl","True",0,"male",6,"Rock",8,6561820
 55,206,1966,"6307ac84d9ca6fbd5dd1c77890ce936eefd076e2","Syndicate Of Sound","Rumors","True",0,"male",8,"Rock",2,6561819
 88,26,1966,"3dd4fb2ab39e343b523fde4994317867fbb9a21e","Tamiko Jones with Herbie Mann","A Man And A Woman","False",NULL,NULL,NULL,NULL,NULL,NULL
@@ -5539,9 +5539,9 @@
 93,8,1966,NULL,"The Magic Mushrooms","It's-A-Happening","True",0,"male",5,"Pop",4,782691
 4,1265,1966,"1838e26a65dc0ea24d2b3865e48550e157f4443d","The Mamas & The Papas","California Dreamin'","True",0,"male",6,"Pop",0,101728
 73,137,1966,"bb1dadcfd3d8c1b96275a09e1038d0df4d24cd05","The Mamas & The Papas","Dancing In The Street","True",NULL,NULL,NULL,NULL,NULL,NULL
-5,740,1966,"34f51fd25babd78a6b065dbb361afad4fc99b94d","The Mamas & The Papas","I Saw Her Again","True",0,"#N/A",0,"Pop",0,7192096
+5,740,1966,"34f51fd25babd78a6b065dbb361afad4fc99b94d","The Mamas & The Papas","I Saw Her Again","True",0,"duet",0,"Pop",0,7192096
 24,442,1966,"55642a7a867a1244a4783bc90e4689cc45fe4f64","The Mamas & The Papas","Look Through My Window","True",NULL,NULL,NULL,NULL,NULL,NULL
-1,1002,1966,"6bb4d36e7b7e31133499b9855122670aa9deb5b5","The Mamas & The Papas","Monday, Monday","True",0,"#N/A",6,"Pop",0,1916729
+1,1002,1966,"6bb4d36e7b7e31133499b9855122670aa9deb5b5","The Mamas & The Papas","Monday, Monday","True",0,"duet",6,"Pop",0,1916729
 5,917,1966,NULL,"The Mamas & The Papas","Words Of Love","True",0,"female",7,"Pop",0,101772
 96,7,1966,NULL,"The Manhattans","Baby I Need You","True",0,"male",9,"R&B",2,15855477
 92,14,1966,NULL,"The Manhattans","Follow Your Heart","False",NULL,NULL,NULL,NULL,NULL,NULL
@@ -6165,7 +6165,7 @@
 9,741,1967,"eb0dfd680a32abd10e222115e0b8ee57ff1e8ce0","The 4 Seasons Featuring the ""Sound of Frankie Valli""","C'mon Marianne","True",6,"male",8,"Pop",0,608294
 30,390,1967,"f94fc159b31924eca36c9ced854e6c347b94899c","The 4 Seasons Featuring the ""Sound of Frankie Valli""","Watch The Flowers Grow","True",NULL,NULL,NULL,NULL,NULL,NULL
 45,224,1967,"ab05674b59de10c8c44776f48535aa5b01cdea45","The 5th Dimension","Another Day, Another Heartache","True",NULL,NULL,NULL,NULL,NULL,NULL
-16,610,1967,"34db25f5d81f56e2736a0ce6eec7135a12458eec","The 5th Dimension","Go Where You Wanna Go","True",0,"#N/A",0,"Rock",0,7257321
+16,610,1967,"34db25f5d81f56e2736a0ce6eec7135a12458eec","The 5th Dimension","Go Where You Wanna Go","True",0,"duet",0,"Rock",0,7257321
 34,315,1967,"74175f5253f17adc738142a1fd01508be5e7dc4e","The 5th Dimension","Paper Cup","True",0,"male",7,"Rock",0,79111
 7,911,1967,"122d0b0ac9df0dc7d3263d911e061d5353402b56","The 5th Dimension","Up -- Up And Away","True",2,"female",7,"Pop",0,7257328
 5,1161,1967,"b5af1a3d922d6e45999a42e74f070fbd1e3080d1","The American Breed","Bend Me, Shape Me","True",0,"male",6,"Pop",2,633841
@@ -6288,7 +6288,7 @@
 18,482,1967,"ad02d2390e7dcff6fdcdbd8164bec3684831f45a","The Lovin' Spoonful","Six O'Clock","True",0,"male",6,"Pop",0,1960203
 93,8,1967,"d13452cfcda8391c05681e34962a1a42475bdc8f","The Magnificent Men","I Could Be So Happy","False",NULL,NULL,NULL,NULL,NULL,NULL
 90,21,1967,NULL,"The Magnificent Men","Sweet Soul Medley - Part 1","True",NULL,NULL,NULL,NULL,NULL,NULL
-5,663,1967,"c978c49bcfded30b29db2262198ba1b945ca1430","The Mamas & The Papas","Creeque Alley","True",0,"#N/A",0,"Pop",0,34809
+5,663,1967,"c978c49bcfded30b29db2262198ba1b945ca1430","The Mamas & The Papas","Creeque Alley","True",0,"duet",0,"Pop",0,34809
 51,235,1967,"f228e9eb0b813cd31524ca258db66df26ac16cb1","The Mamas & The Papas","Dancing Bear","True",NULL,NULL,NULL,NULL,NULL,NULL
 2,865,1967,"e10b1b5d7e9832d2ee9e3504a50ee432026e1cf6","The Mamas & The Papas","Dedicated To The One I Love","True",0,"female",7,"Pop",0,34808
 26,428,1967,NULL,"The Mamas & The Papas","Glad To Be Unhappy","True",0,"duet",7,"Pop",0,101758
@@ -6418,7 +6418,7 @@
 34,361,1967,NULL,"Vikki Carr","The Lesson","True",NULL,NULL,NULL,NULL,NULL,NULL
 89,23,1967,"6180424969291f3b600ce550629c57e7a28c9b42","Walter Jackson","Speak Her Name","True",0,"male",5,"R&B",0,9993130
 44,480,1967,NULL,"Wes Montgomery","Windy","True",NULL,NULL,NULL,NULL,NULL,NULL
-20,465,1967,NULL,"Whistling Jack Smith","I Was Kaiser Bill's Batman","True",0,"#N/A",0,"Pop",0,681936
+20,465,1967,NULL,"Whistling Jack Smith","I Was Kaiser Bill's Batman","True",0,"male",0,"Pop",0,681936
 95,12,1967,"84d800e637aa5a6a42068d57555a1356e086dbdd","William Bell","Everybody Loves A Winner","True",0,"male",6,"R&B",0,13042215
 96,7,1967,"b1d2e9debfc627c6fecc317771259fc72abbf2a0","Willie Mitchell","Slippin' & Slidin'","True",NULL,NULL,NULL,NULL,NULL,NULL
 29,373,1967,"e8239f7400fb6d57e0cbfc7d07b27a50c8c1e78e","Wilson Pickett","Everybody Needs Somebody To Love","True",3,"male",8,"R&B",4,486028
@@ -7004,7 +7004,7 @@
 54,249,1968,NULL,"The Magistrates","Here Come The Judge","False",NULL,NULL,NULL,NULL,NULL,NULL
 76,85,1968,"f6d73e09cb6aeca3dfa54893d2a603e2b20a6a4f","The Mamas & The Papas","Do You Wanna Dance","True",2,"male",6,"Pop",0,101726
 81,90,1968,NULL,"The Mamas & The Papas","For The Love Of Ivy","True",0,"duet",7,"Pop",0,34797
-53,227,1968,"f89fa80a138c869a72bdc2c8442c7275b348e3db","The Mamas & The Papas","Safe In My Garden","True",0,"#N/A",0,"Pop",0,34799
+53,227,1968,"f89fa80a138c869a72bdc2c8442c7275b348e3db","The Mamas & The Papas","Safe In My Garden","True",0,"duet",0,"Pop",0,34799
 63,159,1968,NULL,"The Marvelettes","Destination: Anywhere","True",0,"female",6,"R&B",0,5795914
 44,373,1968,NULL,"The Marvelettes","Here I Am Baby","True",0,"female",6,"R&B",0,6599023
 57,169,1968,NULL,"The Masqueraders","I Ain't Got To Love Nobody Else","True",0,"male",7,"R&B",3,11061536
@@ -8840,7 +8840,7 @@
 13,779,1971,"9fa1fcab0aef6f88485d0a527931f7b47926cbe1","Stevie Wonder","We Can Work It Out","True",3,"male",8,"R&B",0,59464
 71,136,1971,NULL,"Stoney & Meatloaf","What You See Is What You Get","True",NULL,NULL,NULL,NULL,NULL,NULL
 88,31,1971,NULL,"Sugarloaf","Mother Nature's Wine","True",NULL,NULL,NULL,NULL,NULL,NULL
-55,307,1971,NULL,"Sugarloaf","Tongue In Cheek","True",0,"#N/A",0,"Rock",0,11795617
+55,307,1971,NULL,"Sugarloaf","Tongue In Cheek","True",0,"male",0,"Rock",0,11795617
 54,299,1971,"4c3533897f689c8c993882efedd69fc156545c07","Susan Raye","L.A. International Airport","True",0,"female",5,"Pop",0,1223519
 33,509,1971,"1faa2f6392e0e3e27f95b65447b2e25bf0d824f0","Sweathog","Hallelujah","True",NULL,NULL,NULL,NULL,NULL,NULL
 72,111,1971,"7e20e2a02eca72f60519c01d2c1115834ffa48d0","T. Rex","Hot Love","True",0,"male",6,"Rock",2,1608958
@@ -9996,7 +9996,7 @@
 52,355,1973,"a34355a9a0edf729032608916f08f9243b4b6c21","The 5th Dimension","Ashes To Ashes","True",NULL,NULL,NULL,NULL,NULL,NULL
 70,96,1973,"366195ed3d10b52ff1f6990df49d7bc77cc78054","The 5th Dimension","Everything's Been Changed","True",NULL,NULL,NULL,NULL,NULL,NULL
 82,99,1973,"380448cd44bb45bd459f4c7ed843c0a37e172500","The 5th Dimension","Flashback","True",NULL,NULL,NULL,NULL,NULL,NULL
-32,485,1973,"5a0c01cc19f180cc1e6b9da3991d5e547896ae02","The 5th Dimension","Living Together, Growing Together","True",0,"#N/A",0,"Pop",0,79134
+32,485,1973,"5a0c01cc19f180cc1e6b9da3991d5e547896ae02","The 5th Dimension","Living Together, Growing Together","True",0,"duet",0,"Pop",0,79134
 2,1222,1973,"d48fd45a50532b851e49acec19c0596f46b0a96b","The Allman Brothers Band","Ramblin Man","True",0,"male",5,"Rock",0,7593
 91,41,1973,NULL,"The Association","Names, Tags, Numbers & Labels","True",3,"male",6,"Pop",0,493587
 73,132,1973,"dcf333d0db0db02adbb81fd289e23cae734b621e","The Band","Ain't Got No Home","True",0,"male",5,"Rock",2,1125613
@@ -10600,7 +10600,7 @@
 10,1097,1974,"7c8f40aeb7bcbadb2f8ec35c26e01d1f6452273b","Wet Willie","Keep On Smilin'","True",4,"male",6,"Rock",0,197900
 4,1124,1974,"d18eec0b71331809fc5a7e24ecf5d20af8e9c26f","William DeVaughn","Be Thankful For What You Got","True",5,"male",5,"Pop",2,11063925
 43,311,1974,NULL,"William DeVaughn","Blood Is Thicker Than Water","False",5,"male",5,"Pop",2,11063925
-73,89,1974,NULL,"Willie Henderson","Dance Master Pt. 1","True",0,"#N/A",0,"R&B",0,734856
+73,89,1974,NULL,"Willie Henderson","Dance Master Pt. 1","True",0,"duet",0,"R&B",0,734856
 41,613,1974,"8eca30041aa528c012a2f0aa2e76eea8c12fd03a","ZZ Top","La Grange","True",0,"male",4,"Pop",5,62053
 83,70,1975,NULL,"10cc","Art For Art's Sake","True",NULL,NULL,NULL,NULL,NULL,NULL
 2,1220,1975,"d315c252cb218ee4be13a58306aa9e1317d97367","10cc","I'm Not In Love","True",0,"male",7,"Rock",4,11595910
@@ -11040,7 +11040,7 @@
 36,593,1975,NULL,"Smokey Robinson","The Agony And The Ecstasy","True",6,"male",8,"R&B",0,102166
 96,13,1975,NULL,"Smokey","If You Think You Know How To Love Me","True",0,"male",5,"Pop",2,1069214
 96,7,1975,NULL,"Solomon Burke","You And Your Baby Blues","False",0,"male",7,"R&B",0,8998179
-75,99,1975,"219b4aa933a352cb654b6d06660fe91f396b7887","Soul Train Gang","Soul Train ""75""","False",0,"#N/A",0,"Dance",0,7733447
+75,99,1975,"219b4aa933a352cb654b6d06660fe91f396b7887","Soul Train Gang","Soul Train ""75""","False",0,"female",0,"Dance",0,7733447
 61,223,1975,"c99da8bfc7007925f0e681a98f3e33d09c1053e2","South Shore Commission","Free Man","True",NULL,NULL,NULL,NULL,NULL,NULL
 85,45,1975,NULL,"Stark & McBrien","Isn't It Lonely Together","False",NULL,NULL,NULL,NULL,NULL,NULL
 37,357,1975,"319ece32218b1637ba6ecec025153aee4f07ead0","Steely Dan","Black Friday","True",0,"male",7,"Pop",0,52966
@@ -11144,7 +11144,7 @@
 38,372,1975,NULL,"Travis Wammack","(Shu-Doo-Pa-Poo-Poop) Love Being Your Fool","False",NULL,NULL,NULL,NULL,NULL,NULL
 72,108,1975,"f58dcdb75fe0e25de405fe5a6dfd68bcc80c5bbc","Travis Wammack","Easy Evil","False",NULL,NULL,NULL,NULL,NULL,NULL
 91,17,1975,NULL,"U.S. 1","Bye Bye Baby","False",NULL,NULL,NULL,NULL,NULL,NULL
-1,1279,1975,NULL,"Van McCoy And The Soul City Symphony","The Hustle","True",0,"#N/A",0,"R&B",0,12666
+1,1279,1975,NULL,"Van McCoy And The Soul City Symphony","The Hustle","True",0,"duet",0,"R&B",0,12666
 46,335,1975,"202b1fa248f511bc2e1b5932e8f7530af49f65b4","Van Mccoy","Change With The Times","True",NULL,NULL,NULL,NULL,NULL,NULL
 81,57,1975,NULL,"Vicki Lawrence","The Other Woman","True",NULL,NULL,NULL,NULL,NULL,NULL
 7,1094,1975,"93884e4c77bb984ef1d84abb0b66a74c24a459f8","War","Low Rider","True",0,"male",2,"Pop",2,57831
@@ -12130,7 +12130,7 @@
 92,33,1977,NULL,"Tom Powers","It Ain't Love","False",NULL,NULL,NULL,NULL,NULL,NULL
 58,129,1977,"715314e58bd1050af272c15d81656eb5cfec81aa","Tony Orlando & Dawn","Sing","False",NULL,NULL,NULL,NULL,NULL,NULL
 48,290,1977,NULL,"Undisputed Truth","You + Me = Love/Let's Go Down To The Disco","True",NULL,NULL,NULL,NULL,NULL,NULL
-93,31,1977,"5ef284113f2c393d283ac46a0f5ced18bc019761","Universal Robot Band","Dance And Shake Your Tambourine","True",0,"#N/A",0,"Pop",0,674158
+93,31,1977,"5ef284113f2c393d283ac46a0f5ced18bc019761","Universal Robot Band","Dance And Shake Your Tambourine","True",0,"female",0,"Pop",0,674158
 92,28,1977,"dea0ee252b37c7add7d380bb10266cc8c4c988d6","Van Morrison","Moondance","True",0,"male",7,"Pop",0,2351304
 67,166,1977,"a30e4d62510fc357430aa150bc2cb49c7235eb17","Vicki Sue Robinson","Hold Tight","True",NULL,NULL,NULL,NULL,NULL,NULL
 82,74,1977,"0d43010741c4a65d05ecc5c932c62f50bb812018","Walter Egan","Only The Lucky","True",0,"male",5,"Rock",2,7009360
@@ -12577,7 +12577,7 @@
 8,1314,1978,"b0dcc024d3c5544e148596aeb1faf069a7084dda","Walter Egan","Magnet And Steel","True",3,"male",7,"Pop",0,7009452
 39,417,1978,"0a6a3a24f019afb79a9cce340b5ebabc2ae85c00","War","Galaxy","True",NULL,NULL,NULL,NULL,NULL,NULL
 21,684,1978,"d26fe00836559d361395df5fba0f448c43312b1e","Warren Zevon","Werewolves Of London","True",6,"male",6,"Pop",4,60325
-42,337,1978,"969d5a7562e1058b3126ec10d7edfd23d3daa547","Waylon & Willie","Mammas Don't Let Your Babies Grow Up To Be Cowboys","True",0,"#N/A",4,"Country",0,5683867
+42,337,1978,"969d5a7562e1058b3126ec10d7edfd23d3daa547","Waylon & Willie","Mammas Don't Let Your Babies Grow Up To Be Cowboys","True",0,"male",4,"Country",0,5683867
 76,80,1978,"f54d0ad45e72e816fbd8825dd23ccafec49f8f98","Wendy Waldman","Long Hot Summer Nights","True",0,"female",5,"Pop",0,340933
 45,276,1978,"187e5f82ac853cb1947ad4ceedb4d778ef1fd782","Wet Willie","Make You Feel Love Again","False",4,"male",6,"Rock",0,197900
 69,160,1978,"e48a0937eee59059163a2b14c9e72ce3cb32c966","Wild Cherry","I Love My Music","True",NULL,NULL,NULL,NULL,NULL,NULL
@@ -14340,7 +14340,7 @@
 68,139,1982,"6984c5dd99602a2ab422cee9aef9e34bed3ba3cf","The Who","Eminence Front","True",0,"male",7,"Rock",4,270883
 59,230,1982,"d69c80989ce2d0139ea6ffcbbc4a30bd76f78d10","Timothy B. Schmit","So Much In Love","True",NULL,NULL,NULL,NULL,NULL,NULL
 20,1069,1982,"e6cb36ebb6d63b1557f4567ae1195b482d404806","Tom Petty And The Heartbreakers","You Got Lucky","True",0,"male",6,"Rock",0,15156607
-31,752,1982,"e03048565ddbc48470dd507deb7f337fdc258d49","Tom Tom Club","Genius Of Love","True",0,"#N/A",0,"Pop",0,55442
+31,752,1982,"e03048565ddbc48470dd507deb7f337fdc258d49","Tom Tom Club","Genius Of Love","True",0,"duet",0,"Pop",0,55442
 4,1700,1982,"4e80da03907634f15319f5ae4e02d36cd9360067","Tommy Tutone","867-5309/jenny","True",0,"male",5,"Rock",0,7901282
 1,1833,1982,"597e2b6d5b6c437cb76efc62832956b6cb8e65f8","Toni Basil","Mickey","True",0,"female",8,"Pop",6,285796
 77,146,1982,"353ade21ef0335bb07c6cd79e3bd9e54e686da8d","Toronto","Your Daddy Don't Know","True",0,"female",4,"Rock",0,2138636
@@ -16013,7 +16013,7 @@
 37,397,1986,NULL,"Tom Petty & The Heartbreakers With Stevie Nicks","Needles And Pins","True",NULL,NULL,NULL,NULL,NULL,NULL
 11,1272,1986,"e803d36d780058c2aea804ae04d8941b2d2b2de3","Toto","I'll Be Over You","True",0,"male",6,"Pop",0,11287605
 38,475,1986,"b9630ca319c56f69fa60a50fd930b3203a581b13","Toto","Without Your Love","True",NULL,NULL,NULL,NULL,NULL,NULL
-61,328,1986,"7f2ea21153800c26739b8890e5709bfd6af8302b","Trans-X","Living On Video","True",0,"#N/A",0,"Dance",0,9069017
+61,328,1986,"7f2ea21153800c26739b8890e5709bfd6af8302b","Trans-X","Living On Video","True",0,"duet",0,"Dance",0,9069017
 27,662,1986,"ed1fde342724701e4757684f7f08553c0d2a1bbb","Triumph","Somebody's Out There","True",0,"male",9,"Rock",0,246308
 80,140,1986,NULL,"Uptown","(I Know) I'm Losing You","False",4,"male",6,"Pop",0,64355
 22,748,1986,"48d53f5e0a6db0c7a0a6a53d26893286d9cd2a15","Van Halen","Dreams","True",0,"male",10,"Rock",0,719882
@@ -16761,7 +16761,7 @@
 50,258,1988,NULL,"Tiffany","Feelings Of Forever","True",0,"female",7,"Pop",0,205444
 7,980,1988,"46c4789a17807163e9c1514f0623e8b3724ec8e0","Tiffany","I Saw Him Standing There","True",0,"female",7,"Pop",3,205441
 79,84,1988,NULL,"Times Two","Cecilia","False",NULL,NULL,NULL,NULL,NULL,NULL
-21,888,1988,NULL,"Times Two","Strange But True","True",0,"#N/A",7,"Pop",0,428146
+21,888,1988,NULL,"Times Two","Strange But True","True",0,"male",7,"Pop",0,428146
 74,109,1988,NULL,"Tommy Conwell And The Young Rumblers","I'm Not Your Man","True",NULL,NULL,NULL,NULL,NULL,NULL
 48,371,1988,NULL,"Tommy Conwell And The Young Rumblers","If We Never Meet Again","True",NULL,NULL,NULL,NULL,NULL,NULL
 75,162,1988,"2aaa9ef8a33a26c6acaacce0c8c599f4789f1d8f","Tommy Shaw","Ever Since The World Began","True",NULL,NULL,NULL,NULL,NULL,NULL
@@ -16787,7 +16787,7 @@
 86,21,1988,"d7ef3c856f2d3424b81894386499ea01445bfd56","Wa Wa Nee","Stimulation","False",NULL,NULL,NULL,NULL,NULL,NULL
 16,984,1988,NULL,"Was (Not Was)","Spy In The House Of Love","True",0,"male",5,"Pop",2,58030
 58,224,1988,NULL,"Wet Wet Wet","Wishing I Was Lucky","True",0,"male",7,"Pop",0,640380
-11,1468,1988,"063b202679641779dc4f40d80b24a0fbe839bf42","When In Rome","The Promise","True",0,"#N/A",5,"Pop",0,223063
+11,1468,1988,"063b202679641779dc4f40d80b24a0fbe839bf42","When In Rome","The Promise","True",0,"male",5,"Pop",0,223063
 58,325,1988,"25d7a6440bb6797800674299ae41b8ece415f57b","White Lion","Tell Me","True",0,"male",7,"Pop",0,6934671
 8,1226,1988,"14e6eedb79c629cfb5ba76e735cbc967226c5c99","White Lion","Wait","True",0,"male",7,"Pop",0,6934678
 3,1346,1988,"a600fa52cce4a4d16cd78351dc3a0a18d243e580","White Lion","When The Children Cry","True",0,"male",7,"Pop",0,6934661
@@ -17173,7 +17173,7 @@
 7,1010,1989,"ef63d87057bb0cb8a4ec3b9bc5c6ae687b6a7f5a","Was (Not Was)","Walk The Dinosaur","True",0,"male",6,"Pop",2,57980
 10,1069,1989,NULL,"Waterfront","Cry","False",NULL,NULL,NULL,NULL,NULL,NULL
 70,94,1989,NULL,"Waterfront","Nature Of Love","False",NULL,NULL,NULL,NULL,NULL,NULL
-95,12,1989,NULL,"When In Rome","Heaven Knows","True",0,"#N/A",6,"Pop",4,223064
+95,12,1989,NULL,"When In Rome","Heaven Knows","True",0,"male",6,"Pop",4,223064
 60,357,1989,"a80b9e404263a84f87f6f61a46d1e422a8461d87","Whistle","Right Next To Me","True",0,"male",5,"R&B",0,10384314
 52,456,1989,"8572cad61a4aa4390558845dd85a559c7176e90c","White Lion","Little Fighter","True",0,"male",7,"Rock",0,623741
 59,271,1989,"6a0858d183a6e430a37fe99ec800a95463d72615","White Lion","Radar Love","True",0,"male",8,"Pop",2,623748
@@ -18237,7 +18237,7 @@
 5,2871,1992,"a0b821ae8030543a010e7d521b36079d811d7784","Snap!","Rhythm Is A Dancer","True",0,"female",7,"Dance",0,9683205
 75,118,1992,NULL,"Sofia Shinas","The Message","True",NULL,NULL,NULL,NULL,NULL,NULL
 5,1610,1992,"f8d25a5c2aeec8035bf5fb2016283770a4cfeaa6","Sophie B. Hawkins","Damn I Wish I Was Your Lover","True",0,"female",7,"Pop",0,27408
-58,470,1992,NULL,"Sound Factory","Understand This Groove","True",0,"#N/A",0,"Dance",0,13281918
+58,470,1992,NULL,"Sound Factory","Understand This Groove","True",0,"duet",0,"Dance",0,13281918
 17,1179,1992,"2e4d59b23912f0bccacc9d670158c1b2c5b81e42","Spin Doctors","Little Miss Can't Be Wrong","True",0,"male",5,"Rock",0,52395
 97,7,1992,"a03d18741368a34db7ddac61e1e9441689a30e06","St. Etienne","Only Love Can Break Your Heart","True",0,"female",7,"Dance",0,10677330
 27,673,1992,"a709d208fde7bdff7cd0446df789373b4a890094","Stacy Earl (Featuring The Wild Pair)","Romeo & Juliet","True",NULL,NULL,NULL,NULL,NULL,NULL
@@ -18575,7 +18575,7 @@
 19,936,1993,"2a79998cc8cb3c75b2b6a00f28d3db5fe5167b39","Snow","Girl, I've Been Hurt","True",0,"male",5,"Rap/Hip hop",4,106604
 1,2002,1993,"88e3c88cd83a7ee5bdbfb361fb9fce12b2e2e653","Snow","Informer","True",0,"male",6,"Rap/Hip hop",3,7103093
 5,1924,1993,"bee2ec948c65d2f47d5f45d2c8301467c0973590","Soul Asylum","Runaway Train","True",0,"male",6,"Pop",0,52052
-72,164,1993,"6ecf306fb723efa349b79de01a4076e2a8896902","Souls Of Mischief","93 'til Infinity","True",0,"#N/A",7,"Rap/Hip hop",9,631272
+72,164,1993,"6ecf306fb723efa349b79de01a4076e2a8896902","Souls Of Mischief","93 'til Infinity","True",0,"male",7,"Rap/Hip hop",9,631272
 78,139,1993,"d770d3ba1bf21a88686a2b101c9013ffeaad9232","Spin Doctors","Jimmy Olsen's Blues","True",0,"male",7,"Rock",0,52396
 7,2114,1993,"88531d1cfdbcea42686efb7ea5dcf8c5ae797260","Spin Doctors","Two Princes","True",0,"male",6,"Pop",0,52392
 20,1171,1993,"9b21d199d83e3b56a1c7ab7eeb045ce2e7d2d779","Stereo MC's","Connected","True",NULL,NULL,NULL,NULL,NULL,NULL
@@ -18600,7 +18600,7 @@
 44,693,1993,"57a26a2a37061ebaa240c0f3ccb66fb137c3d867","The Breeders","Cannonball","True",0,"female",7,"Rock",3,502122
 8,1702,1993,"8051b0bf577314112acec3f41d7bd3f48aa9d288","The Cranberries","Linger","True",0,"female",5,"Pop",0,14383
 86,29,1993,NULL,"The Flavor Unit MC's","Roll Wit Tha Flava","True",0,"male",7,"Rap/Hip hop",10,99190
-71,267,1993,"b498ac9ff8f5a16a70676f237516fa7f78b70efb","The Goodmen","Give It Up","True",0,"#N/A",0,"Dance",0,11349159
+71,267,1993,"b498ac9ff8f5a16a70676f237516fa7f78b70efb","The Goodmen","Give It Up","True",0,"female",0,"Dance",0,11349159
 91,22,1993,"0b4be75cca5785759464c79b1e90e324e8399c2c","The Jeff Healey Band","Lost In Your Eyes","True",0,"male",3,"Rock",0,78256
 67,261,1993,"b55cca5d97b6ee2c07239ff8c21f5aa76ab79211","The Lemonheads","Into Your Arms","True",0,"male",5,"Pop",2,905741
 52,536,1993,NULL,"The Pharcyde","Passin' Me By","True",0,"male",7,"Rap/Hip hop",10,7519656
@@ -19265,7 +19265,7 @@
 52,707,1995,"9477e5956503435d398b29e73e732ee5cc0f3b47","Terry Ellis","Where Ever You Are","True",0,"female",4,"R&B",2,5472627
 67,70,1995,"04fbe86867614f3e252be7a44578707a9039fc22","The Beatles","Baby It's You","True",0,"male",6,"Rock",0,212397
 6,470,1995,"4172c57bc05c356b0d7b734ecda01cc4e4d8f362","The Beatles","Free As A Bird","True",0,"male",7,"Pop",0,1585025
-49,585,1995,"500694e46cd78525c1a2004b13bac1efcf4b805a","The Bucketheads","The Bomb! (These Sounds Fall Into My Mind)","True",0,"#N/A",0,"Dance",0,718651
+49,585,1995,"500694e46cd78525c1a2004b13bac1efcf4b805a","The Bucketheads","The Bomb! (These Sounds Fall Into My Mind)","True",0,"male",0,"Dance",0,718651
 63,288,1995,"fde9dd0d1436c221140197a3bf3343769053048b","The Click","Hurricane","True",3,"male",7,"Rap/Hip hop",10,658777
 68,254,1995,"546052ca252b524a8fcd6f0d79826fd833435f4f","The Corrs","Runaway","True",0,"female",6,"Pop",0,14062
 54,590,1995,NULL,"The Dove Shack","Summertime In The LBC (From ""The Show"")","True",0,"male",5,"R&B",0,7526181
@@ -20569,13 +20569,13 @@
 30,797,1999,NULL,"Steve Wariner","Two Teardrops","True",0,"male",7,"Pop",0,57945
 3,2520,1999,"8f44a10c7b279459343b2709f609c17aa78b2c3b","Sugar Ray","Every Morning","True",0,"male",8,"Pop",2,53913
 7,2501,1999,"69dbf006bf268faafd2062af676b3081a20f9e41","Sugar Ray","Someday","True",0,"male",4,"Rock",0,5495502
-90,80,1999,NULL,"T.W.D.Y. Featuring Too Short & Mac Mall","Players Holiday","True",0,"#N/A",0,"Rap/Hip hop",0,9895873
+90,80,1999,NULL,"T.W.D.Y. Featuring Too Short & Mac Mall","Players Holiday","True",0,"male",0,"Rap/Hip hop",0,9895873
 14,1891,1999,"ffb1b75c38ff9107cb4d13aa9acc936dabf2bd16","Tal Bachman","She's So High","True",6,"male",9,"Rock",0,83431
 88,137,1999,"3712d6d62ac4601a35dbeae99fc1a1134e6f938e","Tanto Metro & Devonte","Everyone Falls In Love","True",0,"duet",7,"Reggae/Ska",5,1369150
 69,170,1999,"b4c0a5ddc6d6e2e8f289e30406f540c602ba232f","Terri Clark","Everytime I Cry","True",0,"female",7,"Country",0,174360
 99,2,1999,"397067aef42a914fbbc8a1ff60db6868ec4b87a1","Terry Dexter","Better Than Me","True",0,"female",6,"Rock",0,81978
 100,2,1999,"bde28b2bc03caba684cbfee069f82446c788178c","Tevin Campbell","Another Way","True",0,"male",5,"R&B",0,60709
-84,110,1999,"7c2d2c03244ae46d04c4509a0d6bcac9ede0ca83","The Beatnuts Featuring Yellaklaw","Watch Out Now","True",0,"#N/A",0,"Rap/Hip hop",0,4600920
+84,110,1999,"7c2d2c03244ae46d04c4509a0d6bcac9ede0ca83","The Beatnuts Featuring Yellaklaw","Watch Out Now","True",0,"male",0,"Rap/Hip hop",0,4600920
 64,252,1999,"9d02748bfcb8318b39b9757fe154ab3f13aa0f20","The Kinleys","Somebody's Out There Watching","True",3,"female",6,"Pop",0,31947
 82,101,1999,"7ca5bf638f4ba523d2769c4f63c1edf4988a4d98","The Notorious B.I.G. Featuring Puff Daddy & Lil' Kim","Notorious B.I.G.","True",0,"male",4,"Rap/Hip hop",10,80856
 74,196,1999,"8fd307159c730e26b52272f28ef1cf0936935a74","The Offspring","Why Don't You Get A Job?","True",0,"male",7,"Pop",2,6297606
@@ -21171,7 +21171,7 @@
 50,529,2001,"62474602eb7fb419ec364cd785acfd7e171ce222","Snoop Dogg Featuring Master P, Nate Dogg, Butch Cassidy & Tha Eastsidaz","Lay Low","True",0,"male",6,"Rap/Hip hop",10,87288
 90,35,2001,NULL,"Snoop Dogg Featuring Tyrese & Mr. Tan","Just A Baby Boy","True",0,"male",5,"R&B",7,13306316
 77,86,2001,"d29dbd6d63f83984d33f24dc00c1e50bd276d199","Snoop Dogg","Snoop Dogg","False",0,"male",6,"Rap/Hip hop",10,793633
-88,36,2001,NULL,"St. Lunatics","Midwest Swing","True",0,"#N/A",0,"Rap/Hip hop",0,13923411
+88,36,2001,NULL,"St. Lunatics","Midwest Swing","True",0,"male",0,"Rap/Hip hop",0,13923411
 62,426,2001,"5f5975b6fefcf400007655aa5043ef67d850e061","Staind","Fade","True",0,"male",7,"Rock",0,97932
 5,3392,2001,"7c98137672d37068f9081aff2c5031d91dff772d","Staind","It's Been Awhile","True",0,"male",6,"Rock",0,97931
 29,1124,2001,"7a50daec16b740dceabc9b8da757afa757c4e9b7","Steve Holy","Good Morning Beautiful","True",0,"male",5,"Country",0,94354
@@ -24493,7 +24493,7 @@
 1,1935,2010,"743b231f046440a6076fef4bb670f133d05651fc","Wiz Khalifa","Black And Yellow","True",0,"male",5,"Rap/Hip hop",10,1688083
 67,248,2010,"9820d6850bfa30cd255c3a13e28a3ae9bc69d239","YG","Toot It And Boot It","True",0,"male",3,"Rap/Hip hop",10,7365037
 81,99,2010,"4f5cc6543c167b8b840375c4e9bf5d9381dd78b6","Yo Gotti Featuring Lil Wayne","Women Lie, Men Lie","True",0,"male",5,"Rap/Hip hop",10,1486358
-29,924,2010,"fbd1f7992f42916f8084bbca026aaecc0ab16e24","Yolanda Be Cool & Dcup","We No Speak Americano","True",0,"#N/A",0,"Dance",0,1548381
+29,924,2010,"fbd1f7992f42916f8084bbca026aaecc0ab16e24","Yolanda Be Cool & Dcup","We No Speak Americano","True",0,"male",0,"Dance",0,1548381
 35,651,2010,NULL,"Young Jeezy Featuring Plies","Lose My Mind","True",0,"male",6,"Rap/Hip hop",10,1896776
 48,530,2010,NULL,"Young Money Featuring Gucci Mane","Steady Mobbin'","True",0,"male",4,"Rap/Hip hop",10,7760323
 56,287,2010,"c4a749f6194570baf04efa3a7a43af4fded12ff0","Young Money","Roger That","True",0,"male",4,"Rap/Hip hop",10,1476194
@@ -24907,7 +24907,7 @@
 22,2189,2011,"202e9e83190e9cb30677ad67e650ce042155bc45","Selena Gomez & The Scene","Love You Like A Love Song","True",0,"female",4,"Pop",0,2784104
 21,1314,2011,"5155e1e468ffa17c0f93b0f0cf9a3d3e874ec141","Selena Gomez & The Scene","Who Says","True",0,"female",5,"Pop",0,2784106
 66,35,2011,"f4904d759a712c1d82ff1886a18b593996d3002f","Shania Twain","Today Is Your Day","True",0,"female",6,"Country",0,1727856
-85,21,2011,"717e36da79db34974f0b79d810b2945ea4006a1a","Skrillex","First Of The Year (Equinox)","True",0,"#N/A",0,"Dance",0,5509675
+85,21,2011,"717e36da79db34974f0b79d810b2945ea4006a1a","Skrillex","First Of The Year (Equinox)","True",0,"female",0,"Dance",0,5509675
 7,2466,2011,"07aa6b278601d4f50c382fd750000f0f88020f7f","Snoop Dogg & Wiz Khalifa Featuring Bruno Mars","Young, Wild & Free","True",0,"male",4,"Rap/Hip hop",8,1891392
 76,68,2011,"d0f7c5adeeeace6fd8205ed2d4befacb337743e3","Snoop Dogg Featuring T-Pain","Boom","False",NULL,NULL,NULL,NULL,NULL,NULL
 78,83,2011,"ce61c36c6b3ed5f6f4dc09b0cb5bcef9ed989001","Steve Holy","Love Don't Run","True",0,"male",4,"Pop",0,9986364
@@ -25274,8 +25274,8 @@
 78,23,2012,"f7b3f3f19f93b59c91f1a7101558b62571fe65e2","Sean Paul","She Doesn't Mind","True",3,"male",7,"Pop",7,1956408
 94,14,2012,"5818667a90f8d7606a5cf279df9fd87b78dce675","Shinedown","Bully","True",0,"male",8,"Rock",0,1948738
 72,314,2012,"569d7afebba42141ae4ce4e7bb2012b0b7c0bb51","Skrillex Featuring Sirah","Bangarang","True",0,"female",0,"Dance",0,1901553
-74,72,2012,"1f7f6bc4ed891ad0fb90e0090cf500d92dbf240e","Skrillex Featuring Sirah","Kyoto","True",0,"#N/A",0,"Dance",0,1901557
-69,215,2012,"fd1cb014b2eb27e13502c1fb2ef3514dbe713a03","Skrillex","Scary Monsters And Nice Sprites","True",0,"#N/A",0,"Dance",0,2178181
+74,72,2012,"1f7f6bc4ed891ad0fb90e0090cf500d92dbf240e","Skrillex Featuring Sirah","Kyoto","True",0,"duet",0,"Dance",0,1901557
+69,215,2012,"fd1cb014b2eb27e13502c1fb2ef3514dbe713a03","Skrillex","Scary Monsters And Nice Sprites","True",0,"male",0,"Dance",0,2178181
 98,3,2012,NULL,"Slaughterhouse Featuring Eminem","Throw That","True",0,"male",6,"Rap/Hip hop",9,2055950
 78,23,2012,"2d5c1f2ee19c234cf38cbebdf09761d6db2474fa","Snow Patrol","Called Out In The Dark","True",3,"male",5,"Pop",0,1903155
 6,2292,2012,NULL,"Swedish House Mafia Featuring John Martin","Don't You Worry Child","True",0,"male",6,"Dance",4,2237192

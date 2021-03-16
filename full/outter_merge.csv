@@ -654,7 +654,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 10,847.0,1969,647220cf9737fcee9a624aed50bd89fc96d29d25,The Dells,"Oh, What A Night",1969-08-16,11.0,12591.0,male,R&B,0.0,5.0,4.0,True
 81,95.0,1988,1ec43f19e1f63f34cb7de3b35dbed898700523d2,Bardeux,Magic Carpet Ride,1988-02-27,7.0,12658.0,male,Rock,0.0,6.0,0.0,False
 3,1245.0,1968,a969c3b0b06a1e9c167476253e5a8a605b6ed0cb,Steppenwolf,Magic Carpet Ride,1968-10-05,16.0,12658.0,male,Rock,0.0,6.0,0.0,True
-1,1279.0,1975,,Van McCoy And The Soul City Symphony,The Hustle,1975-04-19,19.0,12666.0,,R&B,0.0,0.0,0.0,True
+1,1279.0,1975,,Van McCoy And The Soul City Symphony,The Hustle,1975-04-19,19.0,12666.0,duet,R&B,0.0,0.0,0.0,True
 55,244.0,1981,9f0865cccfdf55c31891e76f859a47f59bf73fb0,Peter Allen,Fly Away,1981-01-10,8.0,12691.0,male,Pop,0.0,4.0,0.0,True
 12,951.0,1979,d3d8b82d2ac0ece6522f05620a6f9c9133508d93,Nick Lowe,Cruel To Be Kind,1979-07-28,15.0,12750.0,male,Rock,0.0,7.0,0.0,True
 91,40.0,1975,92713e5545013dc710c30470bb7aff1de4192344,Billy Swan,Everything's The Same (Ain't Nothing Changed),1975-11-01,5.0,12807.0,male,Country,0.0,6.0,2.0,True
@@ -2009,10 +2009,10 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 5,1291.0,1998,d6c2108d2be7069c71bfe7af4e41124d83a1d097,Madonna,Ray Of Light,1998-07-11,20.0,34775.0,female,Pop,0.0,8.0,0.0,True
 12,750.0,1968,,Mama Cass With The Mamas & The Papas,Dream A Little Dream Of Me,1968-07-06,11.0,34796.0,female,Pop,0.0,5.0,2.0,True
 81,90.0,1968,,The Mamas & The Papas,For The Love Of Ivy,1968-09-14,5.0,34797.0,duet,Pop,0.0,7.0,0.0,True
-53,227.0,1968,f89fa80a138c869a72bdc2c8442c7275b348e3db,The Mamas & The Papas,Safe In My Garden,1968-06-08,6.0,34799.0,,Pop,0.0,0.0,0.0,True
+53,227.0,1968,f89fa80a138c869a72bdc2c8442c7275b348e3db,The Mamas & The Papas,Safe In My Garden,1968-06-08,6.0,34799.0,duet,Pop,0.0,0.0,0.0,True
 20,408.0,1967,,The Mamas & The Papas,Twelve Thirty (Young Girls Are Coming To The Canyon),1967-08-26,6.0,34807.0,female,Pop,0.0,5.0,0.0,True
 2,865.0,1967,e10b1b5d7e9832d2ee9e3504a50ee432026e1cf6,The Mamas & The Papas,Dedicated To The One I Love,1967-02-25,10.0,34808.0,female,Pop,0.0,7.0,0.0,True
-5,663.0,1967,c978c49bcfded30b29db2262198ba1b945ca1430,The Mamas & The Papas,Creeque Alley,1967-04-29,9.0,34809.0,,Pop,0.0,0.0,0.0,True
+5,663.0,1967,c978c49bcfded30b29db2262198ba1b945ca1430,The Mamas & The Papas,Creeque Alley,1967-04-29,9.0,34809.0,duet,Pop,0.0,0.0,0.0,True
 22,663.0,1975,8dff3a5f4cd2b78aeb433d8fe105df6151986645,The Manhattan Transfer,Operator,1975-09-20,12.0,34841.0,female,Pop,0.0,7.0,0.0,True
 23,1950.0,1995,f88e6545eb9ef4697782e0e473f9fce7d10080c1,Blues Traveler,Hook,1995-10-07,34.0,34925.0,male,Pop,0.0,6.0,0.0,True
 24,823.0,1979,59df6cf2edfcc47c185646fa52bbfaf432d66fac,Blondie,One Way Or Another,1979-06-02,14.0,34963.0,female,Pop,0.0,4.0,2.0,True
@@ -3182,7 +3182,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 87,33.0,2000,48e3dea917b386a47c4133c81ae3f26dad342315,2Gether,The Hardest Part Of Breaking Up (Is Getting Back Your Stuff),2000-09-02,3.0,55418.0,male,Pop,0.0,7.0,4.0,True
 5,1615.0,1995,9e880d80ece874f84648d594aacb331261be9b22,TLC,Diggin' On You,1995-11-18,20.0,55419.0,female,R&B,0.0,3.0,0.0,True
 1,2773.0,1994,c3ce84cfd8685cd2e64591819f55492332dd3007,TLC,Creep,1994-11-12,32.0,55432.0,female,R&B,0.0,3.0,2.0,True
-31,752.0,1982,e03048565ddbc48470dd507deb7f337fdc258d49,Tom Tom Club,Genius Of Love,1982-01-23,17.0,55442.0,,Pop,0.0,0.0,0.0,True
+31,752.0,1982,e03048565ddbc48470dd507deb7f337fdc258d49,Tom Tom Club,Genius Of Love,1982-01-23,17.0,55442.0,duet,Pop,0.0,0.0,0.0,True
 22,955.0,1997,3e3660c7f16e72e080243924133e441289a12722,Tony Toni Tone,Thinking Of You,1997-05-10,20.0,55467.0,male,Pop,0.0,7.0,6.0,True
 10,1341.0,1993,,Tony Toni Tone,Anniversary,1993-09-25,20.0,55494.0,male,R&B,4.0,8.0,0.0,True
 82,86.0,1994,,Tony Toni Tone,Leavin',1994-05-14,5.0,55518.0,male,Pop,5.0,8.0,2.0,True
@@ -4047,7 +4047,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 34,315.0,1967,74175f5253f17adc738142a1fd01508be5e7dc4e,The 5th Dimension,Paper Cup,1967-11-04,7.0,79111.0,male,Rock,0.0,7.0,0.0,True
 50,482.0,1993,0c6b2a110ddd5f21fcd48309396f1fd709d0ad31,Taylor Dayne,Send Me A Lover,1993-10-02,14.0,79119.0,female,Pop,0.0,8.0,0.0,True
 20,1053.0,1993,587f69761485a25a1bc06d1abbedb0e8172d9f44,Taylor Dayne,Can't Get Enough Of Your Love,1993-06-05,20.0,79126.0,female,Pop,2.0,8.0,6.0,True
-32,485.0,1973,5a0c01cc19f180cc1e6b9da3991d5e547896ae02,The 5th Dimension,"Living Together, Growing Together",1973-01-06,9.0,79134.0,,Pop,0.0,0.0,0.0,True
+32,485.0,1973,5a0c01cc19f180cc1e6b9da3991d5e547896ae02,The 5th Dimension,"Living Together, Growing Together",1973-01-06,9.0,79134.0,duet,Pop,0.0,0.0,0.0,True
 10,1090.0,1972,34dced5ec011dfa7d330653e25176c8c3548eea6,The 5th Dimension,If I Could Reach You,1972-09-09,15.0,79136.0,female,Rock,0.0,5.0,0.0,True
 27,482.0,1970,68da6b8b94fc9ed171c6d7b186911f7a6d070902,The 5th Dimension,Save The Country,1970-06-13,8.0,79146.0,female,Rock,0.0,7.0,0.0,True
 24,475.0,1970,5bf8a464a3f485d8b67e8917f09a2d36e0471b0c,The 5th Dimension,Puppet Man,1970-04-18,8.0,79147.0,female,Rock,0.0,6.0,0.0,True
@@ -5725,8 +5725,8 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 1,971.0,1965,80a87aad13892151818cf8328a6c5828004a51d2,Petula Clark,My Love,1965-12-25,13.0,222103.0,female,Pop,0.0,6.0,0.0,True
 66,147.0,1982,,Petula Clark,Natural Love,1982-02-06,6.0,222103.0,female,Pop,0.0,6.0,0.0,False
 32,356.0,1966,9e29747a69956deda8690abed0a7d30535255fbd,Brian Wilson,"Caroline, No",1966-03-26,7.0,222298.0,male,Pop,5.0,5.0,0.0,True
-11,1468.0,1988,063b202679641779dc4f40d80b24a0fbe839bf42,When In Rome,The Promise,1988-09-03,25.0,223063.0,,Pop,0.0,5.0,0.0,True
-95,12.0,1989,,When In Rome,Heaven Knows,1989-02-18,2.0,223064.0,,Pop,0.0,6.0,4.0,True
+11,1468.0,1988,063b202679641779dc4f40d80b24a0fbe839bf42,When In Rome,The Promise,1988-09-03,25.0,223063.0,male,Pop,0.0,5.0,0.0,True
+95,12.0,1989,,When In Rome,Heaven Knows,1989-02-18,2.0,223064.0,male,Pop,0.0,6.0,4.0,True
 78,184.0,2001,,Gigi D'Agostino,I'll Fly With You (L'amour Toujours),2001-08-04,13.0,223089.0,female,Dance,0.0,7.0,0.0,True
 2,1502.0,1988,c23915872784c6d25f386e75cc38bdc42e18064b,Tone-Loc,Wild Thing,1988-12-03,25.0,223537.0,male,Rap/Hip hop,0.0,5.0,10.0,True
 3,1204.0,1989,a3d63aa572690f99014d2f5b0c5c3ddba0bfb46d,Tone-Loc,Funky Cold Medina,1989-03-04,18.0,223541.0,male,Rap/Hip hop,0.0,3.0,10.0,True
@@ -6008,9 +6008,9 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 62,136.0,1958,,The Playboys,Over The Weekend,1958-09-01,6.0,272578.0,male,R&B,0.0,5.0,0.0,True
 100,1.0,1962,,Pete Antell,Night Time,1962-12-08,1.0,272579.0,male,R&B,0.0,4.0,2.0,True
 38,293.0,1959,,Chubby Checker,The Class,1959-05-18,7.0,272584.0,male,R&B,0.0,5.0,4.0,True
-16,926.0,1958,,The Applejacks,Mexican Hat Rock,1958-09-15,15.0,272588.0,,Rock,0.0,0.0,0.0,True
+16,926.0,1958,,The Applejacks,Mexican Hat Rock,1958-09-15,15.0,272588.0,male,Rock,0.0,0.0,0.0,True
 58,281.0,1958,,Georgie Young,"Nine More Miles (The ""Faster-Faster"" Song)",1958-09-22,9.0,272589.0,male,R&B,0.0,4.0,2.0,True
-38,442.0,1958,,The Applejacks,Rocka-Conga,1958-12-22,10.0,272592.0,,Rock,0.0,0.0,0.0,True
+38,442.0,1958,,The Applejacks,Rocka-Conga,1958-12-22,10.0,272592.0,male,Rock,0.0,0.0,0.0,True
 6,1304.0,1959,6b76a04a8d357fdecbeadae7af0f5e97126a6351,Bobby Rydell,We Got Love,1959-10-12,17.0,272594.0,male,Rock,0.0,7.0,0.0,True
 2,1295.0,1960,65733e161b76e30767d63cf5b3d25a67a8c69975,Bobby Rydell,Wild One,1960-02-01,16.0,272596.0,male,Pop,0.0,6.0,0.0,True
 8,1504.0,1961,0a1638602dfc4527bbf31da64eec6845df5d7bb2,Chubby Checker,Let's Twist Again,1961-06-19,23.0,272600.0,male,Pop,0.0,8.0,3.0,True
@@ -6766,7 +6766,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 24,740.0,1959,a0292969899076a8de6569da674d34b569bb1082,Webb Pierce,I Ain't Never,1959-08-10,14.0,425758.0,male,Country,0.0,5.0,0.0,True
 90,40.0,2006,,Remy Ma,Conceited (There's Something About Remy),2006-04-01,5.0,425950.0,female,Rap/Hip hop,0.0,2.0,10.0,True
 10,2134.0,2005,aef36397def804a8040d61411b69c569e9198a19,Cascada,Everytime We Touch,2005-12-17,31.0,426203.0,female,Dance,0.0,7.0,0.0,True
-21,888.0,1988,,Times Two,Strange But True,1988-03-12,17.0,428146.0,,Pop,0.0,7.0,0.0,True
+21,888.0,1988,,Times Two,Strange But True,1988-03-12,17.0,428146.0,male,Pop,0.0,7.0,0.0,True
 88,26.0,2006,,Yeah Yeah Yeahs,Gold Lion,2006-04-01,3.0,428560.0,female,Rock,0.0,5.0,3.0,True
 42,492.0,1993,,LL Cool J,Back Seat (Of My Jeep),1993-06-19,13.0,428830.0,male,Rap/Hip hop,0.0,5.0,10.0,True
 3,2227.0,1996,,LL Cool J,Loungin,1996-07-06,29.0,428833.0,male,Rap/Hip hop,0.0,5.0,10.0,True
@@ -7724,7 +7724,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 67,92.0,1991,91a9b7afdb67ded961383f5c651cfc0f69bdaf8f,The Commitments,Try A Little Tenderness,1991-10-26,4.0,630048.0,male,R&B,0.0,6.0,0.0,True
 7,905.0,1966,a27c9d73f70c720a552080ac91446c5a703a1695,Robert Parker,Barefootin',1966-04-23,14.0,630238.0,male,R&B,2.0,7.0,4.0,True
 9,1101.0,1984,,Ollie And Jerry,Breakin'...there's No Stopping Us,1984-06-02,18.0,630861.0,duet,Rock,0.0,8.0,0.0,True
-72,164.0,1993,6ecf306fb723efa349b79de01a4076e2a8896902,Souls Of Mischief,93 'til Infinity,1993-11-13,9.0,631272.0,,Rap/Hip hop,0.0,7.0,9.0,True
+72,164.0,1993,6ecf306fb723efa349b79de01a4076e2a8896902,Souls Of Mischief,93 'til Infinity,1993-11-13,9.0,631272.0,male,Rap/Hip hop,0.0,7.0,9.0,True
 94,9.0,1969,7c7a45328a6706e965845c2b35e183aef65d3fb6,Archie Bell & The Drells,I Love My Baby,1969-03-29,3.0,632035.0,male,R&B,0.0,6.0,0.0,True
 21,673.0,1968,f5f3cd78c5f86d2be481764b775040c140592cae,Archie Bell & The Drells,There's Gonna Be A Showdown,1968-12-14,11.0,632037.0,male,R&B,0.0,6.0,0.0,True
 59,209.0,1969,b5918884f9ee5094b6ccb9bb5f98cc7c8f3d1796,Archie Bell & The Drells,Girl You're Too Young,1969-06-21,7.0,632039.0,male,R&B,0.0,6.0,0.0,True
@@ -7923,7 +7923,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 100,2.0,1971,13563fe407a3c47436c284475b96d7209d875308,The Poppy Family,I Was Wondering,1971-04-03,2.0,673734.0,female,Pop,0.0,7.0,0.0,True
 80,21.0,1958,,The McGuire Sisters,"Volare (Nel Blu, Dipinto Di Blu)",1958-09-01,1.0,673864.0,female,Pop,0.0,7.0,0.0,True
 11,1074.0,1959,bf258e14cf7e9afabb4a9c5660a59024cfbdb84f,The McGuire Sisters,May You Always,1959-01-05,16.0,673865.0,female,Pop,0.0,7.0,0.0,True
-93,31.0,1977,5ef284113f2c393d283ac46a0f5ced18bc019761,Universal Robot Band,Dance And Shake Your Tambourine,1977-05-14,6.0,674158.0,,Pop,0.0,0.0,0.0,True
+93,31.0,1977,5ef284113f2c393d283ac46a0f5ced18bc019761,Universal Robot Band,Dance And Shake Your Tambourine,1977-05-14,6.0,674158.0,female,Pop,0.0,0.0,0.0,True
 68,109.0,1979,08380e592f60e9d74a54e2ee624dfb3ab134626e,Witch Queen,Bang A Gong,1979-04-28,6.0,674161.0,male,Pop,0.0,5.0,0.0,True
 19,1100.0,1997,66f79bcc9a50996fad3877f088d5195aa2906fd7,SWV (Featuring Puff Daddy),Someone,1997-07-26,20.0,674184.0,female,R&B,0.0,5.0,6.0,True
 25,596.0,1998,a92ed53abf4f9777a23979bba8e17468309b8bf6,SWV,Rain,1998-03-28,14.0,674189.0,female,R&B,0.0,7.0,2.0,True
@@ -7984,7 +7984,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 100,1.0,1966,,Fontella Bass,Safe And Sound,1966-08-27,1.0,681501.0,female,Pop,0.0,8.0,0.0,True
 63,240.0,1963,,Bent Fabric and His Piano,Chicken Feed,1963-01-12,8.0,681928.0,,Jazz,0.0,0.0,0.0,False
 7,1224.0,1962,,Bent Fabric and His Piano,Alley Cat,1962-07-28,18.0,681928.0,,Jazz,0.0,0.0,0.0,True
-20,465.0,1967,,Whistling Jack Smith,I Was Kaiser Bill's Batman,1967-04-29,7.0,681936.0,,Pop,0.0,0.0,0.0,True
+20,465.0,1967,,Whistling Jack Smith,I Was Kaiser Bill's Batman,1967-04-29,7.0,681936.0,male,Pop,0.0,0.0,0.0,True
 48,259.0,1958,3758dc78d305ad00e6e333eb8f02cc03c59d9f94,Enoch Light & The Light Brigade,I Want To Be Happy Cha Cha,1958-11-10,7.0,681940.0,,Pop,0.0,0.0,0.0,True
 70,106.0,1960,,Ernie Freeman,"(Theme from) ""The Dark At The Top Of The Stairs""",1960-10-24,6.0,681942.0,,Pop,0.0,0.0,0.0,True
 10,2542.0,2006,a0cb1465981575f2b033ba7cab461379bfdc99a6,Unk,Walk It Out,2006-09-23,36.0,682352.0,male,Rap/Hip hop,0.0,7.0,10.0,True
@@ -8185,7 +8185,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 12,643.0,1964,9d5394cab22105bf091ac3d82254eb3c177ad4b8,Peter And Gordon,Nobody I Know,1964-06-27,9.0,717474.0,male,Pop,0.0,6.0,0.0,True
 9,791.0,1965,766b32521c157f5398c9413a8a99e8fba4e4a167,Peter And Gordon,I Go To Pieces,1965-01-09,11.0,717475.0,male,Pop,0.0,6.0,0.0,True
 85,38.0,1967,9586b21bb83a389b842270f53a589dacd9592e82,Betty Harris,Nearer To You,1967-07-29,4.0,718222.0,female,R&B,0.0,6.0,0.0,True
-49,585.0,1995,500694e46cd78525c1a2004b13bac1efcf4b805a,The Bucketheads,The Bomb! (These Sounds Fall Into My Mind),1995-07-01,18.0,718651.0,,Dance,0.0,0.0,0.0,True
+49,585.0,1995,500694e46cd78525c1a2004b13bac1efcf4b805a,The Bucketheads,The Bomb! (These Sounds Fall Into My Mind),1995-07-01,18.0,718651.0,male,Dance,0.0,0.0,0.0,True
 3,1200.0,1986,c1890a3d43b14c09924cee71faa994cc384e26a6,Van Halen,Why Can't This Be Love,1986-03-15,16.0,719880.0,male,Rock,0.0,8.0,0.0,True
 22,748.0,1986,48d53f5e0a6db0c7a0a6a53d26893286d9cd2a15,Van Halen,Dreams,1986-05-24,14.0,719882.0,male,Rock,0.0,10.0,0.0,True
 22,875.0,1986,61c670c991a26a20cfdfc7c0518685b9bee0200f,Van Halen,Love Walks In,1986-08-09,15.0,719885.0,male,Rock,0.0,9.0,0.0,True
@@ -8255,7 +8255,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 1,1126.0,1976,1a10fb199126b1bd3ddf754698d4395d4920a4d6,John Sebastian,Welcome Back,1976-03-27,14.0,734211.0,male,Pop,0.0,6.0,0.0,True
 86,52.0,1965,,O.V. Wright,You're Gonna Make Me Cry,1965-08-07,5.0,734748.0,male,R&B,0.0,7.0,2.0,True
 54,299.0,1970,,O.V. Wright,Ace Of Spade,1970-11-14,8.0,734756.0,male,R&B,2.0,8.0,2.0,True
-73,89.0,1974,,Willie Henderson,Dance Master Pt. 1,1974-07-06,5.0,734856.0,,R&B,0.0,0.0,0.0,True
+73,89.0,1974,,Willie Henderson,Dance Master Pt. 1,1974-07-06,5.0,734856.0,duet,R&B,0.0,0.0,0.0,True
 19,700.0,1961,56cd9a93c524bf3441e3365497ea9ad39bd103f5,Ral Donner,Girl Of My Best Friend,1961-04-17,11.0,735185.0,male,Rock,0.0,4.0,0.0,True
 47,360.0,1985,,Rene & Angela,I'll Be Good,1985-09-28,10.0,735222.0,duet,R&B,0.0,3.0,0.0,True
 75,101.0,1986,,Rene & Angela,You Don't Have To Cry,1986-06-21,7.0,735224.0,duet,R&B,0.0,6.0,0.0,True
@@ -8756,7 +8756,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 7,1420.0,2007,8daebc827f16450eab134348fd38695ab7fb6108,Hurricane Chris,A Bay Bay,2007-06-23,20.0,910013.0,male,Rap/Hip hop,0.0,8.0,10.0,True
 1,1665.0,2007,149a2a28b7acbe31096d9f3cb4618ef08926c8b2,Sean Kingston,Beautiful Girls,2007-06-09,22.0,910068.0,male,Pop,0.0,6.0,2.0,True
 69,61.0,2007,f9dbc2cb5ae45570f6735d32d9dec1838c0dc6fc,Paul McCartney,Dance Tonight,2007-07-07,2.0,911813.0,male,Rock,2.0,5.0,2.0,True
-90,20.0,1959,4d1f37a1ce9b31bc7c79bc547d0b289ec621abeb,The Four Lads,The Fountain Of Youth,1959-05-04,2.0,911924.0,,Jazz,0.0,0.0,0.0,True
+90,20.0,1959,4d1f37a1ce9b31bc7c79bc547d0b289ec621abeb,The Four Lads,The Fountain Of Youth,1959-05-04,2.0,911924.0,male,Jazz,0.0,0.0,0.0,True
 56,151.0,2007,ef755ba679987ec032f89396394e7ff0ad0563f5,Daddy Yankee Featuring Fergie,Impacto,2007-05-26,7.0,913817.0,male,Latin,0.0,5.0,6.0,True
 79,26.0,2006,b7fa3ded4a3a1395152d809e991e962d168b749e,Chris Cornell,You Know My Name,2006-12-09,2.0,913909.0,male,Rock,0.0,5.0,0.0,True
 92,9.0,1958,ae9035f48590b49fdbbed7d425f5961a2a703967,Ray Price,Invitation To The Blues,1958-09-08,1.0,917851.0,male,Country,0.0,6.0,0.0,True
@@ -10213,7 +10213,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 18,628.0,2011,,Enrique Iglesias With Usher Featuring Lil Wayne,Dirty Dancer,2011-05-28,12.0,1547542.0,male,Pop,0.0,7.0,2.0,True
 8,668.0,2010,,Miley Cyrus,Can't Be Tamed,2010-06-05,10.0,1547860.0,female,Pop,0.0,5.0,0.0,True
 75,26.0,2010,a6a46e36039e1836a67fa1d36493cbe01ac268a0,Miley Cyrus,Stay,2010-07-10,1.0,1547865.0,female,Pop,0.0,5.0,0.0,True
-29,924.0,2010,fbd1f7992f42916f8084bbca026aaecc0ab16e24,Yolanda Be Cool & Dcup,We No Speak Americano,2010-10-02,20.0,1548381.0,,Dance,0.0,0.0,0.0,True
+29,924.0,2010,fbd1f7992f42916f8084bbca026aaecc0ab16e24,Yolanda Be Cool & Dcup,We No Speak Americano,2010-10-02,20.0,1548381.0,male,Dance,0.0,0.0,0.0,True
 4,2896.0,2010,eafb58a06091d179995000d4c7acbacfa663d0b0,Enrique Iglesias Featuring Pitbull,I Like It,2010-05-29,38.0,1551550.0,male,Latin,0.0,7.0,0.0,True
 60,439.0,2010,,Rick Ross Featuring Styles P,B.M.F. (Blowin' Money Fast),2010-07-24,16.0,1551593.0,male,Rap/Hip hop,0.0,6.0,10.0,True
 30,1023.0,2010,ab455237e1b045665c072acde118cfe186805b83,Rick Ross Featuring Drake & Chrisette Michele,Aston Martin Music,2010-08-07,20.0,1551594.0,male,Rap/Hip hop,0.0,5.0,10.0,True
@@ -10943,7 +10943,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 35,651.0,2010,,Young Jeezy Featuring Plies,Lose My Mind,2010-05-22,15.0,1896776.0,male,Rap/Hip hop,0.0,6.0,10.0,True
 84,17.0,2012,4db45bc378e2c3c8999550bdeff25397d14aa749,3OH!3,Set You Free,2012-01-21,1.0,1901539.0,male,Pop,0.0,8.0,3.0,True
 72,314.0,2012,569d7afebba42141ae4ce4e7bb2012b0b7c0bb51,Skrillex Featuring Sirah,Bangarang,2012-03-03,20.0,1901553.0,female,Dance,0.0,0.0,0.0,True
-74,72.0,2012,1f7f6bc4ed891ad0fb90e0090cf500d92dbf240e,Skrillex Featuring Sirah,Kyoto,2012-01-21,4.0,1901557.0,female,Dance,0.0,0.0,0.0,True
+74,72.0,2012,1f7f6bc4ed891ad0fb90e0090cf500d92dbf240e,Skrillex Featuring Sirah,Kyoto,2012-01-21,4.0,1901557.0,duet,Dance,0.0,0.0,0.0,True
 76,25.0,2012,fe0371ec6081666b84367ed8973f792c73c2f24a,Adam Lambert,Better Than I Know Myself,2012-01-07,1.0,1901813.0,male,Pop,0.0,6.0,0.0,True
 98,4.0,2012,a7468b7744fd96ecf933fe807fdc35700ba36a70,B.o.B Featuring Andre 3000,Play The Guitar,2012-01-14,2.0,1901838.0,male,Rap/Hip hop,0.0,7.0,10.0,True
 80,81.0,2012,10e1d7eb9a9df0e84d7dc8201d6445ca55de5225,Fat Joe Featuring Chris Brown,Another Round,2012-04-21,6.0,1902714.0,male,R&B,0.0,6.0,10.0,True
@@ -10987,7 +10987,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 73,44.0,1966,,James Brown And The Famous Flames,I'll Go Crazy,1966-02-19,2.0,1916616.0,male,R&B,2.0,8.0,0.0,True
 94,13.0,1972,b28fcc7fdc42f788e3b5d7319e1430da438b8134,The Sylvers,Fool's Paradise,1972-09-02,3.0,1916694.0,male,Pop,0.0,7.0,0.0,False
 58,43.0,1958,067ac22ab1ed480f972c0fd35ea99a891fc6ac91,The Crickets,Fool's Paradise,1958-08-04,1.0,1916694.0,male,Pop,0.0,7.0,0.0,True
-1,1002.0,1966,6bb4d36e7b7e31133499b9855122670aa9deb5b5,The Mamas & The Papas,"Monday, Monday",1966-04-09,12.0,1916729.0,,Pop,0.0,6.0,0.0,True
+1,1002.0,1966,6bb4d36e7b7e31133499b9855122670aa9deb5b5,The Mamas & The Papas,"Monday, Monday",1966-04-09,12.0,1916729.0,duet,Pop,0.0,6.0,0.0,True
 35,458.0,1971,,James Brown,I'm A Greedy Man - Part I,1971-11-13,8.0,1916879.0,male,R&B,2.0,8.0,2.0,True
 40,374.0,1972,,James Brown,King Heroin,1972-03-04,7.0,1916883.0,male,R&B,0.0,7.0,8.0,True
 20,539.0,1969,,James Brown,"I Don't Want Nobody To Give Me Nothing (Open Up The Door, I'll Get It Mysel",1969-04-05,8.0,1916900.0,male,R&B,0.0,8.0,2.0,True
@@ -11143,7 +11143,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 93,22.0,1964,4d73466a522190b3cfa2fd3749bc47c6a4d51556,The Rivieras,Little Donna,1964-05-02,3.0,1951990.0,male,Rock,0.0,5.0,0.0,True
 99,2.0,1964,860ded32b70025c7840a617b051926b7417a1b7b,The Rivieras,Let's Have A Party,1964-05-30,1.0,1951993.0,male,Rock,4.0,5.0,0.0,True
 96,7.0,1964,3b468e4464f9d7ae8fd49c8fa4e6b227607f7328,The Rivieras,Rockin' Robin,1964-09-05,3.0,1951994.0,male,Rock,0.0,5.0,0.0,True
-17,708.0,1966,cc0f301dce0ca52f2d45ac5db706da7a9a84f55c,Swingin' Medallions,Double Shot (Of My Baby's Love),1966-04-23,13.0,1952110.0,,Rock,0.0,0.0,0.0,True
+17,708.0,1966,cc0f301dce0ca52f2d45ac5db706da7a9a84f55c,Swingin' Medallions,Double Shot (Of My Baby's Love),1966-04-23,13.0,1952110.0,male,Rock,0.0,0.0,0.0,True
 71,98.0,1966,,The Swingin' Medallions,She Drives Me Out Of My Mind,1966-08-20,5.0,1952112.0,male,Rock,3.0,6.0,0.0,True
 17,1257.0,1980,098a33598611a272560265f0e319e2fd3515b27f,Cliff Richard,A Little In Love,1980-12-13,22.0,1952130.0,male,Pop,3.0,5.0,0.0,True
 10,1312.0,1980,,Cliff Richard,Dreaming,1980-09-13,22.0,1952135.0,male,Pop,0.0,6.0,0.0,True
@@ -11546,7 +11546,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 29,494.0,1975,73e85c4359f417efbeee3b7b9dbee806922cc161,The Charlie Daniels Band,The South's Gonna Do It,1975-02-08,10.0,2172619.0,male,Country,0.0,7.0,2.0,True
 95,6.0,2012,c13aad9ad4d3d6b1452046229850f26306ebf433,Glee Cast,It's Time,2012-09-29,1.0,2173892.0,male,Pop,0.0,6.0,0.0,True
 80,65.0,2014,a5b14d8dd9984fcce2b101ee793bd8d3f3df9af0,The 1975,Chocolate,2014-02-08,6.0,2175597.0,male,Rock,0.0,5.0,2.0,True
-69,215.0,2012,fd1cb014b2eb27e13502c1fb2ef3514dbe713a03,Skrillex,Scary Monsters And Nice Sprites,2012-01-07,14.0,2178181.0,,Dance,0.0,0.0,0.0,True
+69,215.0,2012,fd1cb014b2eb27e13502c1fb2ef3514dbe713a03,Skrillex,Scary Monsters And Nice Sprites,2012-01-07,14.0,2178181.0,male,Dance,0.0,0.0,0.0,True
 63,432.0,2012,d43d819d41bf41916738f21c8f91a02ddbfff207,Kacey Musgraves,Merry Go 'round,2012-12-29,15.0,2178267.0,male,Country,0.0,6.0,0.0,True
 60,41.0,2014,e698cee5c8ebf25ad34123aabb25525ac45da71a,Kacey Musgraves,Follow Your Arrow,2014-02-15,1.0,2178275.0,female,Country,0.0,6.0,0.0,True
 1,2065.0,2010,26fbb617612f266a5aaba88d653027466379a4a8,Rihanna Featuring Britney Spears,S&M,2010-12-04,26.0,2178312.0,female,Pop,0.0,7.0,0.0,True
@@ -12148,7 +12148,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 39,485.0,1971,,Sounds Of Sunshine,Love Means (You Never Have To Say You're Sorry),1971-05-29,12.0,2590767.0,duet,Pop,0.0,6.0,0.0,True
 96,5.0,1964,fad6bd5e365a3064d3662603c5081502dcad8bbb,The Reflections,Like Columbus Did,1964-07-11,1.0,2590777.0,male,Pop,4.0,8.0,0.0,True
 71,167.0,1964,9a43f00fc06e61b762251785b9324c17ee32f091,Sonny Knight,If You Want This Love,1964-10-10,9.0,2590780.0,male,Pop,0.0,5.0,0.0,True
-75,101.0,1964,,The Greenwood County Singers,Frankie And Johnny,1964-08-01,5.0,2590784.0,,Pop,0.0,0.0,0.0,True
+75,101.0,1964,,The Greenwood County Singers,Frankie And Johnny,1964-08-01,5.0,2590784.0,duet,Pop,0.0,0.0,0.0,True
 96,5.0,1961,71713c5385baaca134f1d9d91c3506e0f8750e66,Fred Darian,Johnny Willow,1961-09-25,1.0,2590801.0,male,Pop,0.0,7.0,0.0,True
 58,139.0,1960,,Ivo Robic,The Happy Muleteer,1960-01-18,6.0,2590812.0,male,Pop,0.0,6.0,3.0,True
 55,186.0,1959,,The Tassels,To A Soldier Boy,1959-07-13,7.0,2590814.0,female,Pop,0.0,4.0,0.0,True
@@ -12594,7 +12594,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 78,23.0,2015,,Drake,Charged Up,2015-08-22,1.0,4125957.0,male,Rap/Hip hop,0.0,7.0,7.0,True
 21,1094.0,2015,b9eb047397458bea4583bdb017b1e77ef3b05f63,Drake,Back To Back,2015-08-22,20.0,4126226.0,male,Rap/Hip hop,0.0,7.0,9.0,True
 41,432.0,1987,,Thirty Eight Special,"Back To Paradise (From ""Revenge Of The Nerds II"")",1987-07-25,11.0,4126226.0,male,Rap/Hip hop,0.0,7.0,9.0,False
-80,67.0,1958,,Wade Flemons and the Newcomers,Here I Stand,1958-12-22,5.0,4335471.0,,Country,0.0,0.0,0.0,True
+80,67.0,1958,,Wade Flemons and the Newcomers,Here I Stand,1958-12-22,5.0,4335471.0,male,Country,0.0,0.0,0.0,True
 14,906.0,1965,487970dd28b1e63aa0dd4e9a8493571c6e913a24,Jackie Lee,The Duck,1965-11-20,14.0,4363039.0,male,R&B,0.0,6.0,0.0,True
 65,145.0,1972,a4625b1d362ac115198ffae2971a44831f8f4cdf,The Wackers,Day And Night,1972-11-18,5.0,4365780.0,male,Rock,0.0,7.0,0.0,True
 54,472.0,2017,974049e435a80fdfd978b90157206e4744fe4f31,Michael Ray,Think A Little Less,2017-01-14,16.0,4368240.0,male,Country,0.0,5.0,3.0,True
@@ -12712,7 +12712,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 56,453.0,2017,,Eric Church,Round Here Buzz,2017-10-14,19.0,4600701.0,male,Country,0.0,4.0,3.0,True
 71,287.0,2016,65648825ecd8fff032b5f151463c5ccf92f86791,Eric Church Featuring Rhiannon Giddens,Kill A Word,2016-11-26,15.0,4600702.0,male,Country,0.0,4.0,3.0,True
 44,631.0,2016,,Eric Church,Record Year,2016-04-23,20.0,4600704.0,male,Country,0.0,5.0,3.0,True
-84,110.0,1999,7c2d2c03244ae46d04c4509a0d6bcac9ede0ca83,The Beatnuts Featuring Yellaklaw,Watch Out Now,1999-06-26,12.0,4600920.0,,Rap/Hip hop,0.0,0.0,0.0,True
+84,110.0,1999,7c2d2c03244ae46d04c4509a0d6bcac9ede0ca83,The Beatnuts Featuring Yellaklaw,Watch Out Now,1999-06-26,12.0,4600920.0,male,Rap/Hip hop,0.0,0.0,0.0,True
 73,334.0,2016,7fa2b913ff678d6929cf1e4980ac89f2e11b38ee,Major Lazer Featuring Nyla & Fuse ODG,Light It Up,2016-04-02,20.0,4601096.0,female,Dance,0.0,5.0,0.0,True
 17,1617.0,2016,1d3c6c844fa6f0f6fa242966da884f9b196b3d28,Kevin Gates,2 Phones,2016-01-23,25.0,4601962.0,male,Rap/Hip hop,0.0,5.0,7.0,True
 13,1055.0,2015,f5c8203c517a906dd581e0faeca84d1e0206c8b6,Coldplay,Adventure Of A Lifetime,2015-11-28,20.0,4602359.0,male,Pop,5.0,6.0,0.0,True
@@ -13255,7 +13255,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 15,1525.0,2007,d9e1c914291a7dd89173857f031b53488940400e,Linkin Park,Shadow Of The Day,2007-11-24,22.0,5509627.0,male,Rock,0.0,6.0,0.0,True
 7,1748.0,2007,b2bdf31db7c3a90dfa8f5c7539f8832c4089afe8,Linkin Park,What I've Done,2007-04-21,23.0,5509631.0,male,Rock,0.0,7.0,0.0,True
 94,9.0,2008,ebe5e431132a55286d6cd339a0d73cb8f0873ff4,Linkin Park,Leave Out All The Rest,2008-11-22,2.0,5509636.0,male,Rock,0.0,6.0,0.0,True
-85,21.0,2011,717e36da79db34974f0b79d810b2945ea4006a1a,Skrillex,First Of The Year (Equinox),2011-11-19,3.0,5509675.0,,Dance,0.0,0.0,0.0,True
+85,21.0,2011,717e36da79db34974f0b79d810b2945ea4006a1a,Skrillex,First Of The Year (Equinox),2011-11-19,3.0,5509675.0,female,Dance,0.0,0.0,0.0,True
 81,107.0,1984,45ddaae7c93f053915a8a7b8357b73eb64a766db,Midnight Star,No Parking (On The Dance Floor),1984-03-03,8.0,5509678.0,male,Pop,0.0,6.0,4.0,True
 87,14.0,2016,d3eb12d7e4bb7b9d8f150abcd214c10d345b62ee,Young Thug,Wyclef Jean,2016-09-17,1.0,5510401.0,male,Rap/Hip hop,0.0,7.0,8.0,True
 50,620.0,2016,e498b3c5b1908d806622d1be4cc278b49a42819f,DJ ESCO Featuring Future & Lil Uzi Vert,Too Much Sauce,2016-09-10,20.0,5510693.0,male,Rap/Hip hop,0.0,5.0,9.0,True
@@ -13914,7 +13914,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 12,996.0,1969,9e3f78ab6ec5f4a6c3df02252d6aa30851a6a3cc,Spiral Starecase,More Today Than Yesterday,1969-04-05,15.0,5683743.0,male,Pop,0.0,8.0,0.0,True
 54,213.0,1979,448c5fcc9b3a06857b632a46d3f839221b4d37b8,Waylon,Amanda,1979-06-09,7.0,5683786.0,male,Country,0.0,4.0,3.0,True
 75,91.0,1974,6baa26669eb0ce608770da35ecab9dfd98cbb85a,Waylon Jennings,I'm A Ramblin' Man,1974-09-07,7.0,5683788.0,male,Pop,0.0,4.0,0.0,True
-42,337.0,1978,969d5a7562e1058b3126ec10d7edfd23d3daa547,Waylon & Willie,Mammas Don't Let Your Babies Grow Up To Be Cowboys,1978-02-11,10.0,5683867.0,,Country,0.0,4.0,0.0,True
+42,337.0,1978,969d5a7562e1058b3126ec10d7edfd23d3daa547,Waylon & Willie,Mammas Don't Let Your Babies Grow Up To Be Cowboys,1978-02-11,10.0,5683867.0,male,Country,0.0,4.0,0.0,True
 54,218.0,1966,0ed5296df34971a61ba112801d05eb7c51c2d76e,The Standells,Why Pick On Me,1966-10-22,7.0,5683897.0,male,Rock,0.0,5.0,2.0,True
 78,49.0,1967,,The Standells,Can't Help But Love You,1967-11-25,3.0,5683905.0,male,Pop,2.0,7.0,2.0,True
 77,68.0,1985,439bf5201657dc5886392aa84e10c119dd8f429c,UTFO,"Roxanne, Roxanne",1985-03-09,5.0,5683955.0,male,Rap/Hip hop,0.0,4.0,10.0,True
@@ -14894,7 +14894,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 41,501.0,1983,,Mac McAnally,Minimum Love,1983-03-05,12.0,6460611.0,male,Country,0.0,5.0,0.0,True
 1,1265.0,1964,6c3bb30315006f0402baf0b8c45f1a89adc43a92,Petula Clark,Downtown,1964-12-19,15.0,6462645.0,female,Pop,0.0,7.0,0.0,True
 3,913.0,1967,3d3a6676daa0c43e390e1eedc9024aa28723b905,Petula Clark,This Is My Song,1967-03-04,12.0,6462650.0,female,Pop,0.0,5.0,0.0,True
-90,11.0,1958,,The Ames Brothers,Stay,1958-08-04,1.0,6480123.0,,Pop,0.0,0.0,0.0,True
+90,11.0,1958,,The Ames Brothers,Stay,1958-08-04,1.0,6480123.0,male,Pop,0.0,0.0,0.0,True
 49,359.0,1969,,Gloria Taylor,You Got To Pay The Price,1969-11-08,9.0,6488018.0,female,Rock,0.0,7.0,0.0,True
 67,126.0,1964,1f521ade471c55bb531d4a2bbcd140e216b3378c,Bill Black's Combo,Comin' On,1964-02-01,5.0,6491493.0,,Rock,0.0,0.0,0.0,True
 92,9.0,1966,f7d9c6ec0de85688791c4aacea11e998aafdca1c,Willie Mitchell,Bad Eye,1966-05-07,1.0,6494837.0,,R&B,0.0,0.0,0.0,True
@@ -16170,7 +16170,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 32,849.0,2013,,Kendrick Lamar,"Bitch, Don't Kill My Vibe",2013-01-26,21.0,7190195.0,male,Rap/Hip hop,0.0,3.0,8.0,True
 26,987.0,2012,12aea6e4a5d42029895d8ff23f6b41e2d89a93d8,Kendrick Lamar Featuring Drake,Poetic Justice,2012-11-10,24.0,7190199.0,male,Rap/Hip hop,0.0,3.0,10.0,True
 72,29.0,2008,493b2b09faf75990a3334f19910269d4a07c103c,Disturbed,Indestructible,2008-06-21,1.0,7190960.0,male,Rock,0.0,6.0,0.0,True
-5,740.0,1966,34f51fd25babd78a6b065dbb361afad4fc99b94d,The Mamas & The Papas,I Saw Her Again,1966-07-02,9.0,7192096.0,,Pop,0.0,0.0,0.0,True
+5,740.0,1966,34f51fd25babd78a6b065dbb361afad4fc99b94d,The Mamas & The Papas,I Saw Her Again,1966-07-02,9.0,7192096.0,duet,Pop,0.0,0.0,0.0,True
 79,93.0,1989,,Patti LaBelle,"If You Asked Me To (From ""Licence To Kill"")",1989-10-07,5.0,7192120.0,female,R&B,0.0,5.0,0.0,True
 78,50.0,1961,67d9e652f6980747e4d94ead55f1e78ec817f67b,The Marcels,Summertime,1961-05-29,3.0,7192205.0,male,R&B,0.0,5.0,0.0,True
 61,48.0,2007,3a962f1f6c2ed2dfd92d7d8a2de2326b2014b6da,Faith Hill,Lost,2007-07-07,2.0,7192240.0,female,Country,0.0,5.0,0.0,True
@@ -16358,7 +16358,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 35,312.0,1969,cabaa4b83116d365bfe76a880da55906ca6d3fe0,Donovan,To Susan On The West Coast Waiting,1969-02-08,6.0,7256217.0,male,Pop,0.0,5.0,0.0,True
 7,980.0,1969,503ff447511864cdc17bf56ee7bbeacd9e30013c,Donovan,Atlantis,1969-04-05,13.0,7256218.0,male,Pop,0.0,6.0,5.0,True
 4,806.0,1966,6b27918850057df603ba9e55a7448d099a9035bf,Los Bravos,Black Is Black,1966-08-13,12.0,7256774.0,male,Pop,0.0,6.0,0.0,True
-16,610.0,1967,34db25f5d81f56e2736a0ce6eec7135a12458eec,The 5th Dimension,Go Where You Wanna Go,1967-01-14,10.0,7257321.0,,Rock,0.0,0.0,0.0,True
+16,610.0,1967,34db25f5d81f56e2736a0ce6eec7135a12458eec,The 5th Dimension,Go Where You Wanna Go,1967-01-14,10.0,7257321.0,duet,Rock,0.0,0.0,0.0,True
 7,911.0,1967,122d0b0ac9df0dc7d3263d911e061d5353402b56,The 5th Dimension,Up -- Up And Away,1967-06-03,12.0,7257328.0,female,Pop,2.0,7.0,0.0,True
 83,49.0,1974,ff9a35226cd16f419a8835e746ec63c3293bb3b8,Edgar Winter Group,Easy Street,1974-10-26,4.0,7258382.0,male,Pop,0.0,8.0,2.0,True
 84,41.0,1975,fc0a3ad6d82f0156334ce49d3f04c44a1321dd3b,Stephen Stills,Turn Back The Pages,1975-08-09,3.0,7258441.0,male,Folk,0.0,5.0,0.0,True
@@ -17062,7 +17062,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 16,710.0,1963,1fb8843aa215a4ee71e281806dacff14052f827b,The Rocky Fellers,Killer Joe,1963-03-23,13.0,7557077.0,male,Pop,0.0,8.0,2.0,True
 44,228.0,1969,,Red Skelton,The Pledge Of Allegiance,1969-03-15,6.0,7557266.0,male,Country,0.0,4.0,8.0,True
 13,1014.0,1960,bfecd76753aac286ae867803843c58fa678cd31d,Little Willie John,Sleep,1960-09-05,16.0,7557435.0,male,R&B,0.0,6.0,0.0,True
-41,360.0,1961,68f5b7e88261d2041a08fd0d61baaa80a57a40ff,The Chanters,"No, No, No",1961-06-19,9.0,7558008.0,,R&B,2.0,6.0,0.0,True
+41,360.0,1961,68f5b7e88261d2041a08fd0d61baaa80a57a40ff,The Chanters,"No, No, No",1961-06-19,9.0,7558008.0,male,R&B,2.0,6.0,0.0,True
 47,316.0,1964,1b30bb4dbad215e3ff84fd4dcf015b987a129c97,Chuck Jackson,Since I Don't Have You,1964-11-14,8.0,7558826.0,male,R&B,0.0,6.0,0.0,True
 45,350.0,1964,7b57d05ee9cf7277068712971e5fe094e91c2ce6,Chuck Jackson,Beg Me,1964-05-23,10.0,7558839.0,male,R&B,0.0,6.0,0.0,True
 24,663.0,1964,fa5eeb6fc552d23a6d0072aa604b1b1ca7b928fe,Maxine Brown,Oh No Not My Baby,1964-10-24,13.0,7558844.0,female,Pop,0.0,6.0,0.0,True
@@ -17096,7 +17096,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 40,812.0,1987,938e9e7f3931aded8923a30ebc003167283fc759,The Cure,Just Like Heaven,1987-10-10,19.0,7675174.0,male,Pop,0.0,5.0,0.0,True
 87,50.0,1978,c892289bdeceb8a6af1d50848658156762842ec1,British Lions,Wild In The Streets,1978-07-22,4.0,7690063.0,male,Rock,0.0,5.0,0.0,True
 32,592.0,1974,75b4d303797990ed413442a0b9b4553b829c9e62,Jim Croce,Workin' At The Car Wash Blues,1974-06-08,11.0,7733024.0,male,Pop,0.0,5.0,0.0,True
-75,99.0,1975,219b4aa933a352cb654b6d06660fe91f396b7887,Soul Train Gang,"Soul Train ""75""",1975-12-06,5.0,7733447.0,,Dance,0.0,0.0,0.0,True
+75,99.0,1975,219b4aa933a352cb654b6d06660fe91f396b7887,Soul Train Gang,"Soul Train ""75""",1975-12-06,5.0,7733447.0,female,Dance,0.0,0.0,0.0,True
 1,1434.0,1985,8f16e65db36d6a0f529a9f51f80b22f48685b6aa,John Parr,St. Elmo's Fire (Man In Motion),1985-06-22,22.0,7733972.0,male,Rock,0.0,8.0,0.0,True
 19,952.0,1999,4773da9677c7092e67d5139e101e983426d22c3b,Madonna,Beautiful Stranger,1999-06-12,19.0,7735452.0,female,Pop,0.0,5.0,0.0,True
 10,1124.0,1986,a15c4b79a3d36c5898ab12331a78dd369700af30,Force M.D.'s,Tender Love,1986-02-01,19.0,7735723.0,male,Pop,10.0,9.0,0.0,True
@@ -17599,7 +17599,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 72,72.0,1976,20ee9157a075e2b29fab80ce7d078603d7a9abeb,Freddy Fender,Living It Down,1976-10-30,4.0,9066668.0,male,Rock,0.0,7.0,2.0,True
 80,124.0,1994,bebc9722f8616f6fe2f3d4430da3a8d0cd9c4ecd,Jocelyn Enriquez,I've Been Thinking About You,1994-04-02,11.0,9068443.0,female,Dance,2.0,7.0,0.0,False
 49,918.0,1996,599e9d151bc713c456dad8ea21968d9fac374ce1,Jocelyn Enriquez,Do You Miss Me,1996-07-27,23.0,9068443.0,female,Dance,2.0,7.0,0.0,True
-61,328.0,1986,7f2ea21153800c26739b8890e5709bfd6af8302b,Trans-X,Living On Video,1986-05-10,12.0,9069017.0,,Dance,0.0,0.0,0.0,True
+61,328.0,1986,7f2ea21153800c26739b8890e5709bfd6af8302b,Trans-X,Living On Video,1986-05-10,12.0,9069017.0,duet,Dance,0.0,0.0,0.0,True
 58,288.0,1983,a4480a7392441803d82cd2e3c3e5bbfa6863c166,Berlin,The Metro,1983-05-28,10.0,9069036.0,female,Pop,0.0,5.0,2.0,True
 85,37.0,1959,893b3a9b3c8915e148b9941277aba7770170940e,Don Gibson,Don't Tell Me Your Troubles,1959-08-10,3.0,9070386.0,male,Country,0.0,5.0,0.0,True
 50,321.0,1961,ce43319b99a7cf35c1d00a6f3c1f0669ac53f8dd,Gogi Grant,The Wayward Wind,1961-04-24,9.0,9071426.0,female,Pop,3.0,7.0,0.0,True
@@ -17874,7 +17874,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 43,698.0,1994,,Lighter Shade Of Brown,"Hey D.J. (From ""Mi Vida Loca"")",1994-02-19,18.0,9892368.0,male,Rap/Hip hop,0.0,6.0,10.0,True
 25,417.0,1966,7ce31ab27761e6759b1cf486e3cb3c3a11d1764e,Frank Sinatra,Summer Wind,1966-09-03,7.0,9895694.0,male,Jazz,0.0,6.0,0.0,True
 32,619.0,1980,9b297729f7750ecbd35ea1b7628e11bef67cc3c9,Frank Sinatra,"Theme From New York, New York",1980-05-03,12.0,9895701.0,male,Jazz,0.0,0.0,0.0,True
-90,80.0,1999,,T.W.D.Y. Featuring Too Short & Mac Mall,Players Holiday,1999-05-08,16.0,9895873.0,,Rap/Hip hop,0.0,0.0,0.0,True
+90,80.0,1999,,T.W.D.Y. Featuring Too Short & Mac Mall,Players Holiday,1999-05-08,16.0,9895873.0,male,Rap/Hip hop,0.0,0.0,0.0,True
 32,387.0,1963,,Brenda Lee,Your Used To Be,1963-01-26,7.0,9896132.0,female,Country,0.0,5.0,0.0,True
 31,494.0,1961,,Brenda Lee,Anybody But Me,1961-10-02,9.0,9896153.0,female,Country,0.0,6.0,2.0,True
 33,244.0,1961,,Brenda Lee,I'm Learning About Love,1961-01-30,4.0,9896155.0,female,Country,0.0,7.0,2.0,True
@@ -18770,7 +18770,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 71,31.0,2018,717ef2ea9e762ec57351066f5639ded7d630e847,Justin Timberlake,Supplies,2018-02-03,2.0,11345467.0,male,Pop,0.0,7.0,3.0,True
 5,3301.0,2018,07f1f752d497dd82cd29a53a1b4a3c69fe62148c,"Zedd, Maren Morris & Grey",The Middle,2018-02-10,40.0,11345959.0,female,Dance,0.0,6.0,0.0,True
 12,1431.0,1995,44d3ea8612d54331a43fa653e2fb697223658fc6,Kris Kross,Tonite's Tha Night,1995-12-09,20.0,11346251.0,male,Rap/Hip hop,0.0,4.0,10.0,True
-71,267.0,1993,b498ac9ff8f5a16a70676f237516fa7f78b70efb,The Goodmen,Give It Up,1993-11-27,14.0,11349159.0,,Dance,0.0,0.0,0.0,True
+71,267.0,1993,b498ac9ff8f5a16a70676f237516fa7f78b70efb,The Goodmen,Give It Up,1993-11-27,14.0,11349159.0,female,Dance,0.0,0.0,0.0,True
 54,400.0,2018,4978147ac417f06049825616fdd66cabdb566ae7,Bad Wolves,Zombie,2018-03-24,18.0,11351187.0,male,Rock,0.0,8.0,0.0,True
 85,17.0,1961,5c8cf8560b8ec431db85ef8347418bc0046973ff,Junior Parker,Driving Wheel,1961-05-22,2.0,11353434.0,male,Pop,0.0,8.0,3.0,True
 23,723.0,1970,35345e76fcf31aba384f6675203661becfed53de,Jack Blanchard & Misty Morgan,Tennessee Bird Walk,1970-02-28,13.0,11356418.0,male,Country,0.0,5.0,0.0,True
@@ -18968,7 +18968,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 21,386.0,2018,539413b256bca7bd14951d182f4771691e68bb3e,Cardi B Featuring Migos,Drip,2018-04-21,10.0,11762169.0,female,Rap/Hip hop,0.0,4.0,10.0,True
 53,334.0,1988,d6fedc74e1a386cafd694528d62b7fd822e6f473,Scritti Politti Featuring Roger,Boom! There She Was,1988-06-18,11.0,11769519.0,male,Pop,0.0,7.0,0.0,True
 24,854.0,1989,388e19cb3be1c2e09cc898ab5a4f7a405c0eef31,Eddie Money,The Love In Your Eyes,1989-01-14,18.0,11776488.0,male,Rock,2.0,7.0,0.0,True
-55,307.0,1971,,Sugarloaf,Tongue In Cheek,1971-03-06,8.0,11795617.0,,Rock,0.0,0.0,0.0,True
+55,307.0,1971,,Sugarloaf,Tongue In Cheek,1971-03-06,8.0,11795617.0,male,Rock,0.0,0.0,0.0,True
 50,79.0,2018,90bc15b0914d6597f1cea5cce5fba40426d82ec5,Cardi B,Thru Your Phone,2018-04-21,3.0,11796395.0,female,Rap/Hip hop,0.0,5.0,8.0,True
 57,55.0,2018,d7e0d7304d2ddf8b8c564b263dc3b1f50563ff5d,Cardi B & YG,She Bad,2018-04-21,2.0,11796396.0,female,Rap/Hip hop,0.0,5.0,10.0,True
 23,185.0,2018,ffb402c3968a55838f580f8042fbb4e5d7c3c8ac,Cardi B Featuring SZA,I Do,2018-04-21,5.0,11796399.0,female,Rap/Hip hop,0.0,6.0,10.0,True
@@ -19544,7 +19544,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 46,561.0,2007,be8845fa59845c1357260f47101363a71ea81109,Rascal Flatts,Stand,2007-03-03,20.0,13281557.0,male,Country,3.0,8.0,0.0,True
 50,583.0,2006,2c8c35e2f06f935abd5995f21c76cb1a5cb61e8f,Rascal Flatts,Me And My Gang,2006-05-27,16.0,13281566.0,male,Country,0.0,8.0,0.0,True
 7,1177.0,2006,50e03dd70e98638280bcb4a43cf4cfdd1f102f5d,Rascal Flatts,Life Is A Highway,2006-06-17,20.0,13281568.0,male,Pop,0.0,7.0,0.0,True
-58,470.0,1992,,Sound Factory,Understand This Groove,1992-12-26,17.0,13281918.0,,Dance,0.0,0.0,0.0,True
+58,470.0,1992,,Sound Factory,Understand This Groove,1992-12-26,17.0,13281918.0,duet,Dance,0.0,0.0,0.0,True
 36,449.0,1976,a2df4de20029d815af53b43d5d557f9cf229d76e,Larry Santos,We Can't Hide It Anymore,1976-02-14,10.0,13283466.0,male,Pop,0.0,4.0,2.0,True
 67,190.0,1978,1c82c1f9b888f6fc06a3dc91f97bab4834a7e371,Clout,Substitute,1978-09-02,10.0,13286026.0,female,Pop,0.0,7.0,0.0,True
 72,51.0,2018,9759d95dea3a538299f9b85f93fc3106b2923bdd,Wiz Khalifa Featuring Swae Lee,Hopeless Romantic,2018-07-28,7.0,13294283.0,male,Rap/Hip hop,0.0,7.0,0.0,True
@@ -19849,7 +19849,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 1,1529.0,1980,c3670651b36377a49132a585c49c0f469b2b61a5,"Lipps, Inc.",Funkytown,1980-03-29,23.0,13923284.0,male,Pop,0.0,8.0,0.0,True
 2,1574.0,1979,43cc7bb62934df8447f2c012a61405e6828b2284,Teri DeSario With K.C.,"Yes, I'm Ready",1979-11-17,23.0,13923288.0,duet,Pop,0.0,8.0,0.0,True
 46,528.0,1995,,Immature,"Feel The Funk (From ""Dangerous Minds"")",1995-09-23,13.0,13923347.0,male,R&B,0.0,8.0,0.0,True
-88,36.0,2001,,St. Lunatics,Midwest Swing,2001-06-30,5.0,13923411.0,,Rap/Hip hop,0.0,0.0,0.0,True
+88,36.0,2001,,St. Lunatics,Midwest Swing,2001-06-30,5.0,13923411.0,male,Rap/Hip hop,0.0,0.0,0.0,True
 74,86.0,1977,,The Bar-Kays,Too Hot To Stop (Pt. 1),1977-02-12,4.0,13923644.0,male,R&B,0.0,8.0,0.0,True
 44,702.0,2009,,Justin Moore,Small Town USA,2009-06-20,20.0,13938686.0,male,Pop,0.0,5.0,0.0,True
 54,239.0,1970,,Lulu with The Dixie Flyers,Hum A Song (From Your Heart),1970-04-25,6.0,13941105.0,female,Pop,0.0,6.0,0.0,True
@@ -19875,7 +19875,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 57,196.0,2006,0c6334f2acda0ab87e1198e575f5fc1e5f6c7f3a,Natasha Bedingfield,Single,2006-06-24,6.0,14004040.0,female,Rock,0.0,8.0,2.0,True
 15,866.0,1985,8324ba11b6800916958dd2c6e1105bb0c87acff2,Paul Hardcastle,19,1985-06-01,14.0,14007386.0,male,Pop,0.0,4.0,10.0,True
 1,1145.0,1964,7569411df6831cbb23056ba2a29ee7e197645f78,Manfred Mann,Do Wah Diddy Diddy,1964-09-05,13.0,14027301.0,male,Pop,0.0,7.0,0.0,True
-33,426.0,1958,c74a7ad762f6b5a88fe648b1d5099138105ad611,The Five Blobs,The Blob,1958-10-06,10.0,14033419.0,,Rock,0.0,0.0,0.0,True
+33,426.0,1958,c74a7ad762f6b5a88fe648b1d5099138105ad611,The Five Blobs,The Blob,1958-10-06,10.0,14033419.0,male,Rock,0.0,0.0,0.0,True
 96,5.0,2019,483355f39bb264b9828633561ab14a7a48e75270,Joji,Slow Dancing In The Dark,,,14039309.0,male,,3.0,7.0,0.0,True
 42,626.0,2019,4e9edf47557bb621554f520963fdea1a36ea90bd,Brett Young,Here Tonight,,,14045611.0,male,,0.0,6.0,0.0,True
 76,25.0,2018,,6LACK Featuring J. Cole,Pretty Little Fears,2018-09-29,1.0,14057466.0,male,Rap/Hip hop,0.0,4.0,4.0,True
@@ -20153,7 +20153,7 @@ peak_rank,points,year,preview_url,artist_name,song_title,release_week,weeks_char
 9,853.0,1963,baaf75d9e4d75124779a891664a9cb333bb84ca0,The Tams,What Kind Of Fool (Do You Think I Am),1963-12-14,14.0,15507913.0,male,Pop,0.0,5.0,0.0,True
 57,492.0,1995,,Mary J. Blige,I Love You/You Bring Me Joy,1995-06-17,19.0,15509442.0,female,R&B,0.0,6.0,0.0,True
 52,375.0,1996,274c501157b0e9e4e85bb3eac46c939ff7ac4c17,Luther Vandross,Your Secret Love,1996-09-21,13.0,15513624.0,male,R&B,0.0,7.0,0.0,True
-35,359.0,1959,0575e1119fbe78c6db9782e4fcfc736761ce53ff,The Revels,Midnight Stroll,1959-10-19,10.0,15518953.0,,Pop,0.0,0.0,0.0,True
+35,359.0,1959,0575e1119fbe78c6db9782e4fcfc736761ce53ff,The Revels,Midnight Stroll,1959-10-19,10.0,15518953.0,male,Pop,0.0,0.0,0.0,True
 69,32.0,2018,9de8cc1fdd435154a8bec4c62e383d2986523c95,Billie Eilish,Come Out And Play,2018-12-08,1.0,15557536.0,female,Rock,0.0,5.0,0.0,True
 5,1062.0,1989,,Deon Estus With George Michael,Heaven Help Me,1989-02-25,16.0,15560368.0,duet,Pop,0.0,4.0,0.0,True
 39,87.0,2018,9fb82c6089f8dcde69ed2ffb4dcf0aeb997c6cb2,Meek Mill Featuring Fabolous & Anuel AA,Uptown Vibes,2018-12-15,3.0,15580568.0,male,Rap/Hip hop,0.0,4.0,10.0,True
