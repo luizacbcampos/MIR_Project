@@ -6,8 +6,6 @@ import csv
 FULL_PATH = "/home/luiza/estudo/8º período/MIR/falsetto/full/"
 ANN_PATH = "/home/luiza/estudo/8º período/MIR/falsetto/data-analysis/"
 
-FULL_PATH_LAURA = "/home/laura/Documentos/Documents/8/music/project/MIR_Project/full/"
-
 def unify(x, col):
 	if pd.isnull(x[(col+'_x')]): #se x é NaN usa o Y
 		return x[(col+'_y')]
@@ -19,13 +17,13 @@ def unify(x, col):
 		return np.nan
 
 def first_merge(save='merge.csv'):
-	data = pd.read_csv(FULL_PATH_LAURA+'data.csv')
+	data = pd.read_csv(FULL_PATH+'data.csv')
 	print("data {}".format(data.shape))
 	#print(data.loc[data.artist_name == 'Jefferson Airplane', ['artist_name', "song_title",'gender']])
 	#print(data.loc[data.artist_name == "Herb Alpert", ['artist_name', "song_title",'gender']])
 	#print(data.tail(10))
 
-	repeat_years = pd.read_csv(FULL_PATH_LAURA+'full_repeat_years.csv')
+	repeat_years = pd.read_csv(FULL_PATH+'full_repeat_years.csv')
 	print("repeat_years {}".format(repeat_years.shape))
 	#print(repeat_years.tail(10))
 
@@ -185,24 +183,24 @@ def first_merge(save='merge.csv'):
 	#reduce_dup = reduce_dup.index.to_list() #indexes to keep
 	#result = result.loc[reduce_dup]
 
-	result.to_csv(FULL_PATH_LAURA+save,index=False)
+	result.to_csv(FULL_PATH+save,index=False)
 
 first_merge(save='outter_merge.csv')
 
 
 
-#merge = pd.read_csv(FULL_PATH_LAURA+'merge.csv')
+#merge = pd.read_csv(FULL_PATH+'merge.csv')
 #print(merge.shape)
 #merge.dropna(subset=['pandora_id'], inplace=True)
 #merge.drop_duplicates(subset=['pandora_id'], keep=False, inplace=True)
 #print(merge.shape)
 #print(merge[merge.duplicated(['pandora_id'], keep=False)][['pandora_id', "artist_name", "song_title", "preview_url"]].sort_values("pandora_id").head(40))
 
-outter_merge = pd.read_csv(FULL_PATH_LAURA+"outter_merge.csv")
+outter_merge = pd.read_csv(FULL_PATH+"outter_merge.csv")
 print(outter_merge.shape)
 
 columns = ['artist_name','track_name','preview_url','artist_title','spotify_id']
-# output = pd.read_csv(ANN_PATH+'output.csv', names=columns, quotechar='|', quoting=csv.QUOTE_MINIMAL)
-# output.dropna(subset=['spotify_id'], inplace=True)
+output = pd.read_csv(ANN_PATH+'output.csv', names=columns, quotechar='|', quoting=csv.QUOTE_MINIMAL)
+output.dropna(subset=['spotify_id'], inplace=True)
 #print("output")
 #print(output.head(30))
