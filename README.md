@@ -5,7 +5,7 @@ This project was highly influenced by The Pudding's ["Are Men Singing Higher in 
 
 ## The Data:
 
-The data was collected from The Pudding, Spotify and _something_.
+The data was collected from The Pudding, Spotify and Essentia.
 
 ### Removed data:
 Some songs had missing info (`NaN` values in *falsetto* e.g.) and was removed. Moreover we filtered the data a little bit:
@@ -15,8 +15,10 @@ Some songs had missing info (`NaN` values in *falsetto* e.g.) and was removed. M
 
 ### Our Dataframes:
 
+1. [main.csv](main.csv): Has all the information extracted with Essentia, plus gender, spotify_id and falsetto. We used it on machine learning models.
 1. [dataframe.csv](dataframe.csv): Overall dataframe. Has basically all the data.
 1. [spotify.csv](data-analysis/spotify.csv): Is a part of `dataframe.csv` but with only the spotify info.
+1. [append.csv](csv_output/append.csv): Unites all the outputs from Essentia. 
 
 
 ## Songs
@@ -39,3 +41,17 @@ You can download a song by using:
 ```
 spotify_dl -V -l SONG_LINK -o songs/ --skip_mp3 -s yes;
 ```
+
+## Spleeter
+
+We used [Deezer's Spleeter](https://github.com/deezer/spleeter) to create voice only versions of the songs. We used their [Google Colab](https://colab.research.google.com/github/deezer/spleeter/blob/master/spleeter.ipynb) environment. 
+
+
+## Essentia
+
+We used [Essentia](https://github.com/MTG/essentia) to extract information on the songs available. 
+
+### Method
+Our extraction method can be seen at [extract.py](extract.py). The extraction results are available at [csv_output](csv_output). 
+
+We concatenated the information using [joiner.py](joiner.py). The final results are saved onto [main.csv](main.csv). 
