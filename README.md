@@ -3,6 +3,13 @@ Final project of Music Information Retrival about Falsettos
 
 This project was highly influenced by The Pudding's ["Are Men Singing Higher in Pop Music?"](https://pudding.cool/2019/08/register/) piece. You can check more about their project (and their databases) on these two links: [falsetto-story](https://github.com/the-pudding/falsetto-story) and [falsetto-site](https://github.com/the-pudding/falsetto-site).
 
+*Index:*
+1. [The Data](#the-data)
+1. [Songs](#songs)
+1. [Spleeter](#spleeter)
+1. [Essentia](#essentia)
+
+
 ## The Data:
 
 The data was collected from The Pudding, Spotify and Essentia.
