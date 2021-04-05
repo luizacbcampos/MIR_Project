@@ -33,3 +33,9 @@ We downloaded the songs using [spotify-dl](https://github.com/SathyaBhat/spotify
 spotify_dl -V -l PLAYLIST_LINK -o songs/ --skip_mp3 -s yes
 ```
 Where `PLAYLIST_LINK` was one of the 3 created ones.
+
+You can download a song by using:
+
+```
+spotify_dl -V -l SONG_LINK -o songs/ --skip_mp3 -s yes;
+```
