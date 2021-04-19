@@ -3,12 +3,31 @@ import numpy as np
 import os
 import glob
 
+def row_diff(row1, row2):
+	result = row1.compare(row2,keep_shape=False)
+	result = result.apply(pd.to_numeric)
+	result['diff'] = result.self - result.other
+	result['p'] = result.apply(lambda x: x['diff']/x['self'], axis=1)
+	result.drop(result[result.p < 0.01].index, inplace=True)
+	print(result)
+
+def catch_row_diff(right, dataframe):
+
+	dupli_df = right[right.duplicated(['spotify_id'],keep=False)].sort_values(by=['spotify_id'])
+	#print(dupli_df['spotify_id'].unique())
+	for ids in dupli_df['spotify_id'].unique():
+		indexes = right.loc[right['spotify_id'] == ids].index.to_list()
+		print(ids, indexes)
+		row_diff(right.loc[indexes[0], :], right.loc[indexes[1], :])
+		print(dataframe.loc[dataframe['spotify_id'] == ids, ['falsetto','artist_name', 'song_title', 'spotify_id', 'spotify_artist', 'spotify_song']])
+		print("-----------------------------------------------------")
+
 def index_list(dataframe):
 	'''
 		Get list of songs with problems/duplicates;
 	'''
 	indexes = []
-	indexes.append(dataframe[(dataframe.spotify_id == '0RgcOUQg4qYAEt9RIdf3oB') & (dataframe.song_title == 'Star')].index[0])
+	#indexes.append(dataframe[(dataframe.spotify_id == '0RgcOUQg4qYAEt9RIdf3oB') & (dataframe.song_title == 'Star')].index[0])
 	indexes.append(dataframe[(dataframe.spotify_id == '0LpE5tfNe15QLvQL4YDi7T') & (dataframe.song_title == 'Bad')].index[0])
 	indexes.append(dataframe[(dataframe.spotify_id == '0dmQv5F4dm9nMxX8zz2x34') & (dataframe.song_title == 'I Want To Be With You')].index[0])
 	indexes.append(dataframe[(dataframe.spotify_id == '0pwYLVXVknPSGUQb39cePC') & (dataframe.song_title == 'Love Me')].index[0])
@@ -56,12 +75,12 @@ def print_index(dataframe, indexes=False):
 		part = int(i/1000) +1
 		print("pt-",part, i, dataframe.loc[i, 'spotify_id'])
 
-def make_short():
+def make_short(dataframe):
 	'''
 		Correcting erros from Spotify's search mechanism. 
 	'''
 
-	dataframe = pd.read_csv('dataframe.csv')
+	#dataframe = pd.read_csv('dataframe.csv')
 	dataframe = dataframe.drop_duplicates()
 
 	indexes = index_list(dataframe)
@@ -76,32 +95,63 @@ def make_short():
 
 def merge():
 
-	make_short()
 	dataframe = pd.read_csv('dataframe.csv')
+	print("Dataframe original: ", len(dataframe))
+
+	make_short(dataframe)
 	df = pd.read_csv('short.csv')
 	df = df.drop_duplicates()
-	#df.to_csv('short.csv', index = False)
+	df.to_csv('short.csv', index = False)
 
 	for index, row in df[df.duplicated(['spotify_id'],keep=False)].sort_values(by=['spotify_id']).iterrows():
 		ids = row['spotify_id']
 		print(dataframe.loc[dataframe['spotify_id'] == ids, ['falsetto','artist_name', 'song_title', 'spotify_id', 'spotify_artist', 'spotify_song']])
 		#print(row.to_frame().T)
 
-	print("Dataframe original: ", len(df))
-
-
+	print("Dataframe original (minus duplicates): ", len(df))
 	right = pd.read_csv('csv_output/append.csv')
 	right.dropna(thresh=2, inplace=True)
+	right.dropna(subset=['spotify_id'] ,inplace=True)
+	right = right.drop_duplicates()
+	#catch_row_diff(right, dataframe)
 
-	#right = append_df()
-	for index, row in right[right.duplicated(['spotify_id'],keep=False)].sort_values(by=['spotify_id']).iterrows():
-		ids = row['spotify_id']
-		print(dataframe.loc[dataframe['spotify_id'] == ids, ['falsetto','artist_name', 'song_title', 'spotify_id', 'spotify_artist', 'spotify_song']])
-
-	right = right.drop_duplicates(['spotify_id'])
+	right = right.drop_duplicates(['spotify_id']) #diff is under 10% (under 3 in most cases)
 
 	result = pd.merge(df, right, how="left", on="spotify_id", validate="one_to_one")
 	print("Novo dataframe: ", len(result))
 	result.to_csv("main.csv", index=False)
 
-merge()
+def get_info_success():
+
+	def check_id(x):
+		if pd.isnull(x['done_right']): #se x é NaN usa o Y
+			return x['done_left']
+		else:							#Y é True
+			return x['done_right']
+
+	df = pd.read_csv('songs/guide.csv')
+	df['spotify_id'] = df.apply(lambda x: x['song'].split('.')[0], axis=1)
+	df['done'] = False
+	print(df.head(), len(df))
+
+	for file in glob.glob('csv_output/pt*.csv'):
+		pt = file.split('/')[-1].split('.')[0]
+		print(pt)
+		df_pt = pd.read_csv(file)
+		df_pt['part'] = pt
+		df_pt['done'] = True
+		df_pt = df_pt[['part', 'spotify_id', 'done']]
+		#print(df_pt.head())
+		df = df.merge(df_pt, on=['part', 'spotify_id'], how='left', suffixes=('_left', '_right'))
+		df['done'] = df.apply(lambda x : check_id(x),axis=1)
+		df = df[['part', 'song','spotify_id','done']]
+		print(df.head())
+
+	df.to_csv('info_on_files.csv', index=False)
+
+
+df = pd.read_csv('csv_output/info_on_files.csv')
+print(df.loc[df['done']==False].head(50))
+
+
+#merge()

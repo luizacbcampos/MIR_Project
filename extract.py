@@ -4,11 +4,19 @@ import numpy as np
 import glob
 import csv
 
-def folder_loop(folder, scalar_lowlevel_descriptors, writer):
+def search_folders():
+    folders = []    
+    for pt in glob.glob('output/*'):
+        inside = glob.glob(pt+'/*/')
+        folders += inside
+    return folders
+
+
+def folder_loop(folder, scalar_lowlevel_descriptors, writer, start=0):
     i = 0
+    size = len(glob.glob(folder+"*.mp3"))
     for song in glob.glob(folder+"*.mp3"):
-        #if i > 578:
-        print(i)
+        print(i, " of ", size)
         spotify_id = get_sp_id(song)
         try:
             row = MusicExt(song, scalar_lowlevel_descriptors)
@@ -57,16 +65,21 @@ scalar_lowlevel_descriptors = ['lowlevel.average_loudness', 'lowlevel.barkbands_
 'lowlevel.spectral_strongpeak.stdev', 'lowlevel.zerocrossingrate.mean', 'lowlevel.zerocrossingrate.stdev']
 
 
-
 HEADER = True
+FOLDERS = False
+
 folders = []
-for pt in glob.glob('output/*'):
-    inside = glob.glob(pt+'/*/')
-    folders += inside
+
+if folders:
+    folders = search_folders()
+else:
+    folders = ['output/pt2/pt2_7/']
+
 
 for folder in folders:
     print("Doing folder: ", folder.split('/')[-2])
     csv_name = folder.split('/')[-2]+'.csv'
+    print(csv_name)
     csvfile = open(csv_name, 'a')
     writer = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
     
