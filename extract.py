@@ -11,6 +11,17 @@ def search_folders():
         folders += inside
     return folders
 
+def is_mute(file_list):
+    i = 1
+    size = len(file_list)
+    for file in file_list:
+        print(i, " of ", size," - ", file)
+        try:
+            row = MusicExt(song, scalar_lowlevel_descriptors)
+        except Exception as e:
+            raise e
+        i += 1
+
 
 def folder_loop(folder, scalar_lowlevel_descriptors, writer, start=0):
     i = 0
@@ -73,7 +84,8 @@ folders = []
 if folders:
     folders = search_folders()
 else:
-    folders = ['output/pt2/pt2_7/']
+    folders = ['output/erros/']
+    #folders = ['output/pt1/output_pt1_7/']
 
 
 for folder in folders:
