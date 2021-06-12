@@ -8,6 +8,7 @@ This project was highly influenced by The Pudding's ["Are Men Singing Higher in 
 1. [Songs](#songs)
 1. [Spleeter](#spleeter)
 1. [Essentia](#essentia)
+1. [The Classifier](#classifier) 
 
 
 ## The Data:
@@ -62,3 +63,9 @@ We used [Essentia](https://github.com/MTG/essentia) to extract information on th
 Our extraction method can be seen at [extract.py](extract.py). The extraction results are available at [csv_output](csv_output). 
 
 We concatenated the information using [joiner.py](joiner.py). The final results are saved onto [main.csv](main.csv). 
+
+## Classifier
+
+We tried different classification techniques on the data. As it can be seen, the data is very unbalanced and for this specific project our main goal was to stabilish the database.
+
+The classifier file is [classifier_raw.ipynb](classifier_raw.ipynb).
