@@ -28,3 +28,9 @@ _Ela gosta de séries temporais:_
 - Comparar artistas? 
     - Comparar artista por métrica (acoustic, falseto, danceability, etc)
     - Seria uma opção por filtro
+
+
+## Visualizações de referência:
+- [Gráfico de radar bonito porém sem legenda](http://bl.ocks.org/nbremer/21746a9668ffdf6d8242)
+- [Explicação para a criação do gráfico de radar bonito](https://www.visualcinnamon.com/2015/10/different-look-d3-radar-chart/)
+- [Gráfico de radar feio com legenda interativa](https://github.com/alangrafu/radar-chart-d3)
