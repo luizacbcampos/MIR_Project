@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="manifest" href='data:application/manifest+json,{ "name": "Projeto%20Vis%20Dados", "short_name": "shortName", "description": "theDescription"}' />
+
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
+		<title>Loads a csv file</title>
+
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+		<!-- D3.js v5  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.0.0/d3.min.js" charset="utf-8"></script>
+		
+        <!-- D3.js v3 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script> -->
+        
+		<!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Ours -->
+        <script type="module" src="main.js"></script>
+        
+        
+        
+	
+	</head>
+	<body>
+        <p>HELLO</p>
+        <script crossorigin="anonymous">
+            var dataset = [];
+            d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main/MIR/dataframe.csv", function(data)
+                {
+                    // here's where we do stuff with the data
+                    var headerRow = Object.keys(data[0])
+                    console.log(headerRow)
+                    dataset = data.map(function(d) { return [ d["song_title"], d["falsetto"] ]; });
+                    // Do something with d3.js
+                });
+            
+        </script>
+
+	</body>
+</html>
