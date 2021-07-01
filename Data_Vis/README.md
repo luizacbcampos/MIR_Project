@@ -6,6 +6,8 @@
 1. [Link da Luiza (nao sabemos se eh show)](https://www.d3-graph-gallery.com/intro_d3js.html)
 1. [Sobre JS](http://learnjsdata.com/getting_started.html)
 1. [D3 Tutorials](https://github.com/d3/d3/wiki/Tutorials)
+1. [Nest](http://bl.ocks.org/phoebebright/raw/3176159/)
+1. [Map e Nest](https://observablehq.com/@stuartathompson/the-difference-between-d3-nest-d3-map-and-data-map)
 1. [Livro de javascript recomendado pelo The Pudding](https://eloquentjavascript.net/)
 1. [The Pudding](https://pudding.cool/topics/#how)
 	* [How to Make Dope Shit Part 1: Working with Data](https://pudding.cool/process/how-to-make-dope-shit-part-1)

@@ -1,6 +1,5 @@
 // Load data in diff ways
 
-
 // Loads data using D3 v5
 
 function loadAv5(file) {
