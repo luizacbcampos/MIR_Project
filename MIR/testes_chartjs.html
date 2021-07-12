@@ -2,16 +2,15 @@
 
 <html>
 <head>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <!-- <script src="chart.js"></script> -->
-    <!-- <script src="dl_plugin.js"></script> -->
-
+    <script src="chart.js"></script>
+    <script src="chartjs-plugin-datalabels.js"></script> 
     
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>  -->  
+
     <script type="module">
-        import {Chart} from './chart.js';
-        import ChartDataLabels from './chartjs-plugin-datalabels';
+        import * as chart from './chart.js';
+        import * as cdl  from './chartjs-plugin-datalabels.js';
         Chart.register(ChartDataLabels);
     </script>
 
@@ -63,7 +62,7 @@
                 const row_contents = row.split(';'); //transforma ela em um array de conteúdos
                 labels.push(row_contents[0]);
                 const aux = row_contents[3] / 20;
-                final_data.push({x: row_contents[1]/1, y: row_contents[2]/1, r: aux, });
+                final_data.push({x: row_contents[1]/1, y: row_contents[2]/1, r: aux, label: row_contents[0]});
                 //duration_ms, energy_x, points
             });
 
@@ -164,7 +163,8 @@
                             },
                             formatter: function(value) {
                                 //console.log(value)
-                                return Math.round(value.r);
+                                //return Math.round(value.r);
+                                return value.label;
                             },
                             offset: 2,
                             padding: 0
