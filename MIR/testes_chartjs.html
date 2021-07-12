@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <script src="chart.js"></script> -->
+    <!-- <script src="dl_plugin.js"></script> -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>    
+    <script type="module">
+        import {Chart} from './chart.js';
+        import ChartDataLabels from './chartjs-plugin-datalabels';
+        Chart.register(ChartDataLabels);
+    </script>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Train: Data and APIs Project 1</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+</head>
+<body>
+    <script>        
+        
+
+        async function loadData(){
+            const year = [];
+            const peak_rank = [];
+            const resp = await fetch('aux.csv');
+            const data = await resp.text();
+
+            const rows = data.split('\n').slice(1); //linhas, excluindo a primeira
+            rows.forEach(row => { //pra cada linha
+                const row_contents = row.split(';'); //transforma ela em um array de conteúdos
+                year.push(row_contents[3]);
+                peak_rank.push(row_contents[1]);
+                console.log(year, peak_rank);
+            });
+
+            return {year, peak_rank}
+        }
+
+        async function loadBubbleData(){
+            const final_data = [];
+            const labels = [];
+            const resp = await fetch('dr_inst_pt_year.csv');
+            const data = await resp.text();
+            var max = 0;
+            const rows = data.split('\n').slice(1); //linhas, excluindo a primeira
+            rows.forEach(row => { //pra cada linha
+                const row_contents = row.split(';'); //transforma ela em um array de conteúdos
+                labels.push(row_contents[0]);
+                const aux = row_contents[3] / 20;
+                final_data.push({x: row_contents[1]/1, y: row_contents[2]/1, r: aux, });
+                //duration_ms, energy_x, points
+            });
+
+            console.log('AQUI::');
+            const data_and_label = [labels, final_data];
+            console.log(labels);
+            return data_and_label
+        }
+
+        async function drawChart() {
+            dataset = await loadData();
+            const ctx = document.getElementById('chart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: dataset.year,
+                    datasets: [{
+                        label: 'Peak rank',
+                        data: dataset.peak_rank,
+                        backgroundColor:  'rgba(132, 99, 255, 0.2)',
+                        borderColor: 'rgba(132, 99, 255, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        function getColors(dataset){
+            const colors = [];
+            dataset.forEach(row => {
+                if (row.r > 45) {
+                    colors.push('rgba(255, 99, 132, 0.7)');
+                } else{
+                    colors.push('rgba(132, 99, 255, 0.3)')
+                }
+            });
+            return colors;
+        }
+        async function drawBubble() {
+            data_and_label = await loadBubbleData();
+            dataset = data_and_label[1];
+            labels = data_and_label[0];
+            
+            colors = getColors(dataset);
+            const ctx = document.getElementById('chart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'bubble',
+                data: {
+                    datasets: [{
+                        data: dataset,
+                        //backgroundColor: 'rgba(132, 99, 255, 0.3)',
+                        backgroundColor: colors
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    title: {
+                        display: true,
+                        text: 'Duração e instrumentalidade (média anual) - impacto em pontos',
+                    },
+                    scales: {
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Instrumentalidade'
+                            }
+                        }],
+                        xAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Duração (segundos)'
+                            }
+                        }]
+                    },
+                    legend: {
+                        display: false
+                    },
+                    plugins: {
+                        datalabels: {
+                            anchor: function(context) {
+                                return "center";
+                            },
+                            align: function(context) {
+                                return "center";
+                            },
+                            color: function(context) {
+                                return "black";
+                            },
+                            font: {
+                                weight: "bold"
+                            },
+                            formatter: function(value) {
+                                //console.log(value)
+                                return Math.round(value.r);
+                            },
+                            offset: 2,
+                            padding: 0
+                        }
+                    }
+                }
+            });
+
+        }
+    </script>
+
+
+    <div class="chart-container" style="position: relative; height:80vh; width:80vw"> 
+        <canvas id="chart">
+            <script>
+                drawBubble();
+            </script>
+        </canvas>
+    </div>
+
+
+</body>
+</html>
+
