@@ -60,3 +60,23 @@ _Ela gosta de séries temporais:_
 - Comparar artistas? 
     - Comparar artista por métrica (acoustic, falseto, danceability, etc)
     - Seria uma opção por filtro
+    
+### Planejamento Final
+
+- Fazer uma análise temporal da evolução do falsete:
+     - Utilizar visualizações voltadas para séries temporais:
+          - Como são muitos anos acho que não dá pra usar um gráfico de radar, e também não tem comportamento sazonal;
+          - Gráfico de linhas é uma boa opção nesse caso (Quando o objetivo é exibir como valores quantitativos mudam durante períodos contínuos de tempo, gráficos de linha são a opção mais precisa - Minardi, Raquel);
+          - Gráfico de linhas e pontos pra comparar valores individuais;
+          - Talvez uma boa abordagem pode ser ter esse gráfico tanto de barras quanto de linhas, e a pessoa pode escolher qual dos dois ver.
+ - Capturar a relação entre gênero e o uso de falsete:
+     - Com isso podemos ver se homens realmente estão fazendo mais falsetes;
+     - Isso pode ser adicionado apenas como um filtro na visualização temporal, de maneira que seja possível selecionar apenas dados de mulheres e apenas dados de homens;
+     - Porém se for apenas filtrar acredito que pode haver aquele problema de memorizar os dados, seria bom alguma forma de visualizar lado a lado:
+          - Talvez um gráfico de barras agrupadas 
+          - Ou então aqueles gráficos legais cheios de pontinhos, vou olhar o nome
+ - Identificar as principais características dessa técnica vocal:
+     - Aqui podemos analisar como o falsete se adapta às características do Spotify:
+          - Plotar vários gráficos de correlação, de falsete x métrica específica, e juntar no formato de pequenos múltiplos;
+          - Aquele gráfico de radar com as métricas, avalia o ano em que a métrica foi mais relevante, se juntar isso com um gráfico ao lado mostrando as décadas que o falsete mais apareceu pode ser legal. Acho que um gráfico de radar igual mesmo, mas só com o falsete do lado, pode ser chique.
+          - Esse gráfico de radar mostra uma análise mais geral dos dados, porque eu agrupei por décadas, uma maneira de ver séries temporais assim com muito mais dados seria plotar uma mapa de calor.
