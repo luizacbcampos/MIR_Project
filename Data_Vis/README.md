@@ -69,12 +69,15 @@ _Ela gosta de séries temporais:_
           - Gráfico de linhas é uma boa opção nesse caso (Quando o objetivo é exibir como valores quantitativos mudam durante períodos contínuos de tempo, gráficos de linha são a opção mais precisa - Minardi, Raquel);
           - Gráfico de linhas e pontos pra comparar valores individuais;
           - Talvez uma boa abordagem pode ser ter esse gráfico tanto de barras quanto de linhas, e a pessoa pode escolher qual dos dois ver.
+          - Um boxplot pode ser massa também, porque mostra a mediada e a distribuição do falsete em cada ano.
  - Capturar a relação entre gênero e o uso de falsete:
      - Com isso podemos ver se homens realmente estão fazendo mais falsetes;
      - Isso pode ser adicionado apenas como um filtro na visualização temporal, de maneira que seja possível selecionar apenas dados de mulheres e apenas dados de homens;
      - Porém se for apenas filtrar acredito que pode haver aquele problema de memorizar os dados, seria bom alguma forma de visualizar lado a lado:
-          - Talvez um gráfico de barras agrupadas 
-          - Ou então aqueles gráficos legais cheios de pontinhos, vou olhar o nome
+          - Talvez um gráfico de barras agrupadas, mas ele não passa tão bem a noção da parte-todo;
+          - Um gráfico de barras empilhadas passa a noção de parte todo, mas é difícil de calcular as categorias, como são apenas duas categorias, acho que rola;
+          - Ou então aqueles gráficos legais cheios de pontinhos (Bee Swarm Plot ou Unit Plot), mas acho que pode ser dado demais pra plotar em bolinhas;
+          - Talvez mostrar um gráfico de áreas agrupadas, daqueles bonitos que a Raquel mostrou. Aquela maluquice de seguir uma curva de rio, podemos ver se é fácil no D3.
  - Identificar as principais características dessa técnica vocal:
      - Aqui podemos analisar como o falsete se adapta às características do Spotify:
           - Plotar vários gráficos de correlação, de falsete x métrica específica, e juntar no formato de pequenos múltiplos;
