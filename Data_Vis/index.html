@@ -18,171 +18,52 @@
         
 		<!-- CSS -->
         <link rel="stylesheet" href="./style.css">
-        <!-- Ours -->
-        <script type="module" src="./main.js"></script>  
+        <!-- Ours
+            <script type="module" src="./main.js"></script>  
+        -->
         
 	
 	</head>
 	<body>
         <p>HELLO</p>
-        <button name="next-button">Obi-Wan abandons the high ground to salute you</button>
-        <div>Primeiro</div>
+        <div id="one">
+            <p>Primeiro</p>
+            <button name="next-button">Obi-Wan abandons the high ground to salute you</button>
+        </div>
+        
         <div id="barplot">
-            <script>
-                // set the dimensions and margins of the graph
-                const margin = {top: 10, right: 30, bottom: 20, left: 50},
-                    width = 460 - margin.left - margin.right,
-                    height = 400 - margin.top - margin.bottom;
-
-                // append the svg object to the body of the page
-                const svg = d3.select("#barplot")
-                  .append("svg")
-                    .attr("width", width + margin.left + margin.right)
-                    .attr("height", height + margin.top + margin.bottom)
-                  .append("g")
-                    .attr("transform", `translate(${margin.left},${margin.top})`);
-
-                // Parse the Data
-                d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_stackedXL.csv").then(function(data) {
-                  // List of subgroups = header of the csv files = soil condition here
-                  const subgroups = data.columns.slice(1)
-
-                  // List of groups = species here = value of the first column called group -> I show them on the X axis
-                  const groups = data.map(d => d.group)
-
-                  // Add X axis
-                  const x = d3.scaleBand()
-                      .domain(groups)
-                      .range([0, width])
-                      .padding([0.2])
-                  svg.append("g")
-                    .attr("transform", `translate(0, ${height})`)
-                    .call(d3.axisBottom(x).tickSizeOuter(0));
-
-                  // Add Y axis
-                  const y = d3.scaleLinear()
-                    .domain([0, 120])
-                    .range([ height, 0 ]);
-                  svg.append("g")
-                    .call(d3.axisLeft(y));
-
-                  // color palette = one color per subgroup
-                  const color = d3.scaleOrdinal()
-                    .domain(subgroups)
-                    .range(d3.schemeSet2);
-
-                  //stack the data? --> stack per subgroup
-                  const stackedData = d3.stack()
-                    .keys(subgroups)
-                    (data)
-
-
-
-
-                  // ----------------
-                  // Highlight a specific subgroup when hovered
-                  // ----------------
-
-                  // Show the bars
-                  svg.append("g")
-                    .selectAll("g")
-                    // Enter in the stack data = loop key per key = group per group
-                    .data(stackedData)
-                    .join("g")
-                      .attr("fill", d => color(d.key))
-                      .attr("class", d => "myRect " + d.key ) // Add a class to each subgroup: their name
-                      .selectAll("rect")
-                      // enter a second time = loop subgroup per subgroup to add all rectangles
-                      .data(d => d)
-                      .join("rect")
-                        .attr("x", d => x(d.data.group))
-                        .attr("y", d => y(d[1]))
-                        .attr("height", d => y(d[0]) - y(d[1]))
-                        .attr("width",x.bandwidth())
-                        .attr("stroke", "grey")
-                        .on("mouseover", function (event,d) { // What happens when user hover a bar
-
-                          // what subgroup are we hovering?
-                          const subGroupName = d3.select(this.parentNode).datum().key 
-                          
-                          // Reduce opacity of all rect to 0.2
-                           d3.selectAll(".myRect").style("opacity", 0.2)  
-                          
-                          // Highlight all rects of this subgroup with opacity 1. It is possible to select them since they have a specific class = their name.
-                           d3.selectAll("."+subGroupName).style("opacity",1) 
-                        })
-                        .on("mouseleave", function (event,d) { // When user do not hover anymore
-                          
-                          // Back to normal opacity: 1
-                          d3.selectAll(".myRect")
-                          .style("opacity",1) 
-                      })
-                })
-            </script>
-        </div>
-        <div>Segundo</div>
-        <div id="novo">
             <script type="module">
-                const margin = {top: 10, right: 30, bottom: 20, left: 50},
-                     width = 2000 - margin.left - margin.right, height = 900 - margin.top - margin.bottom;
-                // append the svg object to the body of the page
-                const grafico = d3.select("#novo")
-                  .append("grafico")
-                    .attr("width", width + margin.left + margin.right)
-                    .attr("height", height + margin.top + margin.bottom)
-                  .append("g")
-                    //.attr("transform", `translate(${margin.left},${margin.top})`);
-
-                import loadDatav5 from './load-data.js';
-                  loadDatav5().then(result => {
-                    var data = result[0];
-                    var headerRow = Object.keys(data[0])
-                    console.log(headerRow)
-
-
-                    // Plotar
-
-                    //novo = anos.map(function(d) { return {year: +d.year, falsetto: +d.falsetto}});
-                    var dataByYear = data.sort(function(a, b) {return d3.ascending(+a.year, +b.year);})
-                    var anos = d3.map(dataByYear, d => +d.year)
-
-                    var por_ano = d3.nest().key(function(d) { return +d.year; }).sortKeys(d3.ascending).entries(data)
-                    var por_ano_falsetto = d3.nest()
-                        .key(function(d) { return +d.year; })
-                        .sortKeys(d3.ascending)
-                        .key(function(d) { return +d.falsetto; })
-                        .sortKeys(d3.ascending)
-                        .entries(data)
-
-                    console.log(por_ano_falsetto)
-                    // anos.keys() é equivalente a por_ano.map(d => d.key)
-
-                    const x = d3.scaleBand().domain(por_ano.map(d => d.key)).range([0, width]).padding([0.2])
-                    
-                    grafico.append("g")
-                    .attr("transform", `translate(0, ${height})`)
-                    .call(d3.axisBottom(x).tickSizeOuter(0));
-
-
-                    const y = d3.scaleLinear()
-                    .domain([0, 120])
-                    .range([ height, 0 ]);
-                  
-                    grafico.append("g").call(d3.axisLeft(y));
-                    
-                    // rollup to count leaves
-                    var nested_data = d3.nest()
-                    .key(function(d) { return +d.year; })
-                    .key(function(d) { return +d.falsetto; })
-                    .rollup(function(leaves) { return +leaves.length} )
-                    .entries(dataByYear);
-
-                    console.log(nested_data)
-
-                    
-
-                }).catch(console.error)
+                import stacked_b_plot from './stacked-bar-plot-ex.js';
+                stacked_b_plot("#barplot")
             </script>
         </div>
+        <div>Segundo
+            <div>First SVG</div>
+            <div id="svg1"></div>
+            <div>Second SVG</div>
+            <div id="svg2"></div>
+            <pre id="data1">name,value
+            foo,8
+            bar,1
+            baz,7
+            foobar,9
+            foobaz,4</pre>
+            <pre id="data2">name,value
+            foo,1
+            bar,2
+            baz,3
+            foobar,9
+            foobaz,8</pre>
+            <script type="module" src="./example.js"></script>
+        </div>
+        <p> AQUI </p>
+        <section>
+            <div id="novo">
+                <script type="module">
+                    import stacked from './stacked-bar-plot.js';
+                    stacked("#novo")
+                </script>
+            </div>
+        </section>
 	</body>
 </html>
