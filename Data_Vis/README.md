@@ -11,6 +11,7 @@
 1. [Sobre JS](http://learnjsdata.com/getting_started.html)
 1. [D3 Tutorials](https://github.com/d3/d3/wiki/Tutorials)
 1. [csv no D3](https://charlesreid1.com/wiki/D3#Loading_Single_CSV_File)
+1. [DUSP VIZ MIT](http://duspviz.mit.edu/d3-workshop/intro-to-d3/)
 
 ## CORS
 
