@@ -202,4 +202,3 @@ svg.append('text')
 	.attr('y', height + margin * 1.7)
 	.attr('text-anchor', 'start')
 	.text('Source: Stack Overflow, 2018')
-

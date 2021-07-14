@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
+		<title>Smoothed D3.js Radar Chart</title>
+
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+		<!-- D3.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+		
+		<style>
+			body {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 11px;
+				font-weight: 300;
+				fill: #242424;
+				text-align: center;
+				text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+				cursor: default;
+			}
+			
+			.legend {
+				font-family: 'Raleway', sans-serif;
+				fill: #333333;
+			}
+			
+			.tooltip {
+				fill: #333333;
+			}
+		</style>
+	
+	</head>
+	<body>
+
+		<div class="radarChart"></div>
+
+		<script src="radarChart.js"></script>	
+		<script>
+      
+      /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
+      
+			////////////////////////////////////////////////////////////// 
+			//////////////////////// Set-Up ////////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var margin = {top: 100, right: 100, bottom: 100, left: 100},
+				width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
+				height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+					
+			////////////////////////////////////////////////////////////// 
+			////////////////////////// Data ////////////////////////////// 
+            ////////////////////////////////////////////////////////////// 
+            
+//             acousticness  danceability    energy  instrumentalness  liveness   loudness  speechiness
+// decade                                                                                          
+// 1950        0.688311      0.553912  0.491462          0.023696  0.193799 -10.447776     0.051062
+// 1960        0.510540      0.539467  0.526168          0.027452  0.219578 -10.189161     0.051306
+// 1970        0.337598      0.574863  0.587382          0.042595  0.194889 -10.411179     0.052248
+// 1980        0.199156      0.624323  0.655264          0.024619  0.184454  -9.814562     0.047406
+// 1990        0.176901      0.649102  0.649275          0.029562  0.180399  -8.476010     0.081863
+// 2000        0.154014      0.624372  0.712979          0.010637  0.184340  -5.737622     0.099236
+// 2010        0.178342      0.637640  0.669764          0.009422  0.185027  -6.024370     0.114594
+
+			var data = [
+                    // {
+                    //     className: "1950",
+                    //     axes: 
+                    [//1950
+                    {axis:"Acousticness",value:0.688311},
+                    {axis:"Danceability",value:0.553912},
+                    {axis:"Energy",value:0.491462},
+                    {axis:"Instrumentalness",value:0.023696},
+                    {axis:"Liveness",value:0.193799},
+                    {axis:"Speechiness",value:0.051062}		
+                    ],
+                    // },
+                    // {
+                    //     className:"1960",
+                    //     axes: 
+                    [//1960
+                    {axis:"Acousticness",value:0.510540},
+                    {axis:"Danceability",value:0.539467},
+                    {axis:"Energy",value:0.526168},
+                    {axis:"Instrumentalness",value:0.027452},
+                    {axis:"Liveness",value:0.219578},
+                    {axis:"Speechiness",value:0.051306}	
+                    ],
+                    // },
+                    // {
+                    //     className: "1970",
+                    //     axes: 
+                    [//1970
+                        {axis:"Acousticness",value:0.337598},
+                        {axis:"Danceability",value:0.574863},
+                        {axis:"Energy",value:0.587382},
+                        {axis:"Instrumentalness",value:0.042595},
+                        {axis:"Liveness",value:0.194889},
+                        {axis:"Speechiness",value:0.052248}	
+                    ],
+                    // },
+                    // {   
+                    //     className: "1980",
+                    //     axes: 
+                    [//1980
+                            {axis:"Acousticness",value:0.199156},
+                            {axis:"Danceability",value:0.624323},
+                            {axis:"Energy",value:0.655264},
+                            {axis:"Instrumentalness",value:0.024619},
+                            {axis:"Liveness",value:0.184454},
+                            {axis:"Speechiness",value:0.047406}	
+                        ],
+                    // },
+                    // {   
+                    //     className: "1990",
+                    //     axes: 
+                        [//1990
+                            {axis:"Acousticness",value:0.176901},
+                            {axis:"Danceability",value:0.649102},
+                            {axis:"Energy",value:0.649275},
+                            {axis:"Instrumentalness",value:0.029562},
+                            {axis:"Liveness",value:0.180399},
+                            {axis:"Speechiness",value:0.081863}	
+                        ],
+                    // },
+                    // {   
+                    //     className: "2000", 
+                    //     axes: 
+                        [//2000
+                            {axis:"Acousticness",value:0.154014},
+                            {axis:"Danceability",value:0.624372},
+                            {axis:"Energy",value:0.712979},
+                            {axis:"Instrumentalness",value:0.010637},
+                            {axis:"Liveness",value:0.184340},
+                            {axis:"Speechiness",value:0.099236}	
+                        ],
+                    // },
+                    // {   
+                    //     className: "2010",
+                    //     axes: 
+                    [//2010
+                            {axis:"Acousticness",value:0.178342},
+                            {axis:"Danceability",value:0.637640},
+                            {axis:"Energy",value:0.669764},
+                            {axis:"Instrumentalness",value:0.009422},
+                            {axis:"Liveness",value:0.185027},
+                            {axis:"Speechiness",value:0.114594}	
+                        ]
+                    // }
+                        
+                    ];
+			////////////////////////////////////////////////////////////// 
+			//////////////////// Draw the Chart ////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var color = d3.scale.ordinal()
+				.range(["#EDC951","#CC333F","#00A0B0", "#60BF5A", "#C592F9", "#3E83B2", "#E59866"]);
+				
+			var radarChartOptions = {
+			  w: width,
+			  h: height,
+			  margin: margin,
+			  maxValue: 0.5,
+			  levels: 5,
+			  roundStrokes: true,
+			  color: color
+			};
+			//Call function to draw the Radar chart
+			RadarChart(".radarChart", data, radarChartOptions);
+		</script>
+	</body>
+</html>
