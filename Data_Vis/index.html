@@ -1,14 +1,30 @@
 <!DOCTYPE html>
+<html lang='en' data-version='001'>
 <html>
 	<head>
-        <link rel="manifest" href='data:application/manifest+json,{ "name": "Projeto%20Vis%20Dados", "short_name": "shortName", "description": "theDescription"}' />
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+		
+        <title>The Falsetto Project</title>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+        <meta name="description" content="An analysis of falsettos in Billboard Hot 100 songs.">
+        <meta name='keywords' content='music' />
+
+
         <link rel="shortcut icon" href="#">
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
-		<title>Loads a csv file</title>
+        <link rel="manifest" href='data:application/manifest+json,{ "name": "Projeto%20Vis%20Dados", "short_name": "shortName", "description": "An%20analysis%20of%20falsettos%20in%20Billboard%20Hot%20100%20songs"}' />
+        
+		<!--<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >-->
 
 		<!-- Google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+        <!-- Loadash  -->
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+
+        <!-- Howler  -->
+        <script src= "https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
 
 		<!-- D3.js v5  -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js" charset="utf-8"></script>
@@ -19,52 +35,95 @@
 		<!-- CSS -->
         <link rel="stylesheet" href="./style.css">
         <!-- Ours
-            <script type="module" src="./main.js"></script>  
         -->
+        <script type="module" src="./main.js"></script>  
         
 	
 	</head>
 	<body>
-        <p>HELLO</p>
-        <div id="one">
-            <p>Primeiro</p>
-            <button name="next-button">Obi-Wan abandons the high ground to salute you</button>
-        </div>
-        
-        <div id="barplot">
-            <script type="module">
-                import stacked_b_plot from './stacked-bar-plot-ex.js';
-                stacked_b_plot("#barplot")
-            </script>
-        </div>
-        <div>Segundo
-            <div>First SVG</div>
-            <div id="svg1"></div>
-            <div>Second SVG</div>
-            <div id="svg2"></div>
-            <pre id="data1">name,value
-            foo,8
-            bar,1
-            baz,7
-            foobar,9
-            foobaz,4</pre>
-            <pre id="data2">name,value
-            foo,1
-            bar,2
-            baz,3
-            foobar,9
-            foobaz,8</pre>
-            <script type="module" src="./example.js"></script>
-        </div>
-        <p> AQUI </p>
-        <br> <br> <br> <br>
-        <section>
-            <div id="novo">
-                <script type="module">
-                    import stacked from './stacked-bar-plot.js';
-                    stacked("#novo")
-                </script>
+        <main id='content'>
+            <!-- Ours <script type="module" src="./main.js"></script> -->
+            <div class='intro'>
+                <div class="intro_video">
+                    <div class="fill"></div>
+                    <img class="" src="https://media.giphy.com/media/3kCXOc72gCyQjZ8qlf/giphy.gif" alt="">
+                    <!-- <video src="assets/intro_video.mp4" autoplay muted preload playsinline loop></video> -->
+                    <div class="sound-wrapper">
+                        <p class="track-name">Mark Gonzales skating to John Coltrane&rsquo;s &ldquo;Traneing In&rdquo;
+                        </p>
+                        <div class="sound-on">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-2">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                            </svg>
+                        </div>
+                        <div class="sound-off">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-x">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                <line x1="23" y1="9" x2="17" y2="15"></line>
+                                <line x1="17" y1="9" x2="23" y2="15"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <h1 class='intro__head'>The Falsetto Project</h1>
+                <p class='intro__desc'>An analysis of falsettos in Billboard Hot 100 songs.</p>
+                <p class='intro__byline'>By 
+                    <!--
+                    <a href='{{info.author.url}}' target='_blank'><strong>{{info.author.name}}</strong></a> -->
+                    Bruno Monteiro, Igor Marques, Isadora Salles and Luiza Campos
+                </p>
             </div>
-        </section>
+            <section class="lyrics_show" id="story">
+                <div class="intro_text">
+                    <h1>Falsetto today</h1>
+                    <div class="text-element">
+                        <p>
+                            <span class="step-text">This is the 2019 mega-hit &ldquo;Sucker&rdquo; by Jonas Brothers. It’s sung by three men at a very high vocal range with falsetto.</span>
+                        </p>
+                    </div>
+                    <br><br>
+                </div>
+                <div id="jonas">
+                    <div class="part lyrics-container" id="jonas-child">
+                        <div class="lyric">
+                            <p></p>
+                            <div class="arrow arrow-up">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up" viewBox="0 0 24 24">
+                                    <line x1="12" y1="19" x2="12" y2="5"></line>
+                                    <polyline points="5 12 12 5 19 12"></polyline>
+                                </svg>
+                                <p>higher note</p>
+                            </div>
+                            <div class="arrow arrow-down">
+                                <p>lower note</p>
+                                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down" viewBox="0 0 24 24">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <polyline points="19 12 12 19 5 12"></polyline>
+                                </svg>
+                            </div>
+                        <script type="module">
+                            import lyrics from "./load-lyrics.js"
+                            lyrics.init()
+                        </script>
+                        </div>
+                    </div>
+                    <div class="background-image" id="jonas-child">
+                        <img style="opacity:.5;" alt="" src="https://media.giphy.com/media/3kCXOc72gCyQjZ8qlf/giphy.gif">
+                        <div class="dot"></div>
+                    </div>
+
+                </div>
+            </section>
+            <br> <br> <br> <br>
+            <section id="f_ano" class="chart">
+                <div id="fasettoANO">
+                    <script type="module">
+                        import stack from './stacked-bar-plot.js';
+                        stack.stacked("#fasettoANO")
+                    </script>
+                </div>
+            </section>
+        </main>
 	</body>
 </html>

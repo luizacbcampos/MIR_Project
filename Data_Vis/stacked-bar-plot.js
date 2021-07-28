@@ -1,40 +1,85 @@
 // Stacked bar plot year x falsetto
 import loadDatav5 from './load-data.js';
 
-export default function stacked(selector){
-	    
-	const margin = {top: 50, right: 30, bottom: 50, left: 50};
-	var width = 1800 - margin.left - margin.right,
-		height = 900 - margin.top - margin.bottom;
+// Setting width/heigth information
+const margin = {top: 50, right: 20, bottom: 50, left: 50};
 
-    // append the svg object to the body of the page
-    const svg = d3.select(selector)
-    	.append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", `translate(${margin.left},${margin.top})`);	
+var viewportWidth = parseInt(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
+var viewportHeight = parseInt(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+
+var width = parseInt((viewportWidth - margin.left - margin.right)*0.95); // Use the window's width
+var height = parseInt((viewportHeight - margin.top - margin.bottom)*0.95); // Use the window's height
+
+var widthValue = width + margin.left + margin.right;
+var heightValue = height + margin.top + margin.bottom;
+
+var og_ratio = height/width
+
+// This creates the chart
+var svg = d3.select('#fasettoANO')
+  .classed("svg-container", true)
+  .append("svg") // append the svg object to the body of the page
+    .attr("width", widthValue)
+    .attr("height", heightValue)
+    //.attr("preserveAspectRatio", "xMidYMid meet")
+    //.attr("viewBox","0 0 " + widthValue + " " + heightValue)
+    //.classed("svg-content-responsive", true) // Class to make it responsive.
+      .append("g") //my graph
+        .attr("width", widthValue)
+        .attr("height", heightValue)
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+var x = null; // setting initials
+var y = null;
+
+
+function scale_values(){
+  // Alter the values
+  viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  width = parseInt((viewportWidth - margin.left - margin.right)*0.95); // Use the window's width
+  height = parseInt((viewportHeight - margin.top - margin.bottom)*0.95); // Use the window's height
+  widthValue = width + margin.left + margin.right;
+  heightValue = height + margin.top + margin.bottom;
+}
+
+
+function resize() {
+  console.log(widthValue, heightValue)
+  scale_values()
+  
+  x.range([0, width]);
+  
+  d3.select(svg.node().parentNode)
+    .style('height', heightValue + 'px')
+    .style('width', widthValue + 'px');
+
+  y.range([width*og_ratio, 0]) // keep ratio
+
+}
+
+
+
+function stacked(selector){	
+  console.log("Stacked")
   // Parse the Data
   d3.csv("falsetto_by_year.csv").then( function(data) {
 
-    // List of subgroups = header of the csv files = soil condition here
-    const subgroups = data.columns.slice(1)
-
-    // List of years = species here = value of the first column called group -> I show them on the X axis
-    const years = data.map(d => d.year)
+    const subgroups = data.columns.slice(1) // List of subgroups = header of csv
+    const years = data.map(d => d.year) // List of years = value of the first column called group
     console.log(years)
 
     // Add X axis
-    const x = d3.scaleBand()
+    x = d3.scaleBand()
         .domain(years)
         .range([0, width])
-        .padding([0.2])
+        .padding([0.2])      
     svg.append("g")
       .attr("transform", `translate(0, ${height})`)
       .call(d3.axisBottom(x).tickSizeOuter(0));
 
     // Add Y axis
-    const y = d3.scaleLinear()
+    y = d3.scaleLinear()
       .domain([0, 600])
       .range([ height, 0 ]);
     svg.append("g")
@@ -45,6 +90,7 @@ export default function stacked(selector){
     	.attr("transform", "translate(" + (width/2) + " ," + (height + margin.top - 10) + ")")
     	.style("text-anchor", "middle")
     	.text("Ano");
+    
     // Y axis label:
     svg.append("text")
     	.attr("text-anchor", "end")
@@ -102,39 +148,31 @@ export default function stacked(selector){
     // Show the bars
     svg.append("g")
       .selectAll("g")
-      // Enter in the stack data = loop key per key = group per group
-      .data(stackedData)
+      .data(stackedData) // Enter in the stack data = loop key per key = group per group
       .join("g")
         .attr("fill", d => color(d.key))
-        .attr("class", d => "myRect a_" + d.key ) // Add a class to each subgroup: their name
+        .attr("class", d => "myRect a_" + d.key ) // Add a class to each subgroup: a_ + their name
         .selectAll("rect")
-        // enter a second time = loop subgroup per subgroup to add all rectangles
-        .data(d => d)
+        .data(d => d) // enter a second time = loop subgroup per subgroup to add all rectangles
         .join("rect")
           .attr("x", d => x(d.data.year))
           .attr("y", d => y(d[1]))
           .attr("height", d => y(d[0]) - y(d[1]))
           .attr("width",x.bandwidth())
-          .attr("stroke", "grey")
-          .on("mouseover", function (event,d) { // What happens when user hover a bar
+          .attr("stroke", "grey") // What happens when user hover a bar
+          .on("mouseover", function (event,d) { 
 
-            // what subgroup are we hovering?
-            const subGroupName = d3.select(this.parentNode).datum().key 
+            const subGroupName = d3.select(this.parentNode).datum().key // what subgroup are we hovering?
             
             // Reduce opacity of all rect to 0.2
-             d3.selectAll(".myRect").style("opacity", 0.2)  
-            
-            // Highlight all rects of this subgroup with opacity 1. 
-            //It is possible to select them since they have a specific class = their name.
+            d3.selectAll(".myRect").style("opacity", 0.2)  
 
-            //convert to string first
-             d3.selectAll(".a_"+subGroupName).style("opacity",1) 
-          })
-          .on("mouseleave", function (event,d) { // When user do not hover anymore
-            
-            // Back to normal opacity: 1
+            // Highlight all rects of this subgroup with opacity 1. We select them bc they have a specific class = their name.
+
+            d3.selectAll(".a_"+subGroupName).style("opacity",1)
+          }) .on("mouseleave", function (event,d) { // When user do not hover anymore
             d3.selectAll(".myRect")
-            .style("opacity",1) 
+            .style("opacity",1) // Back to normal opacity: 1
         })
 
   })
@@ -250,3 +288,5 @@ function counter_per_year(dataByYear){
         .entries(dataByYear);
     return count_per_year;
 }
+
+export default { stacked, resize };
