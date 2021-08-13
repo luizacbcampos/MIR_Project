@@ -65,7 +65,7 @@ function resize() {
 function stacked(selector){	
   console.log("Stacked")
   // Parse the Data
-  d3.csv("../data/falsetto_by_year.csv").then( function(data) {
+  d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main/Data_Vis/assets/data/falsetto_by_year.csv").then( function(data) {
 
     const subgroups = data.columns.slice(1) // List of subgroups = header of csv
     const years = data.map(d => d.year) // List of years = value of the first column called group
