@@ -1,0 +1,234 @@
+/*
+	Style for our work
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+pre {
+	display: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+	font-weight: 300;
+	text-align: center;
+	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+	
+	fill: #242424;
+	/*background: #444444;*/
+	cursor: default;
+
+	min-height: 100vh;
+	width: 100%;
+
+	display:inline-block;
+	box-sizing: border-box;
+}
+
+/* Text Styles */
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+    line-height: 1.2;
+    margin-top: 1.5rem;
+}
+
+
+/* Intro part */ 
+
+.intro {
+  margin: 0 auto;
+  /*padding: 4rem 1rem 1.5rem 1rem; */
+  position: relative;
+  min-height: 100vh;
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+}
+
+.intro .intro_video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #282828;
+  display: block;
+  z-index: 0;
+}
+
+.intro .intro_video .sound-wrapper {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+.intro .intro_video .sound-wrapper .track-name {
+  position: absolute;
+  width: 200px;
+  color: #fff;
+  font-family: 'Open Sans'; /*'Atlas Grotesk Web';*/
+  font-weight: 400; /*600*/
+  font-size: 12px;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+  text-align: right;
+  line-height: 1.5;
+  top: 50%;
+  left: -10px;
+  margin: 0px;
+}
+
+.intro .intro_video .sound-wrapper .sound-off {
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: #fff;
+  display: none;
+}
+
+.intro .intro_video .sound-wrapper .sound-off svg {
+  width: 30px;
+  height: 30px;
+}
+
+.intro .intro_video .sound-wrapper .sound-on {
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.intro .intro_video .sound-wrapper .sound-on svg {
+  width: 30px;
+  height: 30px;
+}
+
+.intro .intro_video img {
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  opacity: 0.5;
+  width: auto;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+
+}
+
+.intro__head {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding-top: 5rem;
+  font-weight: 300;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.intro__byline {
+  max-width: 550px;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  color: #fff;
+}
+
+.intro__byline a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.intro__desc {
+  max-width: 550px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.7;
+  position: relative;
+  color: #fff;
+}
+
+/* End of intro part */ 
+
+/* Jonas part */
+#story{
+	margin: 0 auto;
+	max-width: 100vh;
+	position: relative;
+	
+	display: inline-block;
+}
+
+#jonas{
+	touch-action: none;
+	text-align: center;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#jonas-child{
+	margin: auto;
+
+}
+.lyric{
+	fill: purple;
+	
+}
+
+.legend {
+	font-family: 'Raleway', sans-serif;
+	fill: #333333;
+}
+
+.tooltip {
+	fill: #333333;
+}
+
+
+.svg-container{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	/*padding-bottom: 100%; /* aspect ratio */
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.svg-content-responsive{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
