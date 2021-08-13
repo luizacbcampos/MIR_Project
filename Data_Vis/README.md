@@ -12,6 +12,7 @@
 1. [D3 Tutorials](https://github.com/d3/d3/wiki/Tutorials)
 1. [csv no D3](https://charlesreid1.com/wiki/D3#Loading_Single_CSV_File)
 1. [Dicas ótimas para pequenos detalhes](https://www.d3-graph-gallery.com/index.html)
+1. [DUSP VIZ MIT](http://duspviz.mit.edu/d3-workshop/intro-to-d3/)
 
 ## CORS
 
@@ -62,8 +63,31 @@ _Ela gosta de séries temporais:_
     - Comparar artista por métrica (acoustic, falseto, danceability, etc)
     - Seria uma opção por filtro
 
+    
+### Planejamento Final
 
-## Visualizações de referência:
+- Fazer uma análise temporal da evolução do falsete:
+     - Utilizar visualizações voltadas para séries temporais:
+          - Como são muitos anos acho que não dá pra usar um gráfico de radar, e também não tem comportamento sazonal;
+          - Gráfico de linhas é uma boa opção nesse caso (Quando o objetivo é exibir como valores quantitativos mudam durante períodos contínuos de tempo, gráficos de linha são a opção mais precisa - Minardi, Raquel);
+          - Gráfico de linhas e pontos pra comparar valores individuais;
+          - Talvez uma boa abordagem pode ser ter esse gráfico tanto de barras quanto de linhas, e a pessoa pode escolher qual dos dois ver.
+          - Um boxplot pode ser massa também, porque mostra a mediada e a distribuição do falsete em cada ano.
+ - Capturar a relação entre gênero e o uso de falsete:
+     - Com isso podemos ver se homens realmente estão fazendo mais falsetes;
+     - Isso pode ser adicionado apenas como um filtro na visualização temporal, de maneira que seja possível selecionar apenas dados de mulheres e apenas dados de homens;
+     - Porém se for apenas filtrar acredito que pode haver aquele problema de memorizar os dados, seria bom alguma forma de visualizar lado a lado:
+          - Talvez um gráfico de barras agrupadas, mas ele não passa tão bem a noção da parte-todo;
+          - Um gráfico de barras empilhadas passa a noção de parte todo, mas é difícil de calcular as categorias, como são apenas duas categorias, acho que rola;
+          - Ou então aqueles gráficos legais cheios de pontinhos (Bee Swarm Plot ou Unit Plot), mas acho que pode ser dado demais pra plotar em bolinhas;
+          - Talvez mostrar um gráfico de áreas agrupadas, daqueles bonitos que a Raquel mostrou. Aquela maluquice de seguir uma curva de rio, podemos ver se é fácil no D3.
+ - Identificar as principais características dessa técnica vocal:
+     - Aqui podemos analisar como o falsete se adapta às características do Spotify:
+          - Plotar vários gráficos de correlação, de falsete x métrica específica, e juntar no formato de pequenos múltiplos;
+          - Aquele gráfico de radar com as métricas, avalia o ano em que a métrica foi mais relevante, se juntar isso com um gráfico ao lado mostrando as décadas que o falsete mais apareceu pode ser legal. Acho que um gráfico de radar igual mesmo, mas só com o falsete do lado, pode ser chique.
+          - Esse gráfico de radar mostra uma análise mais geral dos dados, porque eu agrupei por décadas, uma maneira de ver séries temporais assim com muito mais dados seria plotar uma mapa de calor.
+
+### Visualizações de referência:
 - [Gráfico de radar bonito porém sem legenda](http://bl.ocks.org/nbremer/21746a9668ffdf6d8242)
 - [Explicação para a criação do gráfico de radar bonito](https://www.visualcinnamon.com/2015/10/different-look-d3-radar-chart/)
 - [Gráfico de radar feio com legenda interativa](https://github.com/alangrafu/radar-chart-d3)
