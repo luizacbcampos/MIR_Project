@@ -45,7 +45,7 @@ d3.csv("https://gist.githubusercontent.com/brunomaletta/e60ff6ec1644ffd34b89ff7c
   // color palette
   const color = d3.scaleOrdinal()
     .domain(keys)
-    .range(d3.schemeDark2);
+    .range([d3.schemeSet3[3], d3.schemeSet3[4], d3.schemeSet3[5], d3.schemeSet3[6], d3.schemeSet3[9], d3.schemeSet3[11]]);
 
   //stack the data?
   const stackedData = d3.stack()
@@ -58,12 +58,13 @@ d3.csv("https://gist.githubusercontent.com/brunomaletta/e60ff6ec1644ffd34b89ff7c
     .append("text")
     .attr("x", 0)
     .attr("y", 0)
-    .style("opacity", 0)
     .style("font-size", 17)
+	.text("")
 
   // Three function that change the tooltip when user hover / move / leave a cell
   const mouseover = function(event,d) {
-    Tooltip.style("opacity", 1)
+    //grp = d.key
+    //Tooltip.text(grp)
     d3.selectAll(".myArea").style("opacity", .2)
     d3.select(this)
       .style("stroke", "black")
@@ -71,10 +72,11 @@ d3.csv("https://gist.githubusercontent.com/brunomaletta/e60ff6ec1644ffd34b89ff7c
   }
   const mousemove = function(event,d,i) {
     grp = d.key
-    Tooltip.text(grp)
+    Tooltip.text(data.columns[d+1])
+		.style("stroke", color(keys[d]))
   }
   const mouseleave = function(event,d) {
-    Tooltip.style("opacity", 0)
+    Tooltip.text("")
     d3.selectAll(".myArea").style("opacity", 1).style("stroke", "none")
    }
 
