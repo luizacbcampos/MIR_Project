@@ -140,7 +140,13 @@ function RadarChart(id) {
 		.attr("text-anchor", "middle")
 		.attr("dy", "0.35em")
 		.attr("x", function(d, i){ return (rScale(maxValue * cfg.labelFactor)) * Math.cos(angleSlice*i - Math.PI/2); })
-		.attr("y", function(d, i){ return ((rScale(maxValue * cfg.labelFactor)) * Math.sin(angleSlice*i - Math.PI/2))- 10; })
+		.attr("y", function(d, i){ 
+			var value = ((rScale(maxValue * cfg.labelFactor)) * Math.sin(angleSlice*i - Math.PI/2))- 10;
+			if (i == 0) {
+				value = value + 30;
+			}
+			return value;
+		})
 		.text(function(d){return d})
 		.call(wrap, cfg.wrapWidth);
 
