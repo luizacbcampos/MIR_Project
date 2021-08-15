@@ -139,7 +139,7 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
         .attr("y", -50)
         .attr("text-anchor", "left")
         .style("font-size", "22px")
-        .text("Heatmap: Anos x Falsete");
+        .text("Anos x Falsete");
   
   // Add subtitle to graph
   svg.append("text")
@@ -150,6 +150,26 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
         .style("fill", "grey")
         .style("max-width", 400)
         .text("Grau do falsete ano a cada ano.");
+  
+  // Y axis label:
+  svg.append("text")
+        .attr("text-anchor", "end")
+        .attr("transform", "rotate(-90)")
+        .attr("y", -margin.left+12)
+        .attr("x", 0 - (height/ 2)+50)
+        .style("font-size", "14px")
+        .text("Grau do Falsete")
+
+  // Add legend X
+  svg.append("text")
+        .attr("x", width/2-20)
+        .attr("y", 315)
+        .attr("text-anchor", "left")
+        .style("font-size", "14px")
+        .style("fill", "grey")
+        .style("max-width", 400)
+        .text("Ano");
+
   
   const myColorLegend = d3.scaleSequential()
     .interpolator( d3.interpolateYlOrRd)
