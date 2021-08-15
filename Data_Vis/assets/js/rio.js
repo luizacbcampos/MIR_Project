@@ -43,6 +43,19 @@ d3.csv("https://gist.githubusercontent.com/brunomaletta/e60ff6ec1644ffd34b89ff7c
 		.domain([-3, 3])
 		.range([ height, 0 ]);
 
+	const y2 = d3.scaleLinear()
+		.domain([-1.5, 1.5])
+		.range([ 3*height/4, height/4 ]);
+
+	// Add Y axis label:
+	svg.append("text")
+		.attr("text-anchor", "end")
+		.attr("x", 25)
+		.attr("y", 45 )
+		//.text("Amount of falsetto, on average, per year")
+		.text("Quantidade de falsete, em média, por ano")
+		.attr("text-anchor", "start")
+
 	// color palette
 	const color = d3.scaleOrdinal()
 		.domain(keys)
@@ -125,5 +138,9 @@ d3.csv("https://gist.githubusercontent.com/brunomaletta/e60ff6ec1644ffd34b89ff7c
 		.on("mouseover", mouseover)
 		.on("mousemove", mousemove)
 		.on("mouseleave", mouseleave)
+
+	svg.append("g")
+		.attr("transform", `translate(${width}, 0)`)
+		.call(d3.axisRight(y2).ticks(5))
 
 })
