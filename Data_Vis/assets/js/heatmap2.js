@@ -19,7 +19,7 @@ var heightValue = height + margin.top + margin.bottom;
 var og_ratio = height/width
 
 // append the svg object to the body of the page
-const svg = d3.select("#heatmap")
+const svg = d3.select("#heatmap2")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -70,7 +70,7 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
     .domain([0, 1])
 
     // create a tooltip
-    const TooltipMouse = d3.select("#heatmap")
+    const TooltipMouse = d3.select("#heatmap2")
       .append("div")
       .style("opacity", 0)
       .attr("class", "tooltip")
