@@ -93,13 +93,13 @@ d3.csv("https://gist.githubusercontent.com/brunomaletta/e60ff6ec1644ffd34b89ff7c
 			.translate(+ this.getAttribute("cx"), + this.getAttribute("cy"));
 
 		const dx = window.pageXOffset + matrix.e;
-		const dy = - window.pageYOffset + matrix.f;
+		const dy = window.pageYOffset + matrix.f;
 
 		TooltipMouse
 			.text(data.columns[d+1])
 			.style("position", "absolute")
-			.style("margin-left", (dx + d3.mouse(this)[0]) + "px")
-			.style("margin-top", (dy + d3.mouse(this)[1] + 55) + "px")
+			.style("left", (dx + d3.mouse(this)[0] + 10) + "px")
+			.style("top", (dy + d3.mouse(this)[1] - 10) + "px")
 	}
 	const mouseleave = function(event,d) {
 		Tooltip.text("")
