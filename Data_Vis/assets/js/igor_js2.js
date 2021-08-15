@@ -39,7 +39,7 @@ dropdownButton1.on("change", function(d) {
   //alert(selectedOption);
   //alert("esse agora e do outro botao:");
   const otherOption = d3.select("#button2").property("value")
-  d3.selectAll("path").remove();
+  d3.selectAll(".igor").remove();
   updategraph(selectedOption, otherOption);
 })
 
@@ -50,6 +50,6 @@ dropdownButton2.on("change", function(d) {
   // run the updateChart function with this selected option
   //updateChart(selectedOption)
   const otherOption = d3.select("#button1").property("value")
-  d3.selectAll("path").remove();
+  d3.selectAll(".igor").remove();
   updategraph(otherOption, selectedOption);
 })
