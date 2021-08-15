@@ -40,7 +40,7 @@
     
       // Add X axis
       const x = d3.scaleLinear()
-        .domain([0, +1])
+        .domain([-60, 60])
         .range([ 0, width ]);
 
       svg.append("g")
