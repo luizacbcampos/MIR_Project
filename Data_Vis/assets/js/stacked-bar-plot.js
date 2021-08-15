@@ -2,7 +2,7 @@
 import loadDatav5 from './load-data.js';
 
 // Setting width/heigth information
-const margin = {top: 50, right: 20, bottom: 50, left: 50};
+const margin = {top: 50, right: 20, bottom: 65, left: 50};
 
 var viewportWidth = parseInt(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
 var viewportHeight = parseInt(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
@@ -31,7 +31,6 @@ var svg = d3.select('#fasettoANO')
 
 var x = null; // setting initials
 var y = null;
-
 
 function scale_values(){
   // Alter the values
@@ -80,7 +79,7 @@ function stacked(selector){
 	  function update(){
 
 		  // For each check box:
-		  d3.selectAll(".checkbox").each(function(d){
+		  d3.selectAll(".btn-check").each(function(d){
 			  // If the box is check, I show the group
 			  if(this.checked){
 
@@ -129,7 +128,7 @@ function stacked(selector){
 						})
 
 				  // Otherwise I hide it
-			  }else{
+			  } else{
 
 				  d3.selectAll(".myRect")
 					  .remove();
@@ -186,7 +185,7 @@ function stacked(selector){
 	  }
 
     // When a button change, I run the update function
-    d3.selectAll(".checkbox").on("change",update);
+    d3.selectAll(".btn-check").on("change",update);
 
     // Add X axis
     x = d3.scaleBand()
@@ -194,8 +193,13 @@ function stacked(selector){
         .range([0, width])
         .padding([0.2])      
     svg.append("g")
+      .style("font-size", 13)
       .attr("transform", `translate(0, ${height})`)
-      .call(d3.axisBottom(x).tickSizeOuter(0));
+      .call(d3.axisBottom(x).tickSizeOuter(0))
+      .selectAll("text")
+        .attr("dy", "0.5em")
+        .attr("dx", "-1.8em")
+        .attr("transform", "rotate(-65)");
 
     // Add Y axis
     y = d3.scaleLinear()
@@ -207,23 +211,25 @@ function stacked(selector){
 
     // Add X axis label:
     svg.append("text")
-    	.attr("transform", "translate(" + (width/2) + " ," + (height + margin.top - 10) + ")")
-    	.style("text-anchor", "middle")
+    	.attr("transform", "translate(" + (width/2) + " ," + (height + margin.top+10) + ")")
+      .style("text-anchor", "middle")
+      .style("font-size", "15px")
     	.text("Ano");
     
     // Y axis label:
     svg.append("text")
     	.attr("text-anchor", "end")
     	.attr("transform", "rotate(-90)")
-    	.attr("y", -margin.left+10)
-    	.attr("x", 0 - (height/ 2)+margin.bottom)
+    	.attr("y", -margin.left+12)
+      .attr("x", 0 - (height/ 2)+margin.bottom)
+      .style("font-size", "15px")
     	.text("Quantidade de músicas")
 
     svg.append("text")
         .attr("x", (width / 2))             
         .attr("y", 0 - (margin.top / 2))
         .attr("text-anchor", "middle")  
-        .style("font-size", "20px") 
+        .style("font-size", "30px") 
         .style("text-decoration", "bold")  
         .text("Valor de falsetto por ano");
 
