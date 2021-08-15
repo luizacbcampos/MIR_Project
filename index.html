@@ -10,11 +10,10 @@
         <meta name="description" content="An analysis of falsettos in Billboard Hot 100 songs.">
         <meta name='keywords' content='music' />
 
-
-        <link rel="shortcut icon" href="#">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script><link rel="shortcut icon" href="#">
         <link rel="manifest" href='data:application/manifest+json,{ "name": "Projeto%20Vis%20Dados", "short_name": "shortName", "description": "An%20analysis%20of%20falsettos%20in%20Billboard%20Hot%20100%20songs"}' />
-        
-        <!--<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >-->
+         <!--<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >-->
 
         <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel='stylesheet' type='text/css'>
@@ -37,7 +36,13 @@
         <!-- Ours
         -->
         <script type="module" src="Data_Vis/assets/js/main.js"></script>
-        </head>
+    </head>
+
+    <style>
+        .right {
+        width: 180%;
+        }
+    </style>
         
         <body>
             <main id='content'>
@@ -128,9 +133,13 @@
 				<section id="f_ano" class="chart">
                     <div id="fasettoANO">
 						<!-- Button -->
-						<div>
+						<!-- <div>
 							<input type="checkbox" class="checkbox" value="Zero" checked><label>Zero</label>
-						</div>
+                        </div> -->
+                        <div class="right">
+                            <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="btn-check-2-outlined">Incluir Falsette 0</label><br>
+                        </div>
 
                         <script type="module">
                             import stack from './Data_Vis/assets/js/stacked-bar-plot.js';
