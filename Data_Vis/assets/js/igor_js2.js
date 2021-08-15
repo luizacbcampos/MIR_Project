@@ -9,13 +9,15 @@
 const dropdownButton1 = d3.select("#dropdown_button_years")
   .append('select').attr("id", "button1")
   .style("font-size", "20px")
+  .style("background-color", "#f5b540")
 
 const dropdownButton2 = d3.select("#dropdown_button_years")
   .append('select').attr("id", "button2")
   .style("font-size", "20px")
+  .style("background-color", "#3e72c7")
 
 dropdownButton1 // Add a button
-.selectAll('myOptions') // Next 4 lines add 6 options = 6 colors
+.selectAll('myOptions1') // Next 4 lines add 6 options = 6 colors
   .data(years)
 .enter()
 .append('option')
@@ -23,7 +25,7 @@ dropdownButton1 // Add a button
 .attr("value", function (d) { return d; }) // corresponding value returned by the button
 
 dropdownButton2 // Add a button
-.selectAll('myOptions') // Next 4 lines add 6 options = 6 colors
+.selectAll('myOptions2') // Next 4 lines add 6 options = 6 colors
   .data(years)
 .enter()
 .append('option')

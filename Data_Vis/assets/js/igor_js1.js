@@ -55,6 +55,14 @@
         .domain(categories)
         .range([0, height]) //////////////////////////////////////////////////////////// TODO
         .paddingInner(1)
+
+        svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "30px") 
+        .style("text-decoration", "bold")  
+        .text("Densidade dos atributos por ano selecionado");
         
       svg.append("g")
         .call(d3.axisLeft(yName));
