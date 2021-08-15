@@ -114,6 +114,10 @@ function stacked(selector){
 						  .attr("stroke", "grey") // What happens when user hover a bar
 						  .on("mouseover", function (event,d) { 
 
+							  TooltipMouse2
+								  .style("stroke", "black")
+								  .style("opacity", 1)
+
 							const subGroupName = d3.select(this.parentNode).datum().key // what subgroup are we hovering?
 							
 							// Reduce opacity of all rect to 0.2
@@ -123,8 +127,32 @@ function stacked(selector){
 
 							d3.selectAll(".a_"+subGroupName).style("opacity",1)
 						  }) .on("mouseleave", function (event,d) { // When user do not hover anymore
+							  TooltipMouse2
+								  .style("opacity", 0)
+
 							d3.selectAll(".myRect")
 							.style("opacity",1) // Back to normal opacity: 1
+						})
+				  			.on("mousemove", function (event,d) {
+
+
+								const matrix = this.getScreenCTM()
+									.translate(+ this.getAttribute("cx"), + this.getAttribute("cy"));
+
+								console.log("OLA")
+
+								const dx = window.pageXOffset + matrix.e;
+								const dy = window.pageYOffset + matrix.f;
+
+								console.log(event[0]);
+
+								TooltipMouse2
+									.text("Valor: " + (event[1] - event[0]))
+									.style("position", "absolute")
+									.style("font-size", "15px")
+									.style("left", (d3.mouse(this)[0] + 100) + "px")
+									.style("top", (d3.mouse(this)[1]) + "px")
+
 						})
 
 				  // Otherwise I hide it
@@ -168,6 +196,10 @@ function stacked(selector){
 						  .attr("stroke", "grey") // What happens when user hover a bar
 						  .on("mouseover", function (event,d) { 
 
+							  TooltipMouse2
+								  .style("stroke", "black")
+								  .style("opacity", 1)
+
 							const subGroupName = d3.select(this.parentNode).datum().key // what subgroup are we hovering?
 							
 							// Reduce opacity of all rect to 0.2
@@ -177,8 +209,31 @@ function stacked(selector){
 
 							d3.selectAll(".a_"+subGroupName).style("opacity",1)
 						  }) .on("mouseleave", function (event,d) { // When user do not hover anymore
+							  TooltipMouse2
+								  .style("opacity", 0)
+
 							d3.selectAll(".myRect")
 							.style("opacity",1) // Back to normal opacity: 1
+						})
+				  			.on("mousemove", function (event,d) {
+
+
+								const matrix = this.getScreenCTM()
+									.translate(+ this.getAttribute("cx"), + this.getAttribute("cy"));
+
+								console.log("OLA")
+
+								const dx = window.pageXOffset + matrix.e;
+								const dy = window.pageYOffset + matrix.f;
+
+								console.log(event[0]);
+
+								TooltipMouse2
+									.text("Valor: " + (event[1] - event[0]))
+									.style("position", "absolute")
+									.style("font-size", "15px")
+									.style("left", (d3.mouse(this)[0] + 100) + "px")
+									.style("top", (d3.mouse(this)[1]) + "px")
 						})
 			  }
 		  })
@@ -278,9 +333,21 @@ function stacked(selector){
 
 		// And I initialize it at the beginning
 		update()
+
+
+	  // create a tooltip
+	  const TooltipMouse2 = d3.select("#fasettoANO")
+		  .append("div")
+		  .style("opacity", 0)
+		  .attr("class", "tooltip2")
+		  .style("background-color", "white")
+		  .style("border", "solid")
+		  .style("border-width", "2px")
+		  .style("border-radius", "5px")
+		  .style("padding", "5px")
+
   })
 }
-
 
 
 
