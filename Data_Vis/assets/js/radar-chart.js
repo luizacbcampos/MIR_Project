@@ -5,17 +5,18 @@
 /////////// Inspired by the code of alangrafu ///////////
 /////////////////////////////////////////////////////////
 
-var margin = {top: 100, right: 20, bottom: 100, left: 20},
+var margin = {top: 100, right: 50, bottom: 100, left: 50},
 	width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
 	height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
 
 var og_ratio = height/width
 
 // Definitions
-var className = ["Acousticness","Danceability","Energy","Instrumentalness","Liveness","Speechiness"]
+// var className = ["Acousticness","Danceability","Energy","Instrumentalness","Liveness","Speechiness"]
+var className = ["1950", "1960", "1970", "1990", "1980", "2000", "2010"]
 const color = d3.scaleOrdinal()
 		.domain(className)
-		.range([d3.schemeSet3[3], d3.schemeSet3[4], d3.schemeSet3[5], d3.schemeSet3[6], d3.schemeSet3[9], d3.schemeSet3[11]]);
+		.range([d3.schemeSet3[3], d3.schemeSet3[4], d3.schemeSet3[5], d3.schemeSet3[9], d3.schemeSet3[6], d3.schemeSet3[0], d3.schemeSet3[11]]);
 
 //var color = d3.scale.ordinal().range(["#EDC951","#8C9699","#00A0B0", "#60BF5A", "#C592F9", "#CC333F"]);
 	
@@ -138,8 +139,8 @@ function RadarChart(id) {
 		.style("font-size", "11px")
 		.attr("text-anchor", "middle")
 		.attr("dy", "0.35em")
-		.attr("x", function(d, i){ return (rScale(maxValue * cfg.labelFactor) - 33) * Math.cos(angleSlice*i - Math.PI/2); })
-		.attr("y", function(d, i){ return (rScale(maxValue * cfg.labelFactor) - 33) * Math.sin(angleSlice*i - Math.PI/2); })
+		.attr("x", function(d, i){ return (rScale(maxValue * cfg.labelFactor)) * Math.cos(angleSlice*i - Math.PI/2); })
+		.attr("y", function(d, i){ return ((rScale(maxValue * cfg.labelFactor)) * Math.sin(angleSlice*i - Math.PI/2))- 10; })
 		.text(function(d){return d})
 		.call(wrap, cfg.wrapWidth);
 
@@ -320,60 +321,116 @@ function Data(){
 
 	////////// Data //////////
 	var data = [
-            [//Acousticness
-                {axis:1950, value:1.0},
-                {axis:1960, value:0.6672797838787767},
-                {axis:1970, value:0.3435989342974485},
-                {axis:1980, value:0.08448872916762595},
-                {axis:1990, value:0.04283522217181529},
-                {axis:2000, value:0.0},
-                {axis:2010, value:0.04553289065990834}
-            ],
-            [// Danceability
-                {axis:1950, value:0.13175370879193338},
-                {axis:1960, value:0.0},
-                {axis:1970, value:0.32285716833360834},
-                {axis:1980, value:0.7739922660031109},
-                {axis:1990, value:1.0},
-                {axis:2000, value:0.7744370246732508},
-                {axis:2010, value:0.895459091178159}
-            ],
-            [// energy	
-                {axis:1950, value:0.0},
-                {axis:1960, value:0.15667530927573559},
-                {axis:1970, value:0.43301420242507627},
-                {axis:1980, value:0.739456235143245},
-                {axis:1990, value:0.7124170781335484},
-                {axis:2000, value:1.0},
-                {axis:2010, value:0.8049108415406501}
-            ],
-            [// instrumentalness
-                {axis:1950, value:0.43027591727454967},
-                {axis:1960, value:0.5435238673487339},
-                {axis:1970, value:1.0},
-                {axis:1980, value:0.458119910001678},
-                {axis:1990, value:0.6071174908755317},
-                {axis:2000, value:0.03663128085220363},
-                {axis:2010, value:0.0}
-            ],
-            [// liveness
-                {axis:1950, value:0.3420176412109033},
-                {axis:1960, value:1.0},
-                {axis:1970, value:0.36983807164362226},
-                {axis:1980, value:0.10348560299931986},
-                {axis:1990, value:0.0},
-                {axis:2000, value:0.10059190144133545},
-                {axis:2010, value:0.11810797353816316}
-            ],
-            [// speechiness	
-                {axis:1950, value:0.05440979579369243},
-                {axis:1960, value:0.05805219208506518},
-                {axis:1970, value:0.07206534041233348},
-                {axis:1980, value:0.0},
-                {axis:1990, value:0.5128493602344801},
-                {axis:2000, value:0.7714210645001573},
-                {axis:2010, value:1.0}
-            ],
+			[//1950
+				{axis:"Liveness", value:0.3420176412109033},
+				{axis:"Speechiness", value:0.05440979579369243},
+				{axis:"Danceability", value:0.13175370879193338},
+				{axis:"Energy", value:0.0},
+				{axis:"Instrumentalness", value:0.43027591727454967},
+				{axis:"Acousticness", value:1.0}
+			],
+			[//1960
+				{axis:"Liveness", value:1.0},
+				{axis:"Speechiness", value:0.05805219208506518},
+				{axis:"Danceability", value:0.0},
+				{axis:"Energy", value:0.15667530927573559},
+				{axis:"Instrumentalness", value:0.5435238673487339},
+				{axis:"Acousticness", value:0.6672797838787767}
+			],
+			[//1970
+				{axis:"Liveness", value:0.36983807164362226},
+				{axis:"Speechiness", value:0.07206534041233348},
+				{axis:"Danceability", value:0.32285716833360834},
+				{axis:"Energy", value:0.43301420242507627},
+				{axis:"Instrumentalness", value:1.0},
+				{axis:"Acousticness", value:0.3435989342974485}
+			],
+			[//1990
+				{axis:"Liveness", value:0.0},
+				{axis:"Speechiness", value:0.5128493602344801},
+				{axis:"Danceability", value:1.0},
+				{axis:"Energy", value:0.7124170781335484},
+				{axis:"Instrumentalness", value:0.6071174908755317},
+				{axis:"Acousticness", value:0.04283522217181529}
+			],
+			[//1980
+				{axis:"Liveness", value:0.10348560299931986},
+				{axis:"Speechiness", value:0.0},
+				{axis:"Danceability", value:0.7739922660031109},
+				{axis:"Energy", value:0.739456235143245},
+				{axis:"Instrumentalness", value:0.458119910001678},
+				{axis:"Acousticness", value:0.08448872916762595}
+			],
+			[//2000
+				{axis:"Livenes", value:0.10059190144133545},
+				{axis:"Speechiness", value:0.7714210645001573},
+				{axis:"Danceability", value:0.7744370246732508},
+				{axis:"Energy", value:1.0},
+				{axis:"Instrumentalness", value:0.03663128085220363},
+				{axis:"Acousticness", value:0.0}
+			],
+			[//2010
+				{axis:"Livenes", value:0.11810797353816316},
+				{axis:"Speechiness", value:1.0},
+				{axis:"Danceability", value:0.895459091178159},
+				{axis:"Energy", value:0.8049108415406501},
+				{axis:"Instrumentalness", value:0.0},
+				{axis:"Acousticness", value:0.04553289065990834}
+			],
+            // [//Acousticness 
+            //     {axis:1950, value:1.0},
+            //     {axis:1960, value:0.6672797838787767},
+            //     {axis:1970, value:0.3435989342974485},
+            //     {axis:1980, value:0.08448872916762595},
+            //     {axis:1990, value:0.04283522217181529},
+            //     {axis:2000, value:0.0},
+            //     {axis:2010, value:0.04553289065990834}
+            // ],
+            // [// Danceability
+            //     {axis:1950, value:0.13175370879193338},
+            //     {axis:1960, value:0.0},
+            //     {axis:1970, value:0.32285716833360834},
+            //     {axis:1980, value:0.7739922660031109},
+            //     {axis:1990, value:1.0},
+            //     {axis:2000, value:0.7744370246732508},
+            //     {axis:2010, value:0.895459091178159}
+            // ],
+            // [// energy	
+            //     {axis:1950, value:0.0},
+            //     {axis:1960, value:0.15667530927573559},
+            //     {axis:1970, value:0.43301420242507627},
+            //     {axis:1980, value:0.739456235143245},
+            //     {axis:1990, value:0.7124170781335484},
+            //     {axis:2000, value:1.0},
+            //     {axis:2010, value:0.8049108415406501}
+            // ],
+            // [// instrumentalness
+            //     {axis:1950, value:0.43027591727454967},
+            //     {axis:1960, value:0.5435238673487339},
+            //     {axis:1970, value:1.0},
+            //     {axis:1980, value:0.458119910001678},
+            //     {axis:1990, value:0.6071174908755317},
+            //     {axis:2000, value:0.03663128085220363},
+            //     {axis:2010, value:0.0}
+            // ],
+            // [// liveness
+            //     {axis:1950, value:0.3420176412109033},
+            //     {axis:1960, value:1.0},
+            //     {axis:1970, value:0.36983807164362226},
+            //     {axis:1980, value:0.10348560299931986},
+            //     {axis:1990, value:0.0},
+            //     {axis:2000, value:0.10059190144133545},
+            //     {axis:2010, value:0.11810797353816316}
+            // ],
+            // [// speechiness	
+            //     {axis:1950, value:0.05440979579369243},
+            //     {axis:1960, value:0.05805219208506518},
+            //     {axis:1970, value:0.07206534041233348},
+            //     {axis:1980, value:0.0},
+            //     {axis:1990, value:0.5128493602344801},
+            //     {axis:2000, value:0.7714210645001573},
+            //     {axis:2010, value:1.0}
+            // ],
             ];
 	return data
 }
