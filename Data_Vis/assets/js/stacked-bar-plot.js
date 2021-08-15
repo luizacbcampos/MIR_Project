@@ -67,9 +67,101 @@ function stacked(selector){
   // Parse the Data
   d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main/Data_Vis/assets/data/falsetto_by_year.csv").then( function(data) {
 
+	  //data = data.remove("0");
+	  //data = data.remove(0);
+	  //data.splice(1, 1);
+
     const subgroups = data.columns.slice(1) // List of subgroups = header of csv
+	const subgroupsSemZero = data.columns.slice(1);
+	subgroupsSemZero.splice(0, 1);
     const years = data.map(d => d.year) // List of years = value of the first column called group
     console.log(years)
+
+	  function update(){
+
+		  // For each check box:
+		  d3.selectAll(".checkbox").each(function(d){
+			  // If the box is check, I show the group
+			  if(this.checked){
+
+				  d3.selectAll(".myRect")
+					  .remove();
+
+				 // GRAFICO COM O ZERO
+
+					// Show the bars
+					svg.append("g")
+					  .selectAll("g")
+					  .data(stackedData) // Enter in the stack data = loop key per key = group per group
+					  .join("g")
+						.attr("fill", d => color(d.key))
+						.attr("class", d => "myRect a_" + d.key ) // Add a class to each subgroup: a_ + their name
+						.selectAll("rect")
+						.data(d => d) // enter a second time = loop subgroup per subgroup to add all rectangles
+						.join("rect")
+						  .attr("x", d => x(d.data.year))
+						  .attr("y", d => y(d[1]))
+						  .attr("height", d => y(d[0]) - y(d[1]))
+						  .attr("width",x.bandwidth())
+						  .attr("stroke", "grey") // What happens when user hover a bar
+						  .on("mouseover", function (event,d) { 
+
+							const subGroupName = d3.select(this.parentNode).datum().key // what subgroup are we hovering?
+							
+							// Reduce opacity of all rect to 0.2
+							d3.selectAll(".myRect").style("opacity", 0.2)  
+
+							// Highlight all rects of this subgroup with opacity 1. We select them bc they have a specific class = their name.
+
+							d3.selectAll(".a_"+subGroupName).style("opacity",1)
+						  }) .on("mouseleave", function (event,d) { // When user do not hover anymore
+							d3.selectAll(".myRect")
+							.style("opacity",1) // Back to normal opacity: 1
+						})
+
+				  // Otherwise I hide it
+			  }else{
+
+				  d3.selectAll(".myRect")
+					  .remove();
+
+				 // GRAFICO SEM O ZERO
+
+					// Show the bars
+					svg.append("g")
+					  .selectAll("g")
+					  .data(stackedDataSemZero) // Enter in the stack data = loop key per key = group per group
+					  .join("g")
+						.attr("fill", d => color(d.key))
+						.attr("class", d => "myRect a_" + d.key ) // Add a class to each subgroup: a_ + their name
+						.selectAll("rect")
+						.data(d => d) // enter a second time = loop subgroup per subgroup to add all rectangles
+						.join("rect")
+						  .attr("x", d => x(d.data.year))
+						  .attr("y", d => y(d[1]))
+						  .attr("height", d => y(d[0]) - y(d[1]))
+						  .attr("width",x.bandwidth())
+						  .attr("stroke", "grey") // What happens when user hover a bar
+						  .on("mouseover", function (event,d) { 
+
+							const subGroupName = d3.select(this.parentNode).datum().key // what subgroup are we hovering?
+							
+							// Reduce opacity of all rect to 0.2
+							d3.selectAll(".myRect").style("opacity", 0.2)  
+
+							// Highlight all rects of this subgroup with opacity 1. We select them bc they have a specific class = their name.
+
+							d3.selectAll(".a_"+subGroupName).style("opacity",1)
+						  }) .on("mouseleave", function (event,d) { // When user do not hover anymore
+							d3.selectAll(".myRect")
+							.style("opacity",1) // Back to normal opacity: 1
+						})
+			  }
+		  })
+	  }
+
+    // When a button change, I run the update function
+    d3.selectAll(".checkbox").on("change",update);
 
     // Add X axis
     x = d3.scaleBand()
@@ -143,40 +235,17 @@ function stacked(selector){
       .keys(subgroups)
       (data)
 
+    //stack the data? --> stack per subgroup
+    const stackedDataSemZero = d3.stack()
+      .keys(subgroupsSemZero)
+      (data)
+
     // ----------------
     // Highlight a specific subgroup when hovered
     // ----------------
 
-    // Show the bars
-    svg.append("g")
-      .selectAll("g")
-      .data(stackedData) // Enter in the stack data = loop key per key = group per group
-      .join("g")
-        .attr("fill", d => color(d.key))
-        .attr("class", d => "myRect a_" + d.key ) // Add a class to each subgroup: a_ + their name
-        .selectAll("rect")
-        .data(d => d) // enter a second time = loop subgroup per subgroup to add all rectangles
-        .join("rect")
-          .attr("x", d => x(d.data.year))
-          .attr("y", d => y(d[1]))
-          .attr("height", d => y(d[0]) - y(d[1]))
-          .attr("width",x.bandwidth())
-          .attr("stroke", "grey") // What happens when user hover a bar
-          .on("mouseover", function (event,d) { 
-
-            const subGroupName = d3.select(this.parentNode).datum().key // what subgroup are we hovering?
-            
-            // Reduce opacity of all rect to 0.2
-            d3.selectAll(".myRect").style("opacity", 0.2)  
-
-            // Highlight all rects of this subgroup with opacity 1. We select them bc they have a specific class = their name.
-
-            d3.selectAll(".a_"+subGroupName).style("opacity",1)
-          }) .on("mouseleave", function (event,d) { // When user do not hover anymore
-            d3.selectAll(".myRect")
-            .style("opacity",1) // Back to normal opacity: 1
-        })
-
+		// And I initialize it at the beginning
+		update()
   })
 }
 
@@ -244,7 +313,7 @@ function old(selector){
 	        .map(d => d.key);
 
         console.log(subgroups)
-        
+
         // rollup to count leaves
         const y = d3.scaleLinear().domain([0, 600]).range([ height, 0 ]);
       
