@@ -23,7 +23,7 @@
             `translate(${margin.left}, ${margin.top})`);
   
   //read data
-  d3.csv("/csv_tp_final.csv").then(function(data) {
+  d3.csv("file:///home/igor/%C3%81rea%20de%20Trabalho/Gradua%C3%A7%C3%A3o/10o%20Semestre/Visualizacao/MIR_Project/MIR/data/csv_tp_final.csv").then(function(data) {
   
     // Get the different categories and count them
     const categories = [
@@ -77,8 +77,8 @@
         density_2 = kde( data.map(function(d){  return 2*d[key2]; }) )
         
         key = categories[i]
-        allDensity1.push({key: key, density: density1})
-        allDensity2.push({key: key, density: density2})
+        allDensity1.push({key: key, density: density_1})
+        allDensity2.push({key: key, density: density_2})
     }
   
     // Add areas
