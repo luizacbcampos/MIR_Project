@@ -16,7 +16,7 @@
   
   function updategraph(year1, year2) {
     //read data
-    d3.csv("file:///home/igor/%C3%81rea%20de%20Trabalho/Gradua%C3%A7%C3%A3o/10o%20Semestre/Visualizacao/MIR_Project/MIR/data/csv_tp_final.csv").then(function(data) {
+    d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main/Data_Vis/assets/data/ridgeline_map.csv").then(function(data) {
     
       // Get the different categories and count them
       const categories = [
