@@ -246,6 +246,14 @@ h1 {
   margin-bottom: -10rem;
 }
 
+.btn-outline-secondary{
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 1.0;
+  text-shadow :transparent;
+}
+
+
 .density{
   padding: 0.5rem;
 }
