@@ -87,6 +87,15 @@ function stacked(selector){
 				  d3.selectAll(".myRect")
 					  .remove();
 
+				  d3.selectAll(".eixoY").remove();
+
+					y = d3.scaleLinear()
+					  .domain([0, 600])
+					  .range([ height, 0 ]);
+					svg.append("g")
+					  .attr("class", "eixoY")
+					  .call(d3.axisLeft(y));
+
 				 // GRAFICO COM O ZERO
 
 					// Show the bars
@@ -125,6 +134,22 @@ function stacked(selector){
 				  d3.selectAll(".myRect")
 					  .remove();
 
+				  d3.selectAll(".eixoY").remove();
+
+					y = d3.scaleLinear()
+					  .domain([0, 150])
+					  .range([ height, 0 ]);
+					svg.append("g")
+					  .attr("class", "eixoY")
+					  .call(d3.axisLeft(y));
+
+//					y = d3.scaleLinear()
+//					  .domain([0, 300])
+//					  .range([ height, 0 ]);
+//					svg.append("g")
+//					  .call(d3.axisLeft(y));
+
+
 				 // GRAFICO SEM O ZERO
 
 					// Show the bars
@@ -139,7 +164,7 @@ function stacked(selector){
 						.join("rect")
 						  .attr("x", d => x(d.data.year))
 						  .attr("y", d => y(d[1]))
-						  .attr("height", d => y(d[0]) - y(d[1]))
+						  .attr("height", d => 1 * (y(d[0]) - y(d[1])))
 						  .attr("width",x.bandwidth())
 						  .attr("stroke", "grey") // What happens when user hover a bar
 						  .on("mouseover", function (event,d) { 
@@ -177,6 +202,7 @@ function stacked(selector){
       .domain([0, 600])
       .range([ height, 0 ]);
     svg.append("g")
+	  .attr("class", "eixoY")
       .call(d3.axisLeft(y));
 
     // Add X axis label:
