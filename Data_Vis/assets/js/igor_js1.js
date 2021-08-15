@@ -33,14 +33,16 @@
           "speechiness",
           "valence"    
       ]
+
       const n = categories.length
       //const year1 = 1990
       //const year2 = 2015
     
       // Add X axis
       const x = d3.scaleLinear()
-        .domain([-60, +60])
+        .domain([0, +1])
         .range([ 0, width ]);
+
       svg.append("g")
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(x));
@@ -56,7 +58,7 @@
         .range([0, height]) //////////////////////////////////////////////////////////// TODO
         .paddingInner(1)
 
-        svg.append("text")
+      svg.append("text")
         .attr("x", (width / 2))             
         .attr("y", 0 - (margin.top / 2))
         .attr("text-anchor", "middle")  
