@@ -7,6 +7,7 @@
 
 
 <div id="dropdown_button_years"></div>
+
 <script>
   const years = [1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968,
       1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979,
@@ -16,13 +17,13 @@
       2013, 2014, 2015, 2016, 2017, 2018, 2019]
     
   const dropdownButton1 = d3.select("#dropdown_button_years")
-    .append('select')
+    .append('select').attr("id", "button1")
 
   const dropdownButton2 = d3.select("#dropdown_button_years")
-    .append('select')
+    .append('select').attr("id", "button2")
 
   dropdownButton1 // Add a button
-  .selectAll('#button1') // Next 4 lines add 6 options = 6 colors
+  .selectAll('myOptions') // Next 4 lines add 6 options = 6 colors
     .data(years)
   .enter()
   .append('option')
@@ -30,7 +31,7 @@
   .attr("value", function (d) { return d; }) // corresponding value returned by the button
 
   dropdownButton2 // Add a button
-  .selectAll('#button2') // Next 4 lines add 6 options = 6 colors
+  .selectAll('myOptions') // Next 4 lines add 6 options = 6 colors
     .data(years)
   .enter()
   .append('option')
@@ -45,8 +46,9 @@
     //updateChart(selectedOption)
     //alert(selectedOption);
     //alert("esse agora e do outro botao:");
+    const otherOption = d3.select("#button2").property("value")
     d3.selectAll("path").remove();
-    updategraph(selectedOption, 1958);
+    updategraph(selectedOption, otherOption);
   })
 
   dropdownButton2.on("change", function(d) {
@@ -55,8 +57,9 @@
 
     // run the updateChart function with this selected option
     //updateChart(selectedOption)
+    const otherOption = d3.select("#button1").property("value")
     d3.selectAll("path").remove();
-    updategraph(selectedOption, 1958);
+    updategraph(otherOption, selectedOption);
   })
 
 </script>
@@ -135,7 +138,7 @@
           density_1 = kde( data.map(function(d){  return d[key1]; }) )
 
           key2 = categories[i] + "_" + year2
-          density_2 = kde( data.map(function(d){  return 2*d[key2]; }) )
+          density_2 = kde( data.map(function(d){  return d[key2]; }) )
           
           key = categories[i]
           allDensity1.push({key: key, density: density_1})
@@ -173,7 +176,7 @@
     
     })
   }
-  updategraph(1958, 2019);
+  updategraph(1958, 1958);
   
   
   // This is what I need to compute kernel density estimation
