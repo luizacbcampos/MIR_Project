@@ -232,3 +232,13 @@ h1 {
   top: 0;
   left: 0;
 }
+
+.right {
+  padding: 0.5rem;
+  width: 180%;
+  }
+
+.btn-check{
+  padding: 0.5rem;
+  border-radius: 50%;
+}
