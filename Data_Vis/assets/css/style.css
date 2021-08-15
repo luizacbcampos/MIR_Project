@@ -234,11 +234,14 @@ h1 {
 }
 
 .right {
-  padding: 0.5rem;
+  padding-top: 0.5rem;
   width: 180%;
+  position:absolute;
   }
 
 .btn-check{
+  border: none;
   padding: 0.5rem;
   border-radius: 50%;
+  margin-bottom: -10rem;
 }
