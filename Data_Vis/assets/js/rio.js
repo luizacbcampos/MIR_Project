@@ -50,11 +50,12 @@ d3.csv("https://gist.githubusercontent.com/brunomaletta/e60ff6ec1644ffd34b89ff7c
 	// Add Y axis label:
 	svg.append("text")
 		.attr("text-anchor", "end")
-		.attr("x", 25)
-		.attr("y", 45 )
+		.attr("x", 190)
+		.attr("y", 0)
 		//.text("Amount of falsetto, on average, per year")
-		.text("Quantidade de falsete, em média, por ano")
+		.text("Quantidade de falsete (média) por ano")
 		.attr("text-anchor", "start")
+		.style("font", "25px times")
 
 	// color palette
 	const color = d3.scaleOrdinal()
