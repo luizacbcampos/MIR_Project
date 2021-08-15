@@ -1,7 +1,7 @@
 // Heatmap year x falsetto
 
 // set the dimensions and margins of the graph
-const margin = {top: 100, right: 25, bottom: 100, left: 40};
+const margin = {top: 100, right: 25, bottom: 200, left: 40};
 
 var viewportWidth = parseInt(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
 var viewportHeight = parseInt(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
@@ -9,7 +9,7 @@ var viewportHeight = parseInt(Math.max(document.documentElement.clientHeight, wi
 
 
 var width = parseInt((viewportWidth - margin.left - margin.right)*0.95); // Use the window's width
-var height = 450 - margin.top - margin.bottom;
+var height = 550 - margin.top - margin.bottom;
 //parseInt((viewportHeight - margin.top - margin.bottom)*0.95); // Use the window's height
 
 
@@ -20,11 +20,11 @@ var og_ratio = height/width
 
 // append the svg object to the body of the page
 const svg = d3.select("#heatmap")
-.append("svg")
-.attr("width", width + margin.left + margin.right)
-.attr("height", height + margin.top + margin.bottom)
-.append("g")
-.attr("transform", `translate(${margin.left}, ${margin.top})`);
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 //Read the data
 d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora/Data_Vis/Heatmap/falsetto_by_year_sem_0.csv").then(function(data){
@@ -92,7 +92,6 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
   }
   const mousemove = function(event,d) {
 
-
       const matrix = this.getScreenCTM()
           .translate(+ this.getAttribute("cx"), + this.getAttribute("cy"));
 
@@ -102,6 +101,7 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
     TooltipMouse
       .text("Valor: " + event.count)
       .style("position", "absolute")
+      .style("font-size", "15px")
       .style("left", (dx + d3.mouse(this)[0] + 35) + "px")
       .style("top", (dy + d3.mouse(this)[1] - 35) + "px")
 
@@ -113,8 +113,6 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
           .style("stroke", "none")
           .style("opacity", 0.8)
   }
-
-  // console.log(function(d) { return x(d.year) })
 
   // add the squares
   svg.selectAll()
@@ -135,14 +133,13 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
       .on("mousemove", mousemove)
       .on("mouseleave", mouseleave)
   
-
   // Add title to graph
   svg.append("text")
         .attr("x", 0)
         .attr("y", -50)
         .attr("text-anchor", "left")
         .style("font-size", "22px")
-        .text("A d3.js heatmap");
+        .text("Heatmap: Anos x Falsete");
   
   // Add subtitle to graph
   svg.append("text")
@@ -152,38 +149,41 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
         .style("font-size", "14px")
         .style("fill", "grey")
         .style("max-width", 400)
-        .text("A short description of the take-away message of this chart.");
+        .text("Grau do falsete ano a cada ano.");
   
-  const gridSize = Math.floor(width / 25);
-  const legendWidth = (gridSize/2 + 4);
+  const myColorLegend = d3.scaleSequential()
+    .interpolator( d3.interpolateYlOrRd)
+    .domain([1, 200])
 
-  const maxNum = Math.round(d3.max(data,function(d){ return d.value; }));
+  svg.selectAll(".bars")
+    .data(d3.range(200), function(d) { return d; })
+    .enter().append("rect")
+      .attr("class", "bars")
+      .attr("x", function(d, i) { return i+(width/2-150); })
+      .attr("y", 350)
+      .attr("height", 30)
+      .attr("width", 100)
+      .style("fill", function(d, i ) { return myColorLegend(d); })
 
-  const colors = colorbrewer.RdYlGn[10];
-  const colorScale = d3.scale.quantile()
-      .domain([0, 10 - 1, maxNum])
-      .range(colors);
+  svg.append("text")
+      .attr("x", width/2-150)
+      .attr("y", 400)
+      .attr("text-anchor", "left")
+      .style("font-size", "14px")
+      .style("fill", "grey")
+      .style("max-width", 400)
+      .text("0");
 
-  const legend = svg.selectAll(".legend")
-      .data([0].concat(colorScale.quantiles()), function(d) { return d; })
-      .enter().append("g")
-      .attr("class", "legend");
+  svg.append("text")
+      .attr("x", width/2+130)
+      .attr("y", 400)
+      .attr("text-anchor", "left")
+      .style("font-size", "14px")
+      .style("fill", "grey")
+      .style("max-width", 400)
+      .text(">40");
 
-  legend.append("rect")
-    .attr("x", function(d, i) { return gridSize * 11; })
-    .attr("y", function(d, i) { return (i * legendWidth + 7); })
-    .attr("width", gridSize/2)
-    .attr("height", gridSize/2)
-    .style("fill", function(d, i) { return colors[i]; })
-    .attr("class", "square");
-
-  legend.append("text")
-    .attr("class", "mono")
-    .text(function(d) { return "≥ " + Math.round(d); })
-    .attr("x", function(d, i) { return gridSize * 11 + 25; })
-    .attr("y", function(d, i) { return (i * legendWidth + 20); })
-
-})//AQUI
+})
 
 
 
