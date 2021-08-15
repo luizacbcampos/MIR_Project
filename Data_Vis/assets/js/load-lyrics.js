@@ -106,6 +106,8 @@ function playSound(){
     loop:false
     })
 
+	newSound.volume(0.1);
+
     stopLastAudio()
     newSound.play();
     noiseArray.push(newSound);
