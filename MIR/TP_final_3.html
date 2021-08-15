@@ -4,9 +4,67 @@
 <!-- Load d3.js -->
 <script src="d3_v6.js"></script>
         
+
+
+<div id="dropdown_button_years"></div>
+<script>
+  const years = [1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968,
+      1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979,
+      1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990,
+      1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001,
+      2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012,
+      2013, 2014, 2015, 2016, 2017, 2018, 2019]
+    
+  const dropdownButton1 = d3.select("#dropdown_button_years")
+    .append('select')
+
+  const dropdownButton2 = d3.select("#dropdown_button_years")
+    .append('select')
+
+  dropdownButton1 // Add a button
+  .selectAll('myOptions') // Next 4 lines add 6 options = 6 colors
+    .data(years)
+  .enter()
+  .append('option')
+  .text(function (d) { return d; }) // text showed in the menu
+  .attr("value", function (d) { return d; }) // corresponding value returned by the button
+
+  dropdownButton2 // Add a button
+  .selectAll('myOptions') // Next 4 lines add 6 options = 6 colors
+    .data(years)
+  .enter()
+  .append('option')
+  .text(function (d) { return d; }) // text showed in the menu
+  .attr("value", function (d) { return d; }) // corresponding value returned by the button
+
+  dropdownButton1.on("change", function(d) {
+    // recover the option that has been chosen
+    const selectedOption = d3.select(this).property("value")
+
+    // run the updateChart function with this selected option
+    //updateChart(selectedOption)
+    alert(selectedOption);
+  })
+
+  dropdownButton2.on("change", function(d) {
+    // recover the option that has been chosen
+    const selectedOption = d3.select(this).property("value")
+
+    // run the updateChart function with this selected option
+    //updateChart(selectedOption)
+    alert(selectedOption);
+  })
+
+</script>
+
+
+
+
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
+
 <script>
+  
 
   // set the dimensions and margins of the graph
   const margin = {top: 200, right: 30, bottom: 50, left:110},
@@ -32,7 +90,7 @@
         "spoken",
         "acousticness",
         "danceability",
-        "tempo",
+        //"tempo",
         "energy",
         "instrumentalness",
         "liveness",
@@ -41,7 +99,7 @@
         "valence"    
     ]
     const n = categories.length
-    const year1 = 1985
+    const year1 = 1990
     const year2 = 2015
   
     // Add X axis
