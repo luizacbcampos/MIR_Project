@@ -5,7 +5,7 @@
 /////////// Inspired by the code of alangrafu ///////////
 /////////////////////////////////////////////////////////
 
-var margin = {top: 50, right: 20, bottom: 50, left: 50},
+var margin = {top: 100, right: 20, bottom: 100, left: 20},
 	width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
 	height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
 
@@ -14,11 +14,10 @@ var og_ratio = height/width
 // Definitions
 var className = ["Acousticness","Danceability","Energy","Instrumentalness","Liveness","Speechiness"]
 const color = d3.scaleOrdinal()
-      //.domain(className)
-      .range([d3.schemeSet3[3], d3.schemeSet3[4], d3.schemeSet3[5], d3.schemeSet3[6], d3.schemeSet3[9], d3.schemeSet3[11]]);
+		.domain(className)
+		.range([d3.schemeSet3[3], d3.schemeSet3[4], d3.schemeSet3[5], d3.schemeSet3[6], d3.schemeSet3[9], d3.schemeSet3[11]]);
 
 //var color = d3.scale.ordinal().range(["#EDC951","#8C9699","#00A0B0", "#60BF5A", "#C592F9", "#CC333F"]);
-var radarChartOptions = {w: width, h: height, margin: margin, maxValue: 0.5, levels: 5, roundStrokes: true, color: color};
 	
 function resize() {
 
@@ -26,8 +25,8 @@ function resize() {
   console.log(widthValue, heightValue)
 
 }
-
-
+// maxValue: 0.5, levels: 5, roundStrokes: true, 
+var radarChartOptions = {w: width, h: height, margin: margin, color: color};
 
 function RadarChart(id) {
 	console.log("Radar")
@@ -56,20 +55,24 @@ function RadarChart(id) {
 	var svg = d3.select(id).append("svg")
 			.attr("width",  cfg.w + cfg.margin.left + cfg.margin.right)
 			.attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom)
-			.attr("class", "radar"+id);
+			.attr("class", id);
 	//Append a g element		
 	var g = svg.append("g")
+			.attr("width", cfg.w)
+			.attr("height", cfg.h)
 			.attr("transform", "translate(" + (cfg.w/2 + cfg.margin.left) + "," + (cfg.h/2 + cfg.margin.top) + ")");
+			//.attr("transform", "translate(" + (cfg.margin.left) + "," + (cfg.margin.top) + ")");
 	
 	// title
 
 	svg.append("text")
         .attr("x", (cfg.w/2 + cfg.margin.left))             
-        .attr("y", cfg.margin.top / 2)
+        .attr("y", cfg.margin.top/5)
         .attr("text-anchor", "middle")  
         .style("font-size", "20px") 
         .style("text-decoration", "bold")  
         .text("Title");
+
 	//Glow filter 
 	
 	//Filter for the outside glow
@@ -145,12 +148,12 @@ function RadarChart(id) {
 	
 	//The radial line function
 	var radarLine = d3.lineRadial()
-		.curve(d3.curveLinear)//.interpolate("linear-closed")
+		.curve(d3.curveLinearClosed)//.interpolate("linear-closed")
 		.radius(function(d) { return rScale(d.value); })
 		.angle(function(d,i) {	return i*angleSlice; });
 		
 	if(cfg.roundStrokes) {
-		radarLine.curve(d3.curveCardinal)//.interpolate("cardinal-closed");
+		radarLine.curve(d3.curveCardinalClosed)//.interpolate("cardinal-closed");
 	}
 				
 	//////////// Tooltip for legend with mouseover ////////////
@@ -212,16 +215,43 @@ function RadarChart(id) {
 		.style("fill", "none")
 		.style("filter" , "url(#glow)");		
 	
-	//Append the circles
+
+	var newData = [];
+	data.forEach(function(d,i) {
+		d.forEach(function (e){
+			newData.push({
+				id: i,
+				axis: e.axis,
+				value: e.value,
+			});
+		});
+	});
+
+	
 	blobWrapper.selectAll(".radarCircle")
-		.data(function(d,i) { return d; })
+		.data(newData)
 		.enter().append("circle")
 		.attr("class", "radarCircle")
 		.attr("r", cfg.dotRadius)
 		.attr("cx", function(d,i){ return rScale(d.value) * Math.cos(angleSlice*i - Math.PI/2); })
 		.attr("cy", function(d,i){ return rScale(d.value) * Math.sin(angleSlice*i - Math.PI/2); })
-		.style("fill", function(d,i,j) { return cfg.color(j); })
+		.style("fill", function(d){ return cfg.color(className[d.id]);})
 		.style("fill-opacity", 0.8);
+
+	//Append the circles
+//	blobWrapper.selectAll(".radarCircle")
+//		.data(function(d,i) {return d; })
+//		.enter().append("circle")
+//		.attr("class", "radarCircle")
+//		.attr("r", cfg.dotRadius)
+//		.attr("cx", function(d,i){ return rScale(d.value) * Math.cos(angleSlice*i - Math.PI/2); })
+//		.attr("cy", function(d,i){ return rScale(d.value) * Math.sin(angleSlice*i - Math.PI/2); })
+//		.style("fill", function(d,j){
+//			 console.log(d); 
+//			//for (j in d) { console.log(i, j)}
+//			return cfg.color(className[j]);})
+//		//.style("fill", function(d,i,j) { console.log(className[i], i, j); return cfg.color(className[i]); })
+//		.style("fill-opacity", 0.8);
 
 
 	
@@ -257,20 +287,21 @@ function RadarChart(id) {
 	
 }//RadarChart
 
+
 function setConfig(options){ //Default values
 	var cfg = {
 	 w: 600,				//Width of the circle
 	 h: 600,				//Height of the circle
-	 margin: {top: 20, right: 20, bottom: 20, left: 20}, //The margins of the SVG
-	 levels: 3,				//How many levels or inner circles should there be drawn
-	 maxValue: 0, 			//What is the value that the biggest circle will represent
-	 labelFactor: 1.25, 	//How much farther than the radius of the outer circle should the labels be placed
+	 margin: {top: 100, right: 20, bottom: 100, left: 20}, //The margins of the SVG
+	 levels: 5,				//How many levels or inner circles should there be drawn
+	 maxValue: 0.5, 		//What is the value that the biggest circle will represent
+	 labelFactor: 1.15, 	//How much farther than the radius of the outer circle should the labels be placed
 	 wrapWidth: 60, 		//The number of pixels after which a label needs to be given a new line
 	 opacityArea: 0.35, 	//The opacity of the area of the blob
 	 dotRadius: 4, 			//The size of the colored circles of each blog
 	 opacityCircles: 0.1, 	//The opacity of the circles of each blob
 	 strokeWidth: 2, 		//The width of the stroke around each blob
-	 roundStrokes: false,	//If true the area and stroke will follow a round path (cardinal-closed)
+	 roundStrokes: true,	//If true the area and stroke will follow a round path (cardinal-closed)
 	 color: d3.scaleOrdinal(d3.schemeCategory10), //Color function
 	};
 
