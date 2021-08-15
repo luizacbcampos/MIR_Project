@@ -72,7 +72,7 @@ function RadarChart(id) {
         .attr("text-anchor", "middle")  
         .style("font-size", "20px") 
         .style("text-decoration", "bold")  
-        .text("Title");
+        .text("Métricas do Spotify por Décadas");
 
 	//Glow filter 
 	

@@ -1,7 +1,7 @@
 // Heatmap year x falsetto
 
 // set the dimensions and margins of the graph
-const margin = {top: 100, right: 25, bottom: 200, left: 40};
+const margin = {top: 100, right: 25, bottom: 200, left: 100};
 
 var viewportWidth = parseInt(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
 var viewportHeight = parseInt(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
@@ -9,7 +9,7 @@ var viewportHeight = parseInt(Math.max(document.documentElement.clientHeight, wi
 
 
 var width = parseInt((viewportWidth - margin.left - margin.right)*0.95); // Use the window's width
-var height = 550 - margin.top - margin.bottom;
+var height = 500 - margin.top - margin.bottom;
 //parseInt((viewportHeight - margin.top - margin.bottom)*0.95); // Use the window's height
 
 
@@ -27,11 +27,11 @@ const svg = d3.select("#heatmap")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 //Read the data
-d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora/Data_Vis/Heatmap/falsetto_by_year_sem_0.csv").then(function(data){
+d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora/Data_Vis/Heatmap/metrics_by_year.csv").then(function(data){
   console.log("Heatmap")
   // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
   const myGroups = Array.from(new Set(data.map(d => d.year)))
-  const myVars = Array.from(new Set(data.map(d => d.falsetto)))
+  const myVars = Array.from(new Set(data.map(d => d.metrics)))
 
   console.log(myVars)
 
@@ -60,14 +60,14 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
       .domain(myVars)
       .padding(0.05);
     svg.append("g")
-      .style("font-size", 15)
+      .style("font-size", 10)
       .call(d3.axisLeft(y).tickSize(0))
       .select(".domain").remove()
 
     // Build color scale
     const myColor = d3.scaleSequential()
     .interpolator( d3.interpolateYlOrRd)
-    .domain([1, 40])
+    .domain([0, 1])
 
     // create a tooltip
     const TooltipMouse = d3.select("#heatmap")
@@ -116,10 +116,10 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
 
   // add the squares
   svg.selectAll()
-    .data(data, function(d) {return d.year+':'+d.falsetto;})
+    .data(data, function(d) {return d.year+':'+d.metrics;})
     .join("rect")
       .attr("x", function(d) { return x(d.year) })
-      .attr("y", function(d) { return y(d.falsetto) })
+      .attr("y", function(d) { return y(d.metrics) })
       .attr("rx", 4)
       .attr("ry", 4)
       .attr("width", x.bandwidth() )
@@ -139,55 +139,54 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
         .attr("y", -50)
         .attr("text-anchor", "left")
         .style("font-size", "22px")
-        .text("Anos x Falsete");
+        .text("Anos x Métricas do Spotify");
   
-  // Add subtitle to graph
-  svg.append("text")
-        .attr("x", 0)
-        .attr("y", -20)
-        .attr("text-anchor", "left")
-        .style("font-size", "14px")
-        .style("fill", "grey")
-        .style("max-width", 400)
-        .text("Grau do falsete ano a cada ano.");
-  
+//   // Add subtitle to graph
+//   svg.append("text")
+//         .attr("x", 0)
+//         .attr("y", -20)
+//         .attr("text-anchor", "left")
+//         .style("font-size", "14px")
+//         .style("fill", "grey")
+//         .style("max-width", 400)
+//         .text("Grau do falsete ano a cada ano.");
+
   // Y axis label:
   svg.append("text")
         .attr("text-anchor", "end")
         .attr("transform", "rotate(-90)")
         .attr("y", -margin.left+12)
-        .attr("x", 0 - (height/ 2)+50)
+        .attr("x", 0 - (height/ 2)+30)
         .style("font-size", "14px")
-        .text("Grau do Falsete")
+        .text("Métricas")
 
   // Add legend X
   svg.append("text")
         .attr("x", width/2-20)
-        .attr("y", 315)
+        .attr("y", 270)
         .attr("text-anchor", "left")
         .style("font-size", "14px")
         .style("fill", "grey")
         .style("max-width", 400)
         .text("Ano");
-
   
   const myColorLegend = d3.scaleSequential()
     .interpolator( d3.interpolateYlOrRd)
-    .domain([1, 200])
+    .domain([0, 200])
 
   svg.selectAll(".bars")
     .data(d3.range(200), function(d) { return d; })
     .enter().append("rect")
       .attr("class", "bars")
       .attr("x", function(d, i) { return i+(width/2-150); })
-      .attr("y", 350)
+      .attr("y", 300)
       .attr("height", 30)
       .attr("width", 100)
       .style("fill", function(d, i ) { return myColorLegend(d); })
 
   svg.append("text")
       .attr("x", width/2-150)
-      .attr("y", 400)
+      .attr("y", 350)
       .attr("text-anchor", "left")
       .style("font-size", "14px")
       .style("fill", "grey")
@@ -195,13 +194,13 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
       .text("0");
 
   svg.append("text")
-      .attr("x", width/2+130)
-      .attr("y", 400)
+      .attr("x", width/2+140)
+      .attr("y", 350)
       .attr("text-anchor", "left")
       .style("font-size", "14px")
       .style("fill", "grey")
       .style("max-width", 400)
-      .text(">40");
+      .text("1");
 
 })
 
