@@ -138,6 +138,22 @@ h1 {
 
 }
 
+.intro .intro_video video {
+  opacity: 0.5;
+  width: auto;
+  height: auto;
+  min-height: 100%;
+  min-width: 130%;
+  display: block;
+  object-fit: cover;
+  position: absolute;
+  -webkit-filter: grayscale(0.2);
+  filter: grayscale(0.2);
+  top: -10%;
+  left: -30%;
+}
+
+
 .intro__head {
   max-width: 60rem;
   margin: 0 auto;
