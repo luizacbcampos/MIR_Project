@@ -27,7 +27,7 @@ const svg = d3.select("#heatmap")
 .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 //Read the data
-d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora/Data_Vis/Heatmap/falsetto_by_year.csv").then(function(data){
+d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora/Data_Vis/Heatmap/falsetto_by_year_sem_0.csv").then(function(data){
   console.log("Heatmap")
   // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
   const myGroups = Array.from(new Set(data.map(d => d.year)))
@@ -66,8 +66,8 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
 
     // Build color scale
     const myColor = d3.scaleSequential()
-      .interpolator( d3.interpolateRdYlBu)
-      .domain([0, 200])
+    .interpolator( d3.interpolateYlOrRd)
+    .domain([1, 40])
 
     // create a tooltip
     const TooltipMouse = d3.select("#heatmap")
