@@ -86,7 +86,7 @@ function changeWord(){
 
 function stopLastAudio(){
   
-  console.log("stop audio");
+  console.log("stop Sucker");
   if (noiseArray.length > 0) {
     for (var noise in noiseArray){
       noiseArray[noise].stop();
@@ -97,7 +97,7 @@ function stopLastAudio(){
 
 function playSound(){
   
-  console.log("playing sound");
+  console.log("playing Sucker");
 
   const newSound = new Howl({
     src: ["https://p.scdn.co/mp3-preview/8b304ee721be5f4235a67722670be137c785de1e.mp3"],
@@ -120,7 +120,6 @@ function playSound(){
 }
 
 function playSong(currentId){
-
   playSound();
   var interval = null;
 
@@ -143,8 +142,10 @@ function playSong(currentId){
         }
       }
     },100)
-
-    //stopLastAudio()
+  }
+  else{
+    //reset shit
+    stopLastAudio()
   }
 }
 var lyrics = null;
@@ -156,10 +157,28 @@ var lyricsTwo = null;
 var currentId = "jonas"
 var noiseArray = [];
 var lastAudio = null;
+var muted = true;
+
+
+
 
 function init(){
 
-  playSong(currentId)
+  var soundWrapper = d3.select(".sound-wrapper-jonas");
+  soundWrapper.on("click", function (d){
+    if (muted) {
+      muted = false;
+      playSong(currentId);
+      soundWrapper.select(".sound-on-jonas").style("display", "none");
+      soundWrapper.select(".sound-off-jonas").style("display", "block");}
+    else {
+      muted = true;
+      playSong("mute");
+      soundWrapper.select(".sound-on-jonas").style("display", null);
+      soundWrapper.select(".sound-off-jonas").style("display", null);
+    }
+  });
+  //playSong(currentId)
 
 }
 
