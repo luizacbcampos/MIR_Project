@@ -17,7 +17,7 @@ pre {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: 300;
 	text-align: center;
 	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
@@ -38,8 +38,9 @@ body {
 h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 40px;
-    line-height: 1.2;
-    margin-top: 1.5rem;
+  line-height: 1.2;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 
@@ -201,14 +202,15 @@ h1 {
 	margin: 0 auto;
 	max-width: 100vh;
 	position: relative;
-	
+	padding-top: 2rem;
 	display: inline-block;
 }
 
 #jonas{
 	touch-action: none;
 	text-align: center;
-
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -220,8 +222,62 @@ h1 {
 }
 .lyric{
 	fill: purple;
-	
 }
+
+.arrow{
+  padding-top: 1rem;
+}
+
+.sound-wrapper-jonas {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.sound-wrapper-jonas .track-name {
+  position: absolute;
+  width: 200px;
+  color: #fff;
+  font-family: 'Open Sans'; /*'Atlas Grotesk Web';*/
+  font-weight: 400; /*600*/
+  font-size: 12px;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+  text-align: right;
+  line-height: 1.5;
+  top: 50%;
+  left: -10px;
+  margin: 0px;
+}
+
+.sound-wrapper-jonas .sound-off-jonas {
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: #fff;
+  display: none;
+}
+
+.sound-wrapper-jonas .sound-off-jonas svg {
+  width: 30px;
+  height: 30px;
+}
+
+.sound-wrapper-jonas .sound-on-jonas {
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.sound-wrapper-jonas .sound-on-jonas svg {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
 
 .legend {
 	font-family: 'Raleway', sans-serif;
