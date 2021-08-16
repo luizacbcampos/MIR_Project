@@ -1,12 +1,12 @@
   
 
   // set the dimensions and margins of the graph
-  const margin = {top: 200, right: 30, bottom: 50, left:150},
+  const margin = {top: 200, right: 30, bottom: 70, left:170},
       width = 800 - margin.left - margin.right,
       height = 600 - margin.top - margin.bottom;
   
   // append the svg object to the body of the page
-  const svg = d3.select("#my_dataviz")
+  const svg = d3.select("#density")
     .append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
@@ -44,6 +44,7 @@
         .range([ 0, width ]);
 
       svg.append("g")
+        .style("font-size", 13)
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(x));
     
@@ -67,6 +68,7 @@
         .text("Densidade dos atributos por ano selecionado");
         
       svg.append("g")
+      .style("font-size", 15)
         .call(d3.axisLeft(yName));
     
       // Compute kernel density estimation for each column:
@@ -115,6 +117,26 @@
               .x(function(d) { return x(d[0]); })
               .y(function(d) { return y(d[1]); })
           )
+      
+      // Add legend X
+      svg.append("text")
+          .attr("x", width/2-10)
+          .attr("y", height+40)
+          .attr("text-anchor", "left")
+          .style("font-size", "14px")
+          .style("fill", "grey")
+          .style("max-width", 400)
+          .text("Ano");
+
+      // Y axis label:
+      svg.append("text")
+          .attr("text-anchor", "end")
+          .attr("transform", "rotate(-90)")
+          .attr("y", -margin.left+15)
+          .attr("x", 0 - (height/ 2)+30)
+          .style("fill", "grey")
+          .style("font-size", "18px")
+          .text("Métricas")
     
     })
   }

@@ -9,12 +9,12 @@
   ]
   
 const dropdownButton1 = d3.select("#dropdown_button_years")
-  .append('select').attr("id", "button1")
+  .attr("id", "button1")
   .style("font-size", "20px")
   .style("background-color", "#f5b540")
 
-const dropdownButton2 = d3.select("#dropdown_button_years")
-  .append('select').attr("id", "button2")
+const dropdownButton2 = d3.select("#dropdown_button_years2")
+  .attr("id", "button2")
   .style("font-size", "20px")
   .style("background-color", "#3e72c7")
 

@@ -269,6 +269,17 @@ h1 {
   text-shadow :transparent;
 }
 
+.selector_year1 {
+  right: 860px;
+  width: 6%;
+  position:absolute;
+  }
+
+.selector_year2 {
+  right: 740px;
+  width: 6%;
+  position:absolute;
+  }
 
 .density{
   padding: 0.5rem;
