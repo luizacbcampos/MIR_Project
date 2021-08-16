@@ -117,16 +117,6 @@
               .x(function(d) { return x(d[0]); })
               .y(function(d) { return y(d[1]); })
           )
-      
-      // Add legend X
-      svg.append("text")
-          .attr("x", width/2-10)
-          .attr("y", height+40)
-          .attr("text-anchor", "left")
-          .style("font-size", "14px")
-          .style("fill", "grey")
-          .style("max-width", 400)
-          .text("Ano");
 
       // Y axis label:
       svg.append("text")
