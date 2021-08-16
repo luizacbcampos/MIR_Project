@@ -16,11 +16,11 @@
   
   function updategraph(year1, year2) {
     //read data
-    d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main/Data_Vis/assets/data/ridgeline_map.csv").then(function(data) {
+    d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main/Data_Vis/assets/data/normalized_ridgeline_map.csv").then(function(data) {
     
       // Get the different categories and count them
       const categories = [
-          "weeks_charted_all_time",
+          //"weeks_charted_all_time",
           "falsetto",
           "spoken",
           "acousticness",
@@ -40,7 +40,7 @@
     
       // Add X axis
       const x = d3.scaleLinear()
-        .domain([-60, 60])
+        .domain([-5, 5])
         .range([ 0, width ]);
 
       svg.append("g")
@@ -49,7 +49,7 @@
     
       // Create a Y scale for densities
       const y = d3.scaleLinear()
-        .domain([0, 1.2]) //////////////////////////////////////////////////////////// TODO
+        .domain([0, 7]) //////////////////////////////////////////////////////////// TODO
         .range([ height, 0]);
     
       // Create the Y axis for names
@@ -70,7 +70,7 @@
         .call(d3.axisLeft(yName));
     
       // Compute kernel density estimation for each column:
-      const kde = kernelDensityEstimator(kernelEpanechnikov(7), x.ticks(40)) // increase this 40 for more accurate density.
+      const kde = kernelDensityEstimator(kernelEpanechnikov(1), x.ticks(50)) // increase this 40 for more accurate density.
       const allDensity1 = []
       const allDensity2 = []
       for (i = 0; i < n; i++) {
@@ -94,7 +94,7 @@
           .datum(function(d){return(d.density)})
           .attr("fill", "#f5b540")
           .attr("stroke", "#000")
-          .attr("stroke-width", 1)
+          .attr("stroke-width", 0.5)
           .attr("d",  d3.line()
               .curve(d3.curveBasis)
               .x(function(d) { return x(d[0]); })
@@ -109,7 +109,7 @@
           .datum(function(d){return(d.density)})
           .attr("fill", "#3e72c7")
           .attr("stroke", "#000")
-          .attr("stroke-width", 1)
+          .attr("stroke-width", 0.5)
           .attr("d",  d3.line()
               .curve(d3.curveBasis)
               .x(function(d) { return x(d[0]); })
