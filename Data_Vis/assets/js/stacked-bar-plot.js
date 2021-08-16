@@ -139,12 +139,11 @@ function stacked(selector){
 								const matrix = this.getScreenCTM()
 									.translate(+ this.getAttribute("cx"), + this.getAttribute("cy"));
 
-								console.log("OLA")
 
 								const dx = window.pageXOffset + matrix.e;
 								const dy = window.pageYOffset + matrix.f;
 
-								console.log(event[0]);
+								//console.log(event[0]);
 
 								TooltipMouse2
 									.text("Valor: " + (event[1] - event[0]))
@@ -221,12 +220,10 @@ function stacked(selector){
 								const matrix = this.getScreenCTM()
 									.translate(+ this.getAttribute("cx"), + this.getAttribute("cy"));
 
-								console.log("OLA")
-
 								const dx = window.pageXOffset + matrix.e;
 								const dy = window.pageYOffset + matrix.f;
 
-								console.log(event[0]);
+								//console.log(event[0]);
 
 								TooltipMouse2
 									.text("Valor: " + (event[1] - event[0]))
@@ -391,7 +388,7 @@ function old(selector){
 	        .rollup(function(leaves) { return +leaves.length} )
 	        .entries(dataByYear);
 
-        console.log(nested_data)
+        //console.log(nested_data)
 
         // anos.keys() é equivalente a por_ano.map(d => d.key)
 
@@ -402,7 +399,7 @@ function old(selector){
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(x).tickSizeOuter(0));
 
-        console.log("prox")
+        //console.log("prox")
 
         const subgroups = d3.nest()
         	.key(function(d) { return +d.falsetto; })
@@ -426,7 +423,7 @@ function old(selector){
 
         //console.log(mapped_nested)
 
-        console.log("above")
+        //console.log("above")
 
     }).catch(console.error)
 }

@@ -197,6 +197,7 @@ h1 {
 
 /* End of intro part */ 
 
+
 /* Jonas part */
 #story{
 	margin: 0 auto;
@@ -204,6 +205,10 @@ h1 {
 	position: relative;
 	padding-top: 2rem;
 	display: inline-block;
+}
+
+.text-element a:link{
+  color: red;
 }
 
 #jonas{
