@@ -231,8 +231,8 @@ h1 {
 
 #jonas-child{
 	margin: auto;
-
 }
+
 .lyric{
 	fill: purple;
 }
@@ -336,16 +336,30 @@ h1 {
   text-shadow :transparent;
 }
 
+.butao{
+  text-align: center;
+  padding-bottom: 2rem;
+  /*
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px; */
+}
+
+#selector-child{
+  margin: auto;
+  display: inline-block;
+}
+
 .selector_year1 {
-  right: 860px;
+  right: 45%;
   width: 6%;
-  position:absolute;
+  min-width: 100px; 
   }
 
 .selector_year2 {
-  right: 740px;
+  left: 55%;
   width: 6%;
-  position:absolute;
+  min-width: 100px;
   }
 
 .density{
