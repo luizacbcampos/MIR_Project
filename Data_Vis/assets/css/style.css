@@ -208,7 +208,15 @@ h1 {
 }
 
 .text-element a:link{
-  color: red;
+  color: #80b1d3;
+}
+
+.text-element a:visited{
+  color: #fb8072;
+}
+
+.text-element a:hover{
+  color: #bc80bd;
 }
 
 #jonas{
@@ -280,9 +288,7 @@ h1 {
   height: 30px;
 }
 
-
-
-
+/* End of Jonas part */
 
 .legend {
 	font-family: 'Raleway', sans-serif;
