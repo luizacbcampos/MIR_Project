@@ -351,3 +351,20 @@ h1 {
 .density{
   padding: 0.5rem;
 }
+
+
+/* Playlists */
+
+#playlists {
+  position: relative;
+  padding: 2rem;
+}
+
+#playlists iframe{
+  border-radius: 3%;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border: 1.5px black;
+}
+
+/* End Playlists */
