@@ -4,10 +4,10 @@
 	<head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
 		
-        <title>The Falsetto Project</title>
+        <title>O Projeto do Falsete</title>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-        <meta name="description" content="An analysis of falsettos in Billboard Hot 100 songs.">
+        <meta name="description" content="Uma análise de falsetes nas músicas da Billboard Hot 100.">
         <meta name='keywords' content='music' />
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -65,21 +65,53 @@
                                 </svg>
                             </div>
                         </div>
+                    
+                    <script type="text/javascript">
+                        function init() {
+                          var soundWrapper = d3.select(".sound-wrapper");
+                          soundWrapper.on("click", function (d) {
+                            var videoNode = d3.select(".intro_video").select("video").node();
+                            if (videoNode.muted) {
+                              videoNode.muted = false;
+                              soundWrapper.select(".sound-on").style("display", "none");
+                              soundWrapper.select(".sound-off").style("display", "block");}
+                            else {
+                              videoNode.muted = true;
+                              soundWrapper.select(".sound-on").style("display", null);
+                              soundWrapper.select(".sound-off").style("display", null);
+                            }
+                          });
+                        }
+                        init();
+                    </script>
                     </div>
-                    <h1 class='intro__head'>The Falsetto Project</h1>
-                    <p class='intro__desc'>An analysis of falsettos in Billboard Hot 100 songs.</p>
-                    <p class='intro__byline'>By 
+                    <h1 class='intro__head'>O Projeto do Falsete</h1>
+                    <p class='intro__desc'>Uma análise de falsetes nas músicas da Billboard Hot 100.</p>
+                    <p class='intro__byline'>Por 
                         <!--
                         <a href='{{info.author.url}}' target='_blank'><strong>{{info.author.name}}</strong></a> -->
-                        Bruno Monteiro, Igor Marques, Isadora Salles and Luiza Campos
+                        Bruno Monteiro, Igor Marques, Isadora Salles e Luiza Campos
                     </p>
                 </div>
                 <section class="lyrics_show" id="story">
                     <div class="intro_text">
-                        <h1>Falsetto today</h1>
+                        <h1>Falsete hoje</h1>
                         <div class="text-element">
                             <p>
-                                <span class="step-text">This is the 2019 mega-hit &ldquo;Sucker&rdquo; by Jonas Brothers. It’s sung by three men at a very high vocal range with falsetto.</span>
+                                Nos últimos anos, diversas músicas de sucesso como 
+                                <a href='https://open.spotify.com/track/6QgjcU0zLnzq5OrUoSZ3OK?autoplay=true' target='_blank'>
+                                    <strong>I Feel it Still</strong>
+                                </a> de Portugal. The Man e 
+                                <a href='https://open.spotify.com/track/6LsAAHotRLMOHfCsSfYCsz?si=983e8a5a42994683' target='_blank'>
+                                    <strong>If I Can't Have You</strong>
+                                </a> de Shawn Mendes utilizam o falsete.
+                            </p><br>
+
+                            <p>
+                                Este é o mega-hit de 2019 
+                                <a href='https://open.spotify.com/track/22vgEDb5hykfaTwLuskFGD?si=e0c97e6af31f4bb5' target='_blank'>
+                                    <strong>Sucker</strong>
+                                </a> dos Jonas Brothers. Ele é cantado por três homens em um alcance vocal muito alto com falsete.
                             </p>
                         </div>
                         <br><br>
@@ -93,26 +125,40 @@
                                         <line x1="12" y1="19" x2="12" y2="5"></line>
                                         <polyline points="5 12 12 5 19 12"></polyline>
                                     </svg>
-                                    <p>higher note</p>
+                                    <p>nota alta</p>
                                 </div>
                                 <div class="arrow arrow-down">
-                                    <p>lower note</p>
+                                    <p>nota baixa</p>
                                     <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down" viewBox="0 0 24 24">
                                         <line x1="12" y1="5" x2="12" y2="19"></line>
                                         <polyline points="19 12 12 19 5 12"></polyline>
                                     </svg>
                                 </div>
-                            <script type="module">
-                                import lyrics from "./Data_Vis/assets/js/load-lyrics.js"
-                                lyrics.init()
-                            </script>
                             </div>
                         </div>
                         <div class="background-image" id="jonas-child">
                             <img style="opacity:.5;" alt="" src="https://media.giphy.com/media/3kCXOc72gCyQjZ8qlf/giphy.gif">
                             <div class="dot"></div>
+                            
+                            <div class="sound-wrapper-jonas">
+                                <div class="sound-on-jonas">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-2">
+                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                    </svg>
+                                </div>
+                                <div class="sound-off-jonas">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-x">
+                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                        <line x1="23" y1="9" x2="17" y2="15"></line>
+                                        <line x1="17" y1="9" x2="23" y2="15"></line>
+                                    </svg>
+                            </div>
                         </div>
-
+                        <script type="module">
+                                import lyrics from "./Data_Vis/assets/js/load-lyrics.js"
+                                lyrics.init()
+                        </script>
                     </div>
                 </section>
                 <br> <br> <br> <br>
@@ -179,18 +225,28 @@
 		            <div id="density">
                         <script src="./Data_Vis/assets/js/igor_js1.js"></script>
                     </div>
-
-                    <div class="selector_year1">
-                        <select class="form-select" aria-label="Default select example" id="dropdown_button_years"></select>
-                    </div>
-                    <div class="selector_year2">
-                        <select class="form-select" aria-label="Default select example" id="dropdown_button_years2"></select>
+                    <div class="butao">
+                        <div class="selector_year1" id="selector-child">
+                            <select class="form-select" aria-label="Default select example" id="dropdown_button_years"></select>
+                        </div>
+                        <div class="selector_year2" id="selector-child">
+                            <select class="form-select" aria-label="Default select example" id="dropdown_button_years2"></select>
+                        </div>
                     </div>
 
                     <script src="./Data_Vis/assets/js/igor_js2.js"></script>
                 
-				</section>  
+				</section> 
+                <br><br><br><br> 
+                <section id="playlists">
+                    <iframe src="https://open.spotify.com/embed/playlist/5G2ada6BBgbe2wPfWYZMcC?theme=0" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media">  
+                    </iframe>
 
+                    <iframe src="https://open.spotify.com/embed/playlist/7hZAZWkWFoCNbcqbONAQ1l?theme=0" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media">
+                    </iframe>
+
+                    <iframe src="https://open.spotify.com/embed/playlist/1U8FfPx2CpIx2ViM086zYb?theme=0" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </section>
                 <section id="links">
                     <br><br><br><br>
                     <p>https://pudding.cool/2019/08/register/</p>

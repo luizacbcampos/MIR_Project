@@ -28,12 +28,9 @@ const svg = d3.select("#heatmap2")
 
 //Read the data
 d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora/Data_Vis/Heatmap/metrics_by_year.csv").then(function(data){
-    console.log("Heatmap")
     // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
     const myGroups = Array.from(new Set(data.map(d => d.year)))
     const myVars = Array.from(new Set(data.map(d => d.metrics)))
-
-    console.log(myVars)
 
     // Build X scales and axis:
     const x = d3.scaleBand()
@@ -43,10 +40,10 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
     svg.append("g")
       .style("font-size", 13)
       .attr("transform", `translate(0, ${height})`)
-      .call(d3.axisBottom(x).tickSize(d3.timeMonth))
+      .call(d3.axisBottom(x).tickSize(0))
       .selectAll("text")
-        .attr("dy", "1.2em")
-        .attr("dx", "-1.5em")
+        .attr("dy", "0.5em")
+        .attr("dx", "-2em")
         .attr("transform", "rotate(-65)")
       .select(".domain").remove()
 
