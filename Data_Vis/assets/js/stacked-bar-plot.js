@@ -2,7 +2,7 @@
 import loadDatav5 from './load-data.js';
 
 // Setting width/heigth information
-const margin = {top: 50, right: 20, bottom: 50, left: 50};
+const margin = {top: 50, right: 20, bottom: 65, left: 50};
 
 var viewportWidth = parseInt(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
 var viewportHeight = parseInt(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
@@ -31,7 +31,6 @@ var svg = d3.select('#fasettoANO')
 
 var x = null; // setting initials
 var y = null;
-
 
 function scale_values(){
   // Alter the values
@@ -65,11 +64,180 @@ function resize() {
 function stacked(selector){	
   console.log("Stacked")
   // Parse the Data
-  d3.csv("../data/falsetto_by_year.csv").then( function(data) {
+  d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main/Data_Vis/assets/data/falsetto_by_year.csv").then( function(data) {
+
+	  //data = data.remove("0");
+	  //data = data.remove(0);
+	  //data.splice(1, 1);
 
     const subgroups = data.columns.slice(1) // List of subgroups = header of csv
+	const subgroupsSemZero = data.columns.slice(1);
+	subgroupsSemZero.splice(0, 1);
     const years = data.map(d => d.year) // List of years = value of the first column called group
     console.log(years)
+
+	  function update(){
+
+		  // For each check box:
+		  d3.selectAll(".btn-check").each(function(d){
+			  // If the box is check, I show the group
+			  if(this.checked){
+
+				  d3.selectAll(".myRect")
+					  .remove();
+
+				  d3.selectAll(".eixoY").remove();
+
+					y = d3.scaleLinear()
+					  .domain([0, 600])
+					  .range([ height, 0 ]);
+					svg.append("g")
+					  .attr("class", "eixoY")
+					  .call(d3.axisLeft(y));
+
+				 // GRAFICO COM O ZERO
+
+					// Show the bars
+					svg.append("g")
+					  .selectAll("g")
+					  .data(stackedData) // Enter in the stack data = loop key per key = group per group
+					  .join("g")
+						.attr("fill", d => color(d.key))
+						.attr("class", d => "myRect a_" + d.key ) // Add a class to each subgroup: a_ + their name
+						.selectAll("rect")
+						.data(d => d) // enter a second time = loop subgroup per subgroup to add all rectangles
+						.join("rect")
+						  .attr("x", d => x(d.data.year))
+						  .attr("y", d => y(d[1]))
+						  .attr("height", d => y(d[0]) - y(d[1]))
+						  .attr("width",x.bandwidth())
+						  .attr("stroke", "grey") // What happens when user hover a bar
+						  .on("mouseover", function (event,d) { 
+
+							  TooltipMouse2
+								  .style("stroke", "black")
+								  .style("opacity", 1)
+
+							const subGroupName = d3.select(this.parentNode).datum().key // what subgroup are we hovering?
+							
+							// Reduce opacity of all rect to 0.2
+							d3.selectAll(".myRect").style("opacity", 0.2)  
+
+							// Highlight all rects of this subgroup with opacity 1. We select them bc they have a specific class = their name.
+
+							d3.selectAll(".a_"+subGroupName).style("opacity",1)
+						  }) .on("mouseleave", function (event,d) { // When user do not hover anymore
+							  TooltipMouse2
+								  .style("opacity", 0)
+
+							d3.selectAll(".myRect")
+							.style("opacity",1) // Back to normal opacity: 1
+						})
+				  			.on("mousemove", function (event,d) {
+
+
+								const matrix = this.getScreenCTM()
+									.translate(+ this.getAttribute("cx"), + this.getAttribute("cy"));
+
+
+								const dx = window.pageXOffset + matrix.e;
+								const dy = window.pageYOffset + matrix.f;
+
+								//console.log(event[0]);
+
+								TooltipMouse2
+									.text("Valor: " + (event[1] - event[0]))
+									.style("position", "absolute")
+									.style("font-size", "15px")
+									.style("left", (d3.mouse(this)[0] + 100) + "px")
+									.style("top", (d3.mouse(this)[1]) + "px")
+
+						})
+
+				  // Otherwise I hide it
+			  } else{
+
+				  d3.selectAll(".myRect")
+					  .remove();
+
+				  d3.selectAll(".eixoY").remove();
+
+					y = d3.scaleLinear()
+					  .domain([0, 150])
+					  .range([ height, 0 ]);
+					svg.append("g")
+					  .attr("class", "eixoY")
+					  .call(d3.axisLeft(y));
+
+//					y = d3.scaleLinear()
+//					  .domain([0, 300])
+//					  .range([ height, 0 ]);
+//					svg.append("g")
+//					  .call(d3.axisLeft(y));
+
+
+				 // GRAFICO SEM O ZERO
+
+					// Show the bars
+					svg.append("g")
+					  .selectAll("g")
+					  .data(stackedDataSemZero) // Enter in the stack data = loop key per key = group per group
+					  .join("g")
+						.attr("fill", d => color(d.key))
+						.attr("class", d => "myRect a_" + d.key ) // Add a class to each subgroup: a_ + their name
+						.selectAll("rect")
+						.data(d => d) // enter a second time = loop subgroup per subgroup to add all rectangles
+						.join("rect")
+						  .attr("x", d => x(d.data.year))
+						  .attr("y", d => y(d[1]))
+						  .attr("height", d => 1 * (y(d[0]) - y(d[1])))
+						  .attr("width",x.bandwidth())
+						  .attr("stroke", "grey") // What happens when user hover a bar
+						  .on("mouseover", function (event,d) { 
+
+							  TooltipMouse2
+								  .style("stroke", "black")
+								  .style("opacity", 1)
+
+							const subGroupName = d3.select(this.parentNode).datum().key // what subgroup are we hovering?
+							
+							// Reduce opacity of all rect to 0.2
+							d3.selectAll(".myRect").style("opacity", 0.2)  
+
+							// Highlight all rects of this subgroup with opacity 1. We select them bc they have a specific class = their name.
+
+							d3.selectAll(".a_"+subGroupName).style("opacity",1)
+						  }) .on("mouseleave", function (event,d) { // When user do not hover anymore
+							  TooltipMouse2
+								  .style("opacity", 0)
+
+							d3.selectAll(".myRect")
+							.style("opacity",1) // Back to normal opacity: 1
+						})
+				  			.on("mousemove", function (event,d) {
+
+
+								const matrix = this.getScreenCTM()
+									.translate(+ this.getAttribute("cx"), + this.getAttribute("cy"));
+
+								const dx = window.pageXOffset + matrix.e;
+								const dy = window.pageYOffset + matrix.f;
+
+								//console.log(event[0]);
+
+								TooltipMouse2
+									.text("Valor: " + (event[1] - event[0]))
+									.style("position", "absolute")
+									.style("font-size", "15px")
+									.style("left", (d3.mouse(this)[0] + 100) + "px")
+									.style("top", (d3.mouse(this)[1]) + "px")
+						})
+			  }
+		  })
+	  }
+
+    // When a button change, I run the update function
+    d3.selectAll(".btn-check").on("change",update);
 
     // Add X axis
     x = d3.scaleBand()
@@ -77,35 +245,43 @@ function stacked(selector){
         .range([0, width])
         .padding([0.2])      
     svg.append("g")
+      .style("font-size", 13)
       .attr("transform", `translate(0, ${height})`)
-      .call(d3.axisBottom(x).tickSizeOuter(0));
+      .call(d3.axisBottom(x).tickSizeOuter(0))
+      .selectAll("text")
+        .attr("dy", "0.5em")
+        .attr("dx", "-1.8em")
+        .attr("transform", "rotate(-65)");
 
     // Add Y axis
     y = d3.scaleLinear()
       .domain([0, 600])
       .range([ height, 0 ]);
     svg.append("g")
+	  .attr("class", "eixoY")
       .call(d3.axisLeft(y));
 
     // Add X axis label:
     svg.append("text")
-    	.attr("transform", "translate(" + (width/2) + " ," + (height + margin.top - 10) + ")")
-    	.style("text-anchor", "middle")
+    	.attr("transform", "translate(" + (width/2) + " ," + (height + margin.top+10) + ")")
+      .style("text-anchor", "middle")
+      .style("font-size", "15px")
     	.text("Ano");
     
     // Y axis label:
     svg.append("text")
     	.attr("text-anchor", "end")
     	.attr("transform", "rotate(-90)")
-    	.attr("y", -margin.left+10)
-    	.attr("x", 0 - (height/ 2)+margin.bottom)
+    	.attr("y", -margin.left+12)
+      .attr("x", 0 - (height/ 2)+margin.bottom)
+      .style("font-size", "15px")
     	.text("Quantidade de músicas")
 
     svg.append("text")
         .attr("x", (width / 2))             
         .attr("y", 0 - (margin.top / 2))
         .attr("text-anchor", "middle")  
-        .style("font-size", "20px") 
+        .style("font-size", "30px") 
         .style("text-decoration", "bold")  
         .text("Valor de falsetto por ano");
 
@@ -143,43 +319,32 @@ function stacked(selector){
       .keys(subgroups)
       (data)
 
+    //stack the data? --> stack per subgroup
+    const stackedDataSemZero = d3.stack()
+      .keys(subgroupsSemZero)
+      (data)
+
     // ----------------
     // Highlight a specific subgroup when hovered
     // ----------------
 
-    // Show the bars
-    svg.append("g")
-      .selectAll("g")
-      .data(stackedData) // Enter in the stack data = loop key per key = group per group
-      .join("g")
-        .attr("fill", d => color(d.key))
-        .attr("class", d => "myRect a_" + d.key ) // Add a class to each subgroup: a_ + their name
-        .selectAll("rect")
-        .data(d => d) // enter a second time = loop subgroup per subgroup to add all rectangles
-        .join("rect")
-          .attr("x", d => x(d.data.year))
-          .attr("y", d => y(d[1]))
-          .attr("height", d => y(d[0]) - y(d[1]))
-          .attr("width",x.bandwidth())
-          .attr("stroke", "grey") // What happens when user hover a bar
-          .on("mouseover", function (event,d) { 
+		// And I initialize it at the beginning
+		update()
 
-            const subGroupName = d3.select(this.parentNode).datum().key // what subgroup are we hovering?
-            
-            // Reduce opacity of all rect to 0.2
-            d3.selectAll(".myRect").style("opacity", 0.2)  
 
-            // Highlight all rects of this subgroup with opacity 1. We select them bc they have a specific class = their name.
-
-            d3.selectAll(".a_"+subGroupName).style("opacity",1)
-          }) .on("mouseleave", function (event,d) { // When user do not hover anymore
-            d3.selectAll(".myRect")
-            .style("opacity",1) // Back to normal opacity: 1
-        })
+	  // create a tooltip
+	  const TooltipMouse2 = d3.select("#fasettoANO")
+		  .append("div")
+		  .style("opacity", 0)
+		  .attr("class", "tooltip2")
+		  .style("background-color", "white")
+		  .style("border", "solid")
+		  .style("border-width", "2px")
+		  .style("border-radius", "5px")
+		  .style("padding", "5px")
 
   })
 }
-
 
 
 
@@ -223,7 +388,7 @@ function old(selector){
 	        .rollup(function(leaves) { return +leaves.length} )
 	        .entries(dataByYear);
 
-        console.log(nested_data)
+        //console.log(nested_data)
 
         // anos.keys() é equivalente a por_ano.map(d => d.key)
 
@@ -234,7 +399,7 @@ function old(selector){
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(x).tickSizeOuter(0));
 
-        console.log("prox")
+        //console.log("prox")
 
         const subgroups = d3.nest()
         	.key(function(d) { return +d.falsetto; })
@@ -244,7 +409,7 @@ function old(selector){
 	        .map(d => d.key);
 
         console.log(subgroups)
-        
+
         // rollup to count leaves
         const y = d3.scaleLinear().domain([0, 600]).range([ height, 0 ]);
       
@@ -258,7 +423,7 @@ function old(selector){
 
         //console.log(mapped_nested)
 
-        console.log("above")
+        //console.log("above")
 
     }).catch(console.error)
 }

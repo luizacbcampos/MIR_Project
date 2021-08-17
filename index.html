@@ -4,17 +4,16 @@
 	<head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
 		
-        <title>The Falsetto Project</title>
+        <title>O Projeto do Falsete</title>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-        <meta name="description" content="An analysis of falsettos in Billboard Hot 100 songs.">
+        <meta name="description" content="Uma análise de falsetes nas músicas da Billboard Hot 100.">
         <meta name='keywords' content='music' />
 
-
-        <link rel="shortcut icon" href="#">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script><link rel="shortcut icon" href="#">
         <link rel="manifest" href='data:application/manifest+json,{ "name": "Projeto%20Vis%20Dados", "short_name": "shortName", "description": "An%20analysis%20of%20falsettos%20in%20Billboard%20Hot%20100%20songs"}' />
-        
-        <!--<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >-->
+         <!--<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >-->
 
         <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel='stylesheet' type='text/css'>
@@ -36,101 +35,245 @@
         <link rel="stylesheet" href="Data_Vis/assets/css/style.css">
         <!-- Ours
         -->
-        <script type="module" src="/Data_Vis/assets/js/main.js"></script>
-        </head>
+        <script type="module" src="Data_Vis/assets/js/main.js"></script>
+    </head>
+
         
-                <body>
-        <main id='content'>
-            <!-- Ours <script type="module" src="./main.js"></script> -->
-            <div class='intro'>
-                <div class="intro_video">
-                    <div class="fill"></div>
-                    <img class="" src="https://media.giphy.com/media/3kCXOc72gCyQjZ8qlf/giphy.gif" alt="">
-                    <!-- <video src="assets/intro_video.mp4" autoplay muted preload playsinline loop></video> -->
-                    <div class="sound-wrapper">
-                        <p class="track-name">Mark Gonzales skating to John Coltrane&rsquo;s &ldquo;Traneing In&rdquo;
-                        </p>
-                        <div class="sound-on">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-2">
-                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-                            </svg>
-                        </div>
-                        <div class="sound-off">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-x">
-                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                                <line x1="23" y1="9" x2="17" y2="15"></line>
-                                <line x1="17" y1="9" x2="23" y2="15"></line>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <h1 class='intro__head'>The Falsetto Project</h1>
-                <p class='intro__desc'>An analysis of falsettos in Billboard Hot 100 songs.</p>
-                <p class='intro__byline'>By 
-                    <!--
-                    <a href='{{info.author.url}}' target='_blank'><strong>{{info.author.name}}</strong></a> -->
-                    Bruno Monteiro, Igor Marques, Isadora Salles and Luiza Campos
-                </p>
-            </div>
-            <section class="lyrics_show" id="story">
-                <div class="intro_text">
-                    <h1>Falsetto today</h1>
-                    <div class="text-element">
-                        <p>
-                            <span class="step-text">This is the 2019 mega-hit &ldquo;Sucker&rdquo; by Jonas Brothers. It’s sung by three men at a very high vocal range with falsetto.</span>
-                        </p>
-                    </div>
-                    <br><br>
-                </div>
-                <div id="jonas">
-                    <div class="part lyrics-container" id="jonas-child">
-                        <div class="lyric">
-                            <p></p>
-                            <div class="arrow arrow-up">
-                                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up" viewBox="0 0 24 24">
-                                    <line x1="12" y1="19" x2="12" y2="5"></line>
-                                    <polyline points="5 12 12 5 19 12"></polyline>
-                                </svg>
-                                <p>higher note</p>
-                            </div>
-                            <div class="arrow arrow-down">
-                                <p>lower note</p>
-                                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down" viewBox="0 0 24 24">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <polyline points="19 12 12 19 5 12"></polyline>
+        <body>
+            <main id='content'>
+                <!-- Ours <script type="module" src="./main.js"></script> -->
+                <div class='intro'>
+                    <div class="intro_video">
+                        <div class="fill"></div>
+                        <video src="./Data_Vis/assets/Melody.mp4" autoplay muted preload playsinline loop>
+                        </video>
+                        <!-- <img class="" src="https://media.giphy.com/media/3kCXOc72gCyQjZ8qlf/giphy.gif" alt=""> -->
+                        <div class="sound-wrapper">
+                            <p class="track-name">Melody e Deborah <br>&ldquo;Moda do Falsete&rdquo;
+                            </p>
+                            <div class="sound-on">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-2">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
                                 </svg>
                             </div>
-                        <script type="module">
-                            import lyrics from "/Data_Vis/assets/js/load-lyrics.js"
-                            lyrics.init()
-                        </script>
+                            <div class="sound-off">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-x">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                    <line x1="23" y1="9" x2="17" y2="15"></line>
+                                    <line x1="17" y1="9" x2="23" y2="15"></line>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="background-image" id="jonas-child">
-                        <img style="opacity:.5;" alt="" src="https://media.giphy.com/media/3kCXOc72gCyQjZ8qlf/giphy.gif">
-                        <div class="dot"></div>
-                    </div>
-
-                </div>
-            </section>
-            <br> <br> <br> <br>
-            <section id="f_ano" class="chart">
-                <div id="fasettoANO">
-                    <script type="module">
-                        import stack from '/Data_Vis/assets/js/stacked-bar-plot.js';
-                        stack.stacked("#fasettoANO")
+                    
+                    <script type="text/javascript">
+                        function init() {
+                          var soundWrapper = d3.select(".sound-wrapper");
+                          soundWrapper.on("click", function (d) {
+                            var videoNode = d3.select(".intro_video").select("video").node();
+                            if (videoNode.muted) {
+                              videoNode.muted = false;
+                              soundWrapper.select(".sound-on").style("display", "none");
+                              soundWrapper.select(".sound-off").style("display", "block");}
+                            else {
+                              videoNode.muted = true;
+                              soundWrapper.select(".sound-on").style("display", null);
+                              soundWrapper.select(".sound-off").style("display", null);
+                            }
+                          });
+                        }
+                        init();
                     </script>
+                    </div>
+                    <h1 class='intro__head'>O Projeto do Falsete</h1>
+                    <p class='intro__desc'>Uma análise de falsetes nas músicas da Billboard Hot 100.</p>
+                    <p class='intro__byline'>Por 
+                        <!--
+                        <a href='{{info.author.url}}' target='_blank'><strong>{{info.author.name}}</strong></a> -->
+                        Bruno Monteiro, Igor Marques, Isadora Salles e Luiza Campos
+                    </p>
                 </div>
-            </section>
+                <section class="lyrics_show" id="story">
+                    <div class="intro_text">
+                        <h1>Falsete hoje</h1>
+                        <div class="text-element">
+                            <p>
+                                Nos últimos anos, diversas músicas de sucesso como 
+                                <a href='https://open.spotify.com/track/6QgjcU0zLnzq5OrUoSZ3OK?autoplay=true' target='_blank'>
+                                    <strong>I Feel it Still</strong>
+                                </a> de Portugal. The Man e 
+                                <a href='https://open.spotify.com/track/6LsAAHotRLMOHfCsSfYCsz?si=983e8a5a42994683' target='_blank'>
+                                    <strong>If I Can't Have You</strong>
+                                </a> de Shawn Mendes utilizam o falsete.
+                            </p><br>
 
-            <section id="links">
-                <p>https://pudding.cool/2019/08/register/</p>
-                <p>https://github.com/the-pudding/falsetto-story/</p>
-                <p>https://github.com/the-pudding/falsetto-site/</p>
-                <p>https://pudding.cool/2018/06/skate-music/</p>
-                <p>https://github.com/jwilber/Pudding_Skate-Music</p>
-            </section>
-        </main>
+                            <p>
+                                Este é o mega-hit de 2019 
+                                <a href='https://open.spotify.com/track/22vgEDb5hykfaTwLuskFGD?si=e0c97e6af31f4bb5' target='_blank'>
+                                    <strong>Sucker</strong>
+                                </a> dos Jonas Brothers. Ele é cantado por três homens em um alcance vocal muito alto com falsete.
+                            </p>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div id="jonas">
+                        <div class="part lyrics-container" id="jonas-child">
+                            <div class="lyric">
+                                <p></p>
+                                <div class="arrow arrow-up">
+                                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up" viewBox="0 0 24 24">
+                                        <line x1="12" y1="19" x2="12" y2="5"></line>
+                                        <polyline points="5 12 12 5 19 12"></polyline>
+                                    </svg>
+                                    <p>nota alta</p>
+                                </div>
+                                <div class="arrow arrow-down">
+                                    <p>nota baixa</p>
+                                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down" viewBox="0 0 24 24">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <polyline points="19 12 12 19 5 12"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="background-image" id="jonas-child">
+                            <img style="opacity:.5;" alt="" src="https://media.giphy.com/media/3kCXOc72gCyQjZ8qlf/giphy.gif">
+                            <div class="dot"></div>
+                            
+                            <div class="sound-wrapper-jonas">
+                                <div class="sound-on-jonas">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-2">
+                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                    </svg>
+                                </div>
+                                <div class="sound-off-jonas">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-x">
+                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                        <line x1="23" y1="9" x2="17" y2="15"></line>
+                                        <line x1="17" y1="9" x2="23" y2="15"></line>
+                                    </svg>
+                            </div>
+                        </div>
+                        <script type="module">
+                                import lyrics from "./Data_Vis/assets/js/load-lyrics.js"
+                                lyrics.init()
+                        </script>
+                    </div>
+                </section>
+                <br> <br> <br> <br>
+
+				<section id="f_ano" class="chart">
+                    <div id="fasettoANO">
+
+                        <script type="module">
+                            import stack from './Data_Vis/assets/js/stacked-bar-plot.js';
+                            stack.stacked("#fasettoANO")
+                        </script>
+                        <div class="right">
+                            <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="btn-check-2-outlined">Incluir Falsette 0</label><br>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="heatmap" class="chart">
+                    <div id="heatmap">
+						<script type="module" src="./Data_Vis/assets/js/heatmap.js"></script>
+                    </div>
+                </section>
+
+                <section id="radar" class="chart"> 
+                    <br> <br> <br>
+                    <div id="radar-texto" style="display: inline-block; padding: 200px">
+                        <p style="font-size:18px;">
+                            Com este gráfico podemos perceber uma relação entre as características <br>
+                            extraídas do Spotify e as relativas décadas nas quais as músicas foram lançadas.
+                            <br><br>
+                            Note que cada década teve uma tendência maior para uma característica diferente. <br>
+                            A menos dos <span style="color:#b3de69; font-weight:bold">anos 80</span>.
+                            <br><br>
+                            Os <span style="color:#80b1d3; font-weight:bold">anos 60</span> possuem um enfoque maior nas músicas ao vivo e os <span style="color:#fdb462; font-weight:bold">anos 70</span> <br>
+                            nas músicas instrumentais. Essa diferença é interessante porque ambos os anos <br>
+                            foram marcados pelo uso da técnica de falsete.
+                            <br><br>
+                            Podemos notar também uma semelhança entre os <span style="color:#b3de69; font-weight:bold">anos 80</span> e <span style="color:#ffed6f; font-weight:bold">2010</span>. <br>
+                            As características de dança e energia, que estiveram presentes em <span style="color:#b3de69; font-weight:bold">1980</span> <br>
+                            também estão bastante presentes em <span style="color:#ffed6f; font-weight:bold">2010</span>. Como visto anteriormente, <br>
+                            o uso do falsete se assemelha nessas duas décadas.
+                        </p>
+                    </div> 
+                    <div id="radar_chart" style="display: inline-block">
+                        <script type="module">
+                            import radar from './Data_Vis/assets/js/radar-chart.js';
+                            radar.RadarChart("#radar_chart")
+                        </script>
+                    </div>
+                    <br> <br> <br><br> <br> <br>
+                </section>
+
+                <section id="heatmap2" class="chart">
+                    <div id="heatmap2">
+						<script type="module" src="./Data_Vis/assets/js/heatmap2.js"></script>
+                    </div>
+                </section>
+
+                <section id="rio" class="chart">
+                    <div id="Rio-texto" style="display: inline-block; padding: 100px">
+						<p style="font-size:18px;">
+
+							Aqui temos uma visualização que exibe, para cada ano, <br>
+							a quantidade de falsete feita por <span style="color:#fdb462; font-weight:bold">mulheres</span> e <span style="color:#80b1d3; font-weight:bold">homens</span>. <br>
+							Quanto mais alto o gráfico em um determinado ponto, <br>
+							maior é a medida de falsete no dado ano. <br>
+							<br>
+
+							Podemos notar que, na década de 70, por exemplo, a técnica <br>
+							era mais utilizada por homens em relação a décadas posteriores. <br>
+							Em contrapartida, seu uso por mulheres <br>
+							manteve-se relativamente constante.
+
+						</p>
+                    </div>
+                    <div id="Rio" style="display: inline-block">
+						<script type="module" src="./Data_Vis/assets/js/rio.js"></script>
+                    </div>
+                </section>
+                
+                <section id="density">
+		            <div id="density">
+                        <script src="./Data_Vis/assets/js/igor_js1.js"></script>
+                    </div>
+                    <div class="butao">
+                        <div class="selector_year1" id="selector-child">
+                            <select class="form-select" aria-label="Default select example" id="dropdown_button_years"></select>
+                        </div>
+                        <div class="selector_year2" id="selector-child">
+                            <select class="form-select" aria-label="Default select example" id="dropdown_button_years2"></select>
+                        </div>
+                    </div>
+
+                    <script src="./Data_Vis/assets/js/igor_js2.js"></script>
+                
+				</section> 
+                <br><br><br><br> 
+                <section id="playlists">
+                    <iframe src="https://open.spotify.com/embed/playlist/5G2ada6BBgbe2wPfWYZMcC?theme=0" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media">  
+                    </iframe>
+
+                    <iframe src="https://open.spotify.com/embed/playlist/7hZAZWkWFoCNbcqbONAQ1l?theme=0" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media">
+                    </iframe>
+
+                    <iframe src="https://open.spotify.com/embed/playlist/1U8FfPx2CpIx2ViM086zYb?theme=0" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </section>
+                <section id="links">
+                    <br><br><br><br>
+                    <p>https://pudding.cool/2019/08/register/</p>
+                    <p>https://github.com/the-pudding/falsetto-story/</p>
+                    <p>https://github.com/the-pudding/falsetto-site/</p>
+                    <p>https://pudding.cool/2018/06/skate-music/</p>
+                    <p>https://github.com/jwilber/Pudding_Skate-Music</p>
+                </section>
+            </main>
         </body>
 </html>

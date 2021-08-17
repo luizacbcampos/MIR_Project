@@ -17,7 +17,7 @@ pre {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: 300;
 	text-align: center;
 	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
@@ -38,8 +38,9 @@ body {
 h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 40px;
-    line-height: 1.2;
-    margin-top: 1.5rem;
+  line-height: 1.2;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 
@@ -138,6 +139,22 @@ h1 {
 
 }
 
+.intro .intro_video video {
+  opacity: 0.5;
+  width: auto;
+  height: auto;
+  min-height: 100%;
+  min-width: 130%;
+  display: block;
+  object-fit: cover;
+  position: absolute;
+  -webkit-filter: grayscale(0.2);
+  filter: grayscale(0.2);
+  top: -10%;
+  left: -30%;
+}
+
+
 .intro__head {
   max-width: 60rem;
   margin: 0 auto;
@@ -180,19 +197,33 @@ h1 {
 
 /* End of intro part */ 
 
+
 /* Jonas part */
 #story{
 	margin: 0 auto;
 	max-width: 100vh;
 	position: relative;
-	
+	padding-top: 2rem;
 	display: inline-block;
+}
+
+.text-element a:link{
+  color: #80b1d3;
+}
+
+.text-element a:visited{
+  color: #fb8072;
+}
+
+.text-element a:hover{
+  color: #bc80bd;
 }
 
 #jonas{
 	touch-action: none;
 	text-align: center;
-
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -200,12 +231,64 @@ h1 {
 
 #jonas-child{
 	margin: auto;
-
 }
+
 .lyric{
 	fill: purple;
-	
 }
+
+.arrow{
+  padding-top: 1rem;
+}
+
+.sound-wrapper-jonas {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.sound-wrapper-jonas .track-name {
+  position: absolute;
+  width: 200px;
+  color: #fff;
+  font-family: 'Open Sans'; /*'Atlas Grotesk Web';*/
+  font-weight: 400; /*600*/
+  font-size: 12px;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+  text-align: right;
+  line-height: 1.5;
+  top: 50%;
+  left: -10px;
+  margin: 0px;
+}
+
+.sound-wrapper-jonas .sound-off-jonas {
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: #fff;
+  display: none;
+}
+
+.sound-wrapper-jonas .sound-off-jonas svg {
+  width: 30px;
+  height: 30px;
+}
+
+.sound-wrapper-jonas .sound-on-jonas {
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.sound-wrapper-jonas .sound-on-jonas svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* End of Jonas part */
 
 .legend {
 	font-family: 'Raleway', sans-serif;
@@ -232,3 +315,70 @@ h1 {
   top: 0;
   left: 0;
 }
+
+.right {
+  padding-top: 0.5rem;
+  width: 180%;
+  position:absolute;
+  }
+
+.btn-check{
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-bottom: -10rem;
+}
+
+.btn-outline-secondary{
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 1.0;
+  text-shadow :transparent;
+}
+
+.butao{
+  text-align: center;
+  padding-bottom: 2rem;
+  /*
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px; */
+}
+
+#selector-child{
+  margin: auto;
+  display: inline-block;
+}
+
+.selector_year1 {
+  right: 45%;
+  width: 6%;
+  min-width: 100px; 
+  }
+
+.selector_year2 {
+  left: 55%;
+  width: 6%;
+  min-width: 100px;
+  }
+
+.density{
+  padding: 0.5rem;
+}
+
+
+/* Playlists */
+
+#playlists {
+  position: relative;
+  padding: 2rem;
+}
+
+#playlists iframe{
+  border-radius: 3%;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border: 1.5px black;
+}
+
+/* End Playlists */
