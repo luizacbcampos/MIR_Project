@@ -195,11 +195,12 @@ function RadarChart(id) {
 				.style("fill-opacity", 0.7);
 			
 			tooltip
-				.attr("transform", function(d, i) { return "translate(0,600)"; })
+				.text(className[i])
 				.style("visibility", "visible")
+				.style("position", "absolute")
+				.style("right", "350px")
 				.style("font-size", "25px")
-				.style("color", cfg.color(i))
-				.text(className[i]);
+				.style("color", cfg.color(i));
 
 		})
 		.on('mouseout', function(){

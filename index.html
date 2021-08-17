@@ -183,14 +183,33 @@
                     </div>
                 </section>
 
-                <section id="radar" class="chart">
-                    <div id="radar_chart">
+                <section id="radar" class="chart"> 
+                    <br> <br> <br>
+                    <div id="radar-texto" style="display: inline-block; padding: 200px">
+                        <p style="font-size:18px;">
+                            Com este gráfico podemos perceber uma relação entre as características <br>
+                            extraídas do Spotify e as relativas décadas nas quais as músicas foram lançadas.
+                            <br><br>
+                            Note que cada década teve uma tendência maior para uma característica diferente. <br>
+                            A menos dos <span style="color:#b3de69; font-weight:bold">anos 80</span>. Essa diferença é interessante porque ambos os anos <br>
+                            foram marcados pelo uso da técnica de falsete.
+                            <br><br>
+                            Os <span style="color:#80b1d3; font-weight:bold">anos 60</span> possuem um enfoque maior nas músicas ao vivo <br>
+                            e os <span style="color:#fdb462; font-weight:bold">anos 70</span> nas músicas instrumentais. <br>
+                            <br><br>
+                            Podemos notar também uma semelhança entre os <span style="color:#b3de69; font-weight:bold">anos 80</span> e <span style="color:#ffed6f; font-weight:bold">2010</span>. <br>
+                            As características de dança e energia, que estiveram presentes em <span style="color:#b3de69; font-weight:bold">1980</span> <br>
+                            também estão bastante presentes em <span style="color:#ffed6f; font-weight:bold">2010</span>. Como visto anteriormente, <br>
+                            o uso do falsete se assemelha nessas duas décadas.
+                        </p>
+                    </div> 
+                    <div id="radar_chart" style="display: inline-block">
                         <script type="module">
                             import radar from './Data_Vis/assets/js/radar-chart.js';
                             radar.RadarChart("#radar_chart")
                         </script>
                     </div>
-                    <br> <br> <br>
+                    <br> <br> <br><br> <br> <br>
                 </section>
 
                 <section id="heatmap2" class="chart">
