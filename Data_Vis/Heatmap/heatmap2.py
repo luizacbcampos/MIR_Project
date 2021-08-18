@@ -3,7 +3,7 @@ from sklearn import preprocessing
 
 df = pd.read_csv("./MIR/dataframe.csv")
 
-df = df.groupby('year').mean()[["acousticness", "danceability", "energy","instrumentalness", "liveness", "loudness", "speechiness", "spoken", "valence"]]
+df = df.groupby('year').mean()[["acousticness", "danceability", "energy","instrumentalness", "liveness", "loudness", "speechiness", "valence"]]
 
 x = df.values #returns a numpy array
 min_max_scaler = preprocessing.MinMaxScaler()
@@ -14,7 +14,7 @@ for i in range(1958, 2020):
     ind.append(i)
 
 df = pd.DataFrame(x_scaled, index=ind, 
-                    columns=["acousticness", "danceability", "energy","instrumentalness", "liveness", "loudness", "speechiness", "spoken", "valence"])
+                    columns=["acousticness", "danceability", "energy","instrumentalness", "liveness", "loudness", "speechiness", "valence"])
 
 
 with open("metrics_by_year.csv", 'w') as f:
@@ -54,23 +54,17 @@ with open("metrics_by_year.csv", 'w') as f:
         f.write('liveness,')
         f.write(str(round(row.liveness, 3)))
         f.write('\n')
-        #loudness
-        f.write(str(item))
-        f.write(',')
-        f.write('loudness,')
-        f.write(str(round(row.loudness, 3)))
-        f.write('\n')
         #speechiness
         f.write(str(item))
         f.write(',')
         f.write('speechiness,')
         f.write(str(round(row.speechiness, 3)))
         f.write('\n')
-        #spoken
+        #loudness
         f.write(str(item))
         f.write(',')
-        f.write('spoken,')
-        f.write(str(round(row.spoken, 3)))
+        f.write('loudness,')
+        f.write(str(round(row.loudness, 3)))
         f.write('\n')
         #valence
         f.write(str(item))
