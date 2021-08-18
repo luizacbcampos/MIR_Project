@@ -308,7 +308,7 @@
                     </div>
                 </section>
 
-                <div claas="text-heatmap2">
+                <div class="text-heatmap2">
                     Podemos notar claramente em quais anos o uso de cada métrica foi mais representativo. <br> 
                     Note que as músicas foram se tornando mais enérgicas com o passar dos anos, tendo seu ápice de 2006 a 2012. 
                     <br><br>
@@ -317,36 +317,40 @@
                     <br><br><br><br><br>
                 </div>
 
-                <section id="density" class="chart">
-                    <div id="density">
-                        <script src="./Data_Vis/assets/js/igor_js1.js"></script>
-                    </div>
-                    <div id="density-texto">
-						<p>
-                            Também trouxemos esta visualização que permite comparar as <br>
-                            densidades das diversas métricas citadas, de dois anos distintos, <br>
-                            selecionáveis nos botões abaixo. <br><br>
-                            Interagindo com o gráfico é possível notar que anos <br>
-                            próximos tendem a ter características musicais parecidas, <br>
-                            e anos mais distantes tendem a ter características musicais mais distintas.
-                            
-						</p>
-                    </div>
-                    <div class="butao">
-                        <div class="selector_year1" id="selector-child">
-                            <select class="form-select" aria-label="Default select example" id="dropdown_button_years"></select>
-                        </div>
-                        <div class="selector_year2" id="selector-child">
-                            <select class="form-select" aria-label="Default select example" id="dropdown_button_years2"></select>
-                        </div>
-                    </div>
+                <section id="density_section" class="chart">
+                    <div id="density_wrapper">
+                        <div id="visualiza" class="density-child">
+                            <div id="density">
+                                <script src="./Data_Vis/assets/js/igor_js1.js"></script>
+                            </div>
+                            <div class="butao">
+                                <div class="selector_year1" id="selector-child">
+                                    <select class="form-select" aria-label="Default select example" id="dropdown_button_years"></select>
+                                </div>
+                                <div class="selector_year2" id="selector-child">
+                                    <select class="form-select" aria-label="Default select example" id="dropdown_button_years2"></select>
+                                </div>
+                            </div>
 
-                    <script src="./Data_Vis/assets/js/igor_js2.js"></script>
+                            <script src="./Data_Vis/assets/js/igor_js2.js"></script>
+                        </div>
+                        <div id="density-texto" class="density-child">
+    						<p>
+                                Também trouxemos esta visualização que permite comparar as <br>
+                                densidades das diversas métricas citadas, de dois anos distintos, <br>
+                                selecionáveis nos botões abaixo. <br><br>
+                                Interagindo com o gráfico é possível notar que anos <br>
+                                próximos tendem a ter características musicais parecidas, <br>
+                                e anos mais distantes tendem a ter características musicais mais distintas.
+                                
+    						</p>
+                        </div>
+                    </div>
                 </section>
 
+                <br><br><br>
                 <section id="rio" class="chart">
-                    <br><br><br>
-                    <div id="Rio-texto">
+                    <div id="Rio-texto" class="rio-child">
 						<p>
 
                             Por fim, uma outra pergunta que buscamos responder é: <br>
@@ -366,7 +370,7 @@
 
 						</p>
                     </div>
-                    <div id="Rio">
+                    <div id="Rio" class="rio-child">
 						<script type="module" src="./Data_Vis/assets/js/rio.js"></script>
                     </div>
                 </section>
