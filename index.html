@@ -292,9 +292,55 @@
                 </section>
 
                 <section id="heatmap2" class="chart">
+                    <div claas="text-heatmap">
+                        <p>
+                            Com o gráfico de radar não podemos representar muitas séries temporais e não conseguimos visualizar todos os anos sem um agrupamento. <br> 
+                            Devido a isso, criamos também um mapa de calor para visualizar os dados anteriores mais detalhadamente. 
+                            <br><br>
+                            Nesse mapa de calor também foram incluídas outras duas métricas: <em>loudness</em> e <em>valence</em>.
+                            <br><br><br>
+                        </p>
                     <div id="heatmap2">
 						<script type="module" src="./Data_Vis/assets/js/heatmap2.js"></script>
                     </div>
+                </section>
+
+                <div claas="text-heatmap2">
+                    Podemos notar claramente em quais anos o uso de cada métrica foi mais representativo. <br> 
+                    Note que as músicas foram se tornando mais enérgicas com o passar dos anos, tendo seu ápice de 2006 a 2012. 
+                    <br><br>
+                    Com o passar dos anos as músicas foram se tornando cada vez menos acústicas e menos positivas também. <br>
+                    A popularidade da presença de discurso nas músicas começou a aumentar no início dos anos 90, tendo seu ápice em 2018.
+                    <br><br>
+                    Investimos também em uma outra tentativa de comparar essas métricas ano a ano.
+                    <br><br><br><br><br>
+                </div>
+
+                <section id="density" class="chart">
+                    <div id="density-texto">
+						<p>
+                            Esta visualização permite comparar as <br>
+                            densidades de diversas métricas, de dois anos distintos, <br>
+                            selecionáveis nos botões abaixo. <br><br>
+                            Interagindo com o gráfico é possível notar que anos <br>
+                            próximos tendem a ter características musicais parecidas, <br>
+                            e anos mais distantes tendem a ter características musicais mais distintas.
+
+						</p>
+                    </div>
+                    <div id="density">
+                        <script src="./Data_Vis/assets/js/igor_js1.js"></script>
+                    </div>
+                    <div class="butao">
+                        <div class="selector_year1" id="selector-child">
+                            <select class="form-select" aria-label="Default select example" id="dropdown_button_years"></select>
+                        </div>
+                        <div class="selector_year2" id="selector-child">
+                            <select class="form-select" aria-label="Default select example" id="dropdown_button_years2"></select>
+                        </div>
+                    </div>
+
+                    <script src="./Data_Vis/assets/js/igor_js2.js"></script>
                 </section>
 
                 <section id="rio" class="chart">
@@ -317,33 +363,6 @@
                     <div id="Rio">
 						<script type="module" src="./Data_Vis/assets/js/rio.js"></script>
                     </div>
-                </section>
-
-                <section id="density" class="chart">
-                    <div id="density-texto">
-						<p>
-                            Por fim, esta visualização permite comparar as <br>
-                            densidades de diversas métricas, de dois anos distintos, <br>
-                            selecionáveis nos botões abaixo. <br><br>
-                            Interagindo com o gráfico é possível notar que anos <br>
-                            próximos tendem a ter características musicais parecidas, <br>
-                            e anos mais distantes tendem a ter características musicais mais distintas.
-
-						</p>
-                    </div>
-                    <div id="density">
-                        <script src="./Data_Vis/assets/js/igor_js1.js"></script>
-                    </div>
-                    <div class="butao">
-                        <div class="selector_year1" id="selector-child">
-                            <select class="form-select" aria-label="Default select example" id="dropdown_button_years"></select>
-                        </div>
-                        <div class="selector_year2" id="selector-child">
-                            <select class="form-select" aria-label="Default select example" id="dropdown_button_years2"></select>
-                        </div>
-                    </div>
-
-                    <script src="./Data_Vis/assets/js/igor_js2.js"></script>
                 </section>
                 
                 
