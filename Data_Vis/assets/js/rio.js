@@ -55,7 +55,7 @@ d3.csv("https://gist.githubusercontent.com/brunomaletta/e60ff6ec1644ffd34b89ff7c
 		//.text("Amount of falsetto, on average, per year")
 		.text("Quantidade de falsete (média) por ano")
 		.attr("text-anchor", "start")
-		.style("font", "25px times")
+		.style("font-size", "25px")
 
 	// color palette
 	const color = d3.scaleOrdinal()

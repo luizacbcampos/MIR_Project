@@ -293,9 +293,9 @@ function stacked(selector){
         .attr("x", (width / 2))             
         .attr("y", 0 - (margin.top / 2))
         .attr("text-anchor", "middle")  
-        .style("font-size", "30px") 
+        .style("font-size", "25px") 
         .style("text-decoration", "bold")  
-        .text("Valor de falsetto por ano");
+        .text("Valor de falsete por ano");
 
     // color palette = one color per subgroup
     const color = d3.scaleOrdinal()

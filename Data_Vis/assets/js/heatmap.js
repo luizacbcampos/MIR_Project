@@ -131,7 +131,7 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main/Data_Vi
           .attr("x", 0)
           .attr("y", -50)
           .attr("text-anchor", "left")
-          .style("font-size", "22px")
+          .style("font-size", "25px")
           .text("Falsete a cada Ano");
     
     // Add subtitle to graph

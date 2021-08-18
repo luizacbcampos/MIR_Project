@@ -1,7 +1,7 @@
 // Density
 
 // set the dimensions and margins of the graph
-const margin = {top: 100, right: 170, bottom: 70, left:170},
+const margin = {top: 100, right: 170, bottom:70, left:170},
     width = 1000 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 
@@ -63,7 +63,7 @@ function updategraph(year1, year2) {
       .attr("x", (width / 2))             
       .attr("y", 0 - (3*margin.top / 4))
       .attr("text-anchor", "middle")  
-      .style("font-size", "30px") 
+      .style("font-size", "25px") 
       .style("text-decoration", "bold")  
       .text("Densidade dos atributos por ano selecionado");
       

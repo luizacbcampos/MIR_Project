@@ -70,7 +70,7 @@ function RadarChart(id) {
         .attr("x", (cfg.w/2 + cfg.margin.left))             
         .attr("y", cfg.margin.top/5)
         .attr("text-anchor", "middle")  
-        .style("font-size", "20px") 
+        .style("font-size", "25px") 
         .style("text-decoration", "bold")  
         .text("Métricas do Spotify por Décadas");
 
