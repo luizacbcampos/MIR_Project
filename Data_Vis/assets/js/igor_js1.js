@@ -18,7 +18,7 @@ const svg = d3.select("#density")
 const categories = [
     //"weeks_charted_all_time",
     "falsetto",
-    "spoken",
+    //"spoken",
     "acousticness",
     "danceability",
     //"tempo",
