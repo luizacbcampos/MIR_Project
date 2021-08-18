@@ -69,10 +69,22 @@ function stacked(selector){
 	  //data = data.remove("0");
 	  //data = data.remove(0);
 	  //data.splice(1, 1);
+    
+    const subgroups = data.columns.slice(1); // List of subgroups = header of csv
+    var combined = [];
+    var sum = 0;
+    var avg = 0;
+    data.map(function(d) { 
+      sum = d3.sum([d['0'],d['1'],d['2'],d['3'],d['4'],d['5'],d['6'],d['7'],d['8'],d['9'],d['10']])
+      sum = d3.sum([d['1'],d['2'],d['3'],d['4'],d['5'],d['6'],d['7'],d['8'],d['9'],d['10']]) //sem 0
+      avg = d3.sum([d['1'],2*d['2'],3*d['3'],4*d['4'],5*d['5'],6*d['6'],7*d['7'],8*d['8'],9*d['9'],10*d['10']])/sum
+      combined.push(avg)
+    } );
+    console.log(combined)
 
-    const subgroups = data.columns.slice(1) // List of subgroups = header of csv
-	 const subgroupsSemZero = data.columns.slice(1);
-	 subgroupsSemZero.splice(0, 1);
+
+    const subgroupsSemZero = data.columns.slice(1);
+    subgroupsSemZero.splice(0, 1);
     const years = data.map(d => d.year) // List of years = value of the first column called group
     console.log(years)
 

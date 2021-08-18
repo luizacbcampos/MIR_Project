@@ -25,9 +25,11 @@
         <!-- Howler  -->
         <script src= "https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
 
-	<!-- D3.js v5  -->
+        <!-- D3.js v5  -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js" charset="utf-8"></script>
 		
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- D3.js v3 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script> -->
         
@@ -211,30 +213,52 @@
 
                         Se analisarmos a versão do gráfico sem valores 0 o entendimento fica mais fácil. <br><br>
                         É possivel notar como, em 1975, 7 músicas diferentes atingiram o pico. São elas:
-                        <a href="https://open.spotify.com/track/1vIsPpjkRBJyFBbYdQNopN">Shoeshine Boy</a> e 
-                        <a href="https://open.spotify.com/track/1p8EoANWLLf24wrGnyzWOw">Get The Cream Off The Top</a> de Eddie Kendricks,
-                        <a href="https://open.spotify.com/track/6Szw3sQC5Zssr15AJsUY9J">Love To Love You Baby</a> de Donna Summer,
-                        <a href="https://open.spotify.com/track/4GOhstuymDo7yP2SL0N9ZT">Look At Me (I'm In Love)</a> de The Moments,
-                        <a href="https://open.spotify.com/track/1hRDHWWealh2Pk3fnpIe75">Love Rollercoaster</a> de Ohio Players,
-                        <a href="https://open.spotify.com/track/6LipmAiSHO4BuUXH3zvVU8">My Little Lady</a> de Bloodstone e 
-                        <a href="https://open.spotify.com/track/28WMPttAOsyV90WNiMXESa">Love Machine (Part 1)</a> de The Miracles.
+                        <a href="https://open.spotify.com/track/1vIsPpjkRBJyFBbYdQNopN"   target='_blank'>
+                        Shoeshine Boy</a> e 
+                        <a href="https://open.spotify.com/track/1p8EoANWLLf24wrGnyzWOw"   target='_blank'>
+                        Get The Cream Off The Top</a> de Eddie Kendricks,
+                        <a href="https://open.spotify.com/track/6Szw3sQC5Zssr15AJsUY9J"  target='_blank'>
+                        Love To Love You Baby</a> de Donna Summer,
+                        <a href="https://open.spotify.com/track/4GOhstuymDo7yP2SL0N9ZT"   target='_blank'>
+                        Look At Me (I'm In Love)</a> de The Moments,
+                        <a href="https://open.spotify.com/track/1hRDHWWealh2Pk3fnpIe75"  target='_blank'>
+                        Love Rollercoaster</a> de Ohio Players,
+                        <a href="https://open.spotify.com/track/6LipmAiSHO4BuUXH3zvVU8"  target='_blank'>
+                        My Little Lady</a> de Bloodstone e 
+                        <a href="https://open.spotify.com/track/28WMPttAOsyV90WNiMXESa"  target='_blank'>
+                        Love Machine (Part 1)</a> de The Miracles.
                         <br><br>
 
                         Não é um feito pequeno. A música mais recente na base a atingir tal valor é de Pharrell Williams, em 2014, com 
-                        <a href="https://open.spotify.com/track/24MSdaNRlLgjp8xYeJeXwZ">Come Get It Bae</a>. A mais famosa, contudo, é <a href="https://open.spotify.com/track/5ubvP9oKmxLUVq506fgLhk?autoplay=true"  target='_blank'>Stayin' Alive</a>
+                        <a href="https://open.spotify.com/track/24MSdaNRlLgjp8xYeJeXwZ"  target='_blank'>
+                        Come Get It Bae</a>. A mais famosa, contudo, é 
+                        <a href="https://open.spotify.com/track/5ubvP9oKmxLUVq506fgLhk?autoplay=true"  target='_blank'>
+                        Stayin' Alive</a>
                          do Bee Gees. A banda, aliás, emplacou diversos hits 10 de 10, como 
-                         <a href="https://open.spotify.com/track/1WvEr42lxz4P06DlIuYdmr">New York Mining Disaster 1941</a> em 1967,
-                         <a href="https://open.spotify.com/track/2xiOdusRnZezQok1RgLNeS">You Should Be Dancing</a> em 1976,
-                         <a href="https://open.spotify.com/track/6T5GTy1l6dRmagqpNPjdoc">Too Much Heaven</a> em 1978 e 
-                         <a href="https://open.spotify.com/track/73V1mhbDb7K0lqlHB82iN5">Love You Inside Out</a> em 1979. <br><br>
+                         <a href="https://open.spotify.com/track/1WvEr42lxz4P06DlIuYdmr" target='_blank'>
+                         New York Mining Disaster 1941</a> em 1967,
+                         <a href="https://open.spotify.com/track/2xiOdusRnZezQok1RgLNeS" target='_blank'>
+                         You Should Be Dancing</a> em 1976,
+                         <a href="https://open.spotify.com/track/6T5GTy1l6dRmagqpNPjdoc" target='_blank'>
+                         Too Much Heaven</a> em 1978 e 
+                         <a href="https://open.spotify.com/track/73V1mhbDb7K0lqlHB82iN5" target='_blank'>
+                         Love You Inside Out</a> em 1979. <br><br>
                          Observando o gráfico também podemos notar que a técnica atingiu seu auge na segunda metade dos anos 1970. Nos últimos anos <b>podemos</b> notar uma ressurgência com o reaparecimento de valores acima de 7. 
                          <br><br>
+                         No gráfico abaixo exibimos os mesmos dados, mas em um <i>heatmap</i>.
                     </div>
                 </section>
 
-                <section id="heatmap" class="chart">
+                <section id="heatmap-sec" class="chart">
                     <div id="heatmap">
 						<script type="module" src="./Data_Vis/assets/js/heatmap.js"></script>
+                    </div>
+                    <div claas="text-heatmap">
+                        <p>
+                            No gráfico acima fica mais claro o uso de falsete na segunda metade da década de 1970. <br><br>
+                            Também podemos notar como o uso cai consideravelmente na segunda metade da década de 1990, com pouquíssimos valores superiores a 6. <br><br>
+                            Estes dados nos trouxeram outra dúvida: <em>além de falsete, seriam outras características musicais fortemente influenciadas pela década?</em> <br><br>
+                        </p>
                     </div>
                 </section>
 
@@ -294,13 +318,6 @@
 						<script type="module" src="./Data_Vis/assets/js/rio.js"></script>
                     </div>
                 </section>
-                
-                
-                
-                
-                
-                
-
 
                 <section id="density" class="chart">
                     <div id="density-texto">
@@ -311,7 +328,6 @@
                             Interagindo com o gráfico é possível notar que anos <br>
                             próximos tendem a ter características musicais parecidas, <br>
                             e anos mais distantes tendem a ter características musicais mais distintas.
-
 
 						</p>
                     </div>
@@ -358,6 +374,13 @@
 
                 <br><br><br><br> 
                 <section id="playlists">
+                    <div class="texto">
+                        <h1>Nossas playlists</h1>
+                        <p>
+                            Todas as músicas utilizadas nesse trabalho estão disponíveis nas três playlists abaixo. Aproveite!
+                            <br><br>
+                        </p>
+                    </div>
                     <iframe src="https://open.spotify.com/embed/playlist/5G2ada6BBgbe2wPfWYZMcC?theme=0" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media">  
                     </iframe>
 
@@ -367,12 +390,18 @@
                     <iframe src="https://open.spotify.com/embed/playlist/1U8FfPx2CpIx2ViM086zYb?theme=0" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </section>
                 <section id="links">
-                    <br><br><br><br>
-                    <p>https://pudding.cool/2019/08/register/</p>
-                    <p>https://github.com/the-pudding/falsetto-story/</p>
-                    <p>https://github.com/the-pudding/falsetto-site/</p>
-                    <p>https://pudding.cool/2018/06/skate-music/</p>
-                    <p>https://github.com/jwilber/Pudding_Skate-Music</p>
+                    <br><br>
+                    <!--
+                        <p>https://pudding.cool/2019/08/register/</p>
+                        <p>https://github.com/the-pudding/falsetto-story/</p>
+                        <p>https://github.com/the-pudding/falsetto-site/</p>
+                        <p>https://pudding.cool/2018/06/skate-music/</p>
+                        <p>https://github.com/jwilber/Pudding_Skate-Music</p>
+                     -->
+                    <a href="https://github.com/luizacbcampos/MIR_Project"   target='_blank'>
+                        <i class="fa fa-github" style="font-size:48px;color:gray"></i>
+                    </a>
+                    <br><br>                            
                 </section>
             </main>
         </body>

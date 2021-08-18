@@ -43,6 +43,16 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+body i{
+  font-style: italic;
+}
+
+body em{
+  font-style: italic;
+}
+body b{
+  font-style: oblique;
+}
 a:link{
   color: #80b1d3;
 }
