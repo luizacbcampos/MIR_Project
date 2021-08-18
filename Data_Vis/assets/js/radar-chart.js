@@ -198,7 +198,7 @@ function RadarChart(id) {
 				.text(className[i])
 				.style("visibility", "visible")
 				.style("position", "absolute")
-				.style("right", "350px")
+				.style("right", "425px")
 				.style("font-size", "25px")
 				.style("color", cfg.color(i));
 
