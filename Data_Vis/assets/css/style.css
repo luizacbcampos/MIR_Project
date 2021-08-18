@@ -318,10 +318,18 @@ a:hover{
 
 /* RADAR */
 
-#radar-texto{
-  font-size:18px;
-  display: inline-block;
-  padding: 200px;
+#radar{
+  touch-action: none;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.radar-child{
+  margin: auto;
 }
 
 #radar-texto p{
@@ -331,12 +339,7 @@ a:hover{
   font-weight:bold;
 }
 
-#radar_chart{
-  display: inline-block;
-}
-
 /* RIO */
-
 
 #rio{
   touch-action: none;
@@ -385,7 +388,6 @@ a:hover{
 #density-texto span{
   font-weight:bold;
 }
-
 
 #selector-child{
   margin: auto;
