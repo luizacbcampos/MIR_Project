@@ -71,8 +71,8 @@ function stacked(selector){
 	  //data.splice(1, 1);
 
     const subgroups = data.columns.slice(1) // List of subgroups = header of csv
-	const subgroupsSemZero = data.columns.slice(1);
-	subgroupsSemZero.splice(0, 1);
+	 const subgroupsSemZero = data.columns.slice(1);
+	 subgroupsSemZero.splice(0, 1);
     const years = data.map(d => d.year) // List of years = value of the first column called group
     console.log(years)
 

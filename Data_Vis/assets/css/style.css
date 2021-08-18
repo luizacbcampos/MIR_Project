@@ -17,7 +17,7 @@ pre {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
+	font-size: 18px;
 	font-weight: 300;
 	text-align: center;
 	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
@@ -42,6 +42,19 @@ h1 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
+a:link{
+  color: #80b1d3;
+}
+
+a:visited{
+  color: #fb8072;
+}
+
+a:hover{
+  color: #bc80bd;
+}
+
 
 
 /* Intro part */ 
@@ -205,18 +218,8 @@ h1 {
 	position: relative;
 	padding-top: 2rem;
 	display: inline-block;
-}
 
-.text-element a:link{
-  color: #80b1d3;
-}
-
-.text-element a:visited{
-  color: #fb8072;
-}
-
-.text-element a:hover{
-  color: #bc80bd;
+  font-size:18px;
 }
 
 #jonas{
@@ -226,7 +229,7 @@ h1 {
   padding-bottom: 2rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+  grid-gap: 20px;
 }
 
 #jonas-child{
@@ -289,6 +292,10 @@ h1 {
 }
 
 /* End of Jonas part */
+.text-after-graph{
+  padding: 3rem;
+}
+
 
 .legend {
 	font-family: 'Raleway', sans-serif;
@@ -298,6 +305,44 @@ h1 {
 .tooltip {
 	fill: #333333;
 }
+
+/* RADAR */
+
+#radar-texto{
+  font-size:18px;
+  display: inline-block;
+  padding: 200px;
+}
+
+#radar-texto p{
+  font-size:18px;
+}
+#radar-texto span{
+  font-weight:bold;
+}
+
+#radar_chart{
+  display: inline-block;
+}
+
+/* RIO */
+
+#Rio-texto{
+  font-size:18px;
+  display: inline-block;
+  padding: 100px;
+}
+
+#Rio-texto span{
+  font-weight:bold;
+}
+
+#Rio{
+  display: inline-block;
+}
+
+
+
 
 
 .svg-container{
