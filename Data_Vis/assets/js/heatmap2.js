@@ -27,7 +27,7 @@ const svg = d3.select("#heatmap2")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 //Read the data
-d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora/Data_Vis/Heatmap/metrics_by_year.csv").then(function(data){
+d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main/Data_Vis/assets/data/metrics_by_year.csv").then(function(data){
     // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
     const myGroups = Array.from(new Set(data.map(d => d.year)))
     const myVars = Array.from(new Set(data.map(d => d.metrics)))
@@ -132,7 +132,7 @@ d3.csv("https://raw.githubusercontent.com/luizacbcampos/MIR_Project/main-isadora
           .attr("y", -50)
           .attr("text-anchor", "left")
           .style("font-size", "22px")
-          .text("Anos x Métricas do Spotify");
+          .text("Métricas do Spotify por Ano");
   
 //   // Add subtitle to graph
 //   svg.append("text")
